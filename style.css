@@ -994,6 +994,7 @@ body[data-theme="light"] .theme-icon-moon {
     border: 1px solid var(--line);
     background: var(--tag-bg);
     color: var(--text);
+    color-scheme: dark light;
     border-radius: 14px;
     padding: 14px 16px;
     font: inherit;
@@ -1016,6 +1017,39 @@ body[data-theme="light"] .theme-icon-moon {
 .form-row textarea {
     resize: vertical;
     min-height: 160px;
+}
+
+.form-row select option {
+    background: var(--bg-soft);
+    color: var(--text);
+}
+
+body[data-theme="dark"] .form-row input,
+body[data-theme="dark"] .form-row select,
+body[data-theme="dark"] .form-row textarea {
+    background: rgba(15, 23, 42, 0.72);
+    color: #f8fbff;
+}
+
+body[data-theme="dark"] .form-row input::placeholder,
+body[data-theme="dark"] .form-row textarea::placeholder {
+    color: rgba(159, 176, 199, 0.88);
+}
+
+body[data-theme="dark"] .form-row input:-webkit-autofill,
+body[data-theme="dark"] .form-row input:-webkit-autofill:hover,
+body[data-theme="dark"] .form-row input:-webkit-autofill:focus,
+body[data-theme="dark"] .form-row textarea:-webkit-autofill,
+body[data-theme="dark"] .form-row textarea:-webkit-autofill:hover,
+body[data-theme="dark"] .form-row textarea:-webkit-autofill:focus,
+body[data-theme="dark"] .form-row select:-webkit-autofill,
+body[data-theme="dark"] .form-row select:-webkit-autofill:hover,
+body[data-theme="dark"] .form-row select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #f8fbff;
+    -webkit-box-shadow: 0 0 0 1000px rgba(15, 23, 42, 0.96) inset;
+    box-shadow: 0 0 0 1000px rgba(15, 23, 42, 0.96) inset;
+    caret-color: #f8fbff;
+    transition: background-color 9999s ease-out 0s;
 }
 
 .form-actions {
