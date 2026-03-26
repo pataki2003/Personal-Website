@@ -37,7 +37,8 @@ export const en = {
   "hero.letsTalk": "Let's talk",
   "hero.miniLabel": "Current focus",
   "hero.miniTitle": "Building systems that actually work",
-  "hero.miniText": "Clean frontend, reliable backend logic, and automation that reduces manual work.",
+  "hero.miniText":
+    "Clean frontend, reliable backend logic, and automation that reduces manual work.",
   "about.label": "About me",
   "about.title": "More than code. I care about structure, clarity, and momentum.",
   "about.description":
@@ -93,6 +94,14 @@ export const en = {
   "contact.description":
     "If you're looking for someone who enjoys creating practical digital systems, improving workflows, and building with purpose, let's connect.",
   "contact.workWithMe": "Work with me",
+  "booking.label": "Booking",
+  "booking.title": "If you'd rather walk through the project live, let's talk.",
+  "booking.description":
+    "If a short call is the easiest way to align on goals, scope, and next steps, you can book a time here.",
+  "booking.cta": "Book a call",
+  "booking.secondary": "Send a project brief",
+  "booking.note":
+    "If you already have the details ready, the contact form is still the best starting point.",
   "footer.rights": "© 2026 Pataki Attila Bence",
   "footer.facebook": "Facebook",
   "footer.github": "GitHub",
@@ -138,20 +147,25 @@ export const en = {
   "project.links.contact": "Contact section",
   "project.links.projects": "Back to portfolio projects",
   "project.links.home": "View the homepage",
-  "project.preview": "Product Preview",
+  "project.preview": "Product preview",
   "project.linksTitle": "Links",
   "project.coachtimize.eyebrow": "Full-Stack Application",
   "project.coachtimize.title": "Coachtimize",
   "project.coachtimize.description":
     "A full-stack coaching platform built to help coaches manage clients, assign workout plans, and communicate in one place. Designed with structured backend logic, authentication, and a real workflow-oriented system architecture.",
-  "project.coachtimize.meta1": "Status: Built Project",
+  "project.coachtimize.meta1": "Status: Built project",
   "project.coachtimize.meta2": "Focus: Full-Stack Development",
   "project.coachtimize.meta3": "Type: Coaching Platform",
-  "project.coachtimize.problemTitle": "The Problem",
+  "project.coachtimize.problemTitle": "What problem it solves",
   "project.coachtimize.problemText1":
     "Coaches often manage clients, workout plans, appointments, and communication across multiple disconnected tools. That creates unnecessary friction, makes follow-up harder, and turns even simple operations into manual overhead.",
   "project.coachtimize.problemText2":
     "Without a centralized system, client information and coaching workflows become harder to track consistently, especially when the number of clients grows.",
+  "project.coachtimize.whyTitle": "Why I built it",
+  "project.coachtimize.whyText1":
+    "I built Coachtimize to move beyond isolated features and think in terms of a real product-level workflow. I wanted a project where user roles, connected data, and day-to-day usability all matter at the same time.",
+  "project.coachtimize.whyText2":
+    "The coaching domain was a strong fit because it has clear business logic, repeating processes, and enough complexity for architecture and UX decisions to actually matter.",
   "project.coachtimize.solutionTitle": "The Solution",
   "project.coachtimize.solutionText1":
     "Coachtimize was built as a full-stack platform to bring those workflows into one system. It allows coaches to manage clients, assign workout plans, communicate more efficiently, and work from a structured dashboard instead of scattered tools.",
@@ -179,7 +193,7 @@ export const en = {
   "project.coachtimize.role3": "Database structure planning",
   "project.coachtimize.role4": "Frontend UI implementation",
   "project.coachtimize.role5": "Workflow-oriented system thinking",
-  "project.coachtimize.stackTitle": "Tech / Tools",
+  "project.coachtimize.stackTitle": "Tech stack",
   "project.coachtimize.stack1": "HTML",
   "project.coachtimize.stack2": "CSS",
   "project.coachtimize.stack3": "JavaScript",
@@ -195,11 +209,16 @@ export const en = {
   "project.ai.meta1": "Status: Concept",
   "project.ai.meta2": "Focus: Automation",
   "project.ai.meta3": "Type: Business Workflow Design",
-  "project.ai.problemTitle": "The Problem",
+  "project.ai.problemTitle": "What problem it solves",
   "project.ai.problemText1":
     "Small businesses often miss incoming calls during busy hours or outside working time. That usually leads to slower response times, lost opportunities, and a messy manual follow-up process.",
   "project.ai.problemText2":
     "In many cases, customer intent is not captured clearly, so even when the business calls back, the conversation starts from zero again.",
+  "project.ai.whyTitle": "Why I built it",
+  "project.ai.whyText1":
+    "I put this concept together because missed calls often mean real lost revenue for small businesses, yet many automation ideas stay too abstract to be operationally useful.",
+  "project.ai.whyText2":
+    "I wanted to think through an approach where AI is not decoration, but a practical workflow layer: less manual friction, better context, and faster follow-up are the actual goals.",
   "project.ai.solutionTitle": "The Solution",
   "project.ai.solutionText1":
     "I designed a workflow concept that treats missed calls as structured opportunities instead of dead ends. The system captures the event, collects the request context, and routes the inquiry into a more usable follow-up process.",
@@ -219,13 +238,15 @@ export const en = {
   "project.ai.outcomeTitle": "Outcome",
   "project.ai.outcomeText1":
     "This project strengthened my thinking around automation design, business problem-solving, and how digital systems can reduce operational friction instead of adding more layers of chaos.",
+  "project.ai.outcomeText2":
+    "It was especially useful for clarifying when an AI layer adds real value and when a simpler, well-designed process is the better answer.",
   "project.ai.roleTitle": "My Role",
   "project.ai.role1": "Workflow concept design",
   "project.ai.role2": "Problem analysis",
   "project.ai.role3": "System structure thinking",
   "project.ai.role4": "User journey direction",
   "project.ai.role5": "Automation logic planning",
-  "project.ai.stackTitle": "Tech / Tools",
+  "project.ai.stackTitle": "Tech stack",
   "project.ai.stack1": "Workflow Design",
   "project.ai.stack2": "Automation Thinking",
   "project.ai.stack3": "UX Logic",
@@ -234,14 +255,19 @@ export const en = {
   "project.portfolio.title": "Portfolio Website",
   "project.portfolio.description":
     "A lightweight personal website built to present my work, communicate my direction clearly, and give each project a cleaner space to tell its story.",
-  "project.portfolio.meta1": "Status: Live Project",
+  "project.portfolio.meta1": "Status: Live project",
   "project.portfolio.meta2": "Focus: Frontend Structure",
   "project.portfolio.meta3": "Type: Personal Brand Website",
-  "project.portfolio.problemTitle": "The Goal",
+  "project.portfolio.problemTitle": "What problem it solves",
   "project.portfolio.problemText1":
     "I wanted a portfolio that felt modern and intentional without depending on heavy frameworks or bloated templates. The site needed to be fast, readable, and easy to expand over time.",
   "project.portfolio.problemText2":
     "It also had to reflect how I think about building: practical structure first, then polish that supports clarity.",
+  "project.portfolio.whyTitle": "Why I built it",
+  "project.portfolio.whyText1":
+    "I built my own portfolio because I did not want to rely on a generic template to represent my work as a developer. I wanted the site itself to show the same attention to structure, decisions, and maintainability that I value in product work.",
+  "project.portfolio.whyText2":
+    "It also became a good environment for practicing modular frontend structure, content hierarchy, and how to make a simple static site feel intentionally extendable.",
   "project.portfolio.solutionTitle": "The Approach",
   "project.portfolio.solutionText1":
     "I built the site with plain HTML, CSS, and JavaScript, focusing on reusable layout patterns, a simple theme system, and dedicated detail pages for individual projects.",
@@ -261,13 +287,15 @@ export const en = {
   "project.portfolio.outcomeTitle": "Outcome",
   "project.portfolio.outcomeText1":
     "This project gave me a stronger base for presenting my work professionally and helped me practice frontend structure, content hierarchy, and maintainable styling decisions in a real portfolio context.",
+  "project.portfolio.outcomeText2":
+    "It was especially useful for treating my own site like a product: clear goals, a consistent system, and foundations that can evolve without rewrites.",
   "project.portfolio.roleTitle": "My Role",
   "project.portfolio.role1": "Frontend design and implementation",
   "project.portfolio.role2": "Layout and content structure planning",
   "project.portfolio.role3": "Theme toggle behavior",
   "project.portfolio.role4": "Project page system setup",
   "project.portfolio.role5": "Visual polish and responsiveness",
-  "project.portfolio.stackTitle": "Tech / Tools",
+  "project.portfolio.stackTitle": "Tech stack",
   "project.portfolio.stack1": "HTML",
   "project.portfolio.stack2": "CSS",
   "project.portfolio.stack3": "JavaScript",

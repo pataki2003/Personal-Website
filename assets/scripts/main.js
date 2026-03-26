@@ -1,4 +1,5 @@
 import { translations } from "./data/translations.js";
+import { initBookingLinks } from "./shared/booking.js";
 import { initContactForm } from "./shared/contact-form.js";
 import { initI18n } from "./shared/i18n.js";
 import { initMobileNav } from "./shared/nav.js";
@@ -19,4 +20,5 @@ if (navToggle) {
 }
 
 initMobileNav();
+initBookingLinks();
 initContactForm({ t: i18n.t });

@@ -6,7 +6,7 @@ export const hu = {
   "site.logoLabel": "Kezdőlap",
   "site.meta.title": "Pataki Attila Bence | Portfólió",
   "site.meta.description":
-    "Pataki Attila Bence portfóliója - full-stack fejlesztő, AI automatizáció építő és kiberbiztonság iránt érdeklődő alkotó.",
+    "Pataki Attila Bence portfóliója - full-stack fejlesztő, AI automatizációkat építő és kiberbiztonság iránt érdeklődő alkotó.",
   "contact.meta.title": "Dolgozz velem | Pataki Attila Bence",
   "contact.meta.description":
     "Vedd fel a kapcsolatot Pataki Attila Bencével webfejlesztési, automatizációs és digitális rendszerépítési projektekhez.",
@@ -92,6 +92,14 @@ export const hu = {
   "contact.description":
     "Ha olyan embert keresel, aki szeret gyakorlatias digitális rendszereket építeni, workflow-kat javítani és céllal fejleszteni, kapcsolódjunk.",
   "contact.workWithMe": "Dolgozz velem",
+  "booking.label": "Időpontfoglalás",
+  "booking.title": "Ha gyorsabban átmennéd a projektet, beszéljünk élőben.",
+  "booking.description":
+    "Ha inkább egy rövid hívásban egyeztetnéd a célt, a scope-ot és a következő lépéseket, itt tudsz időpontot foglalni.",
+  "booking.cta": "Időpontfoglalás",
+  "booking.secondary": "Projektbrief küldése",
+  "booking.note":
+    "Ha már megvannak a részletek, a kapcsolatfelvételi űrlap továbbra is a legjobb indulópont.",
   "footer.rights": "© 2026 Pataki Attila Bence",
   "footer.facebook": "Facebook",
   "footer.github": "GitHub",
@@ -146,11 +154,16 @@ export const hu = {
   "project.coachtimize.meta1": "Állapot: Elkészült projekt",
   "project.coachtimize.meta2": "Fókusz: Full-Stack fejlesztés",
   "project.coachtimize.meta3": "Típus: Coaching platform",
-  "project.coachtimize.problemTitle": "A probléma",
+  "project.coachtimize.problemTitle": "Milyen problémát old meg",
   "project.coachtimize.problemText1":
     "Az edzők gyakran több különálló eszközben kezelik az ügyfeleket, az edzésterveket, az időpontokat és a kommunikációt. Ez felesleges súrlódást okoz, megnehezíti a követést, és még az egyszerű műveleteket is manuális teherként hagyja meg.",
   "project.coachtimize.problemText2":
     "Központosított rendszer nélkül az ügyféladatok és a coaching workflow-k egyre nehezebben követhetők következetesen, főleg ahogy nő az ügyfélszám.",
+  "project.coachtimize.whyTitle": "Miért építettem",
+  "project.coachtimize.whyText1":
+    "A Coachtimize-ot azért építettem, hogy túllépjek az elszigetelt feature-ökön, és egy valódi termékszintű workflow-ban gondolkodjak. Olyan projektet akartam, ahol a szerepkörök, az adatkapcsolatok és a napi használhatóság egyszerre számítanak.",
+  "project.coachtimize.whyText2":
+    "A coaching domain ehhez jó terep volt, mert világos üzleti logikát, ismétlődő folyamatokat és elég komplexitást ad ahhoz, hogy az architektúra- és UX-döntéseknek is valódi súlya legyen.",
   "project.coachtimize.solutionTitle": "A megoldás",
   "project.coachtimize.solutionText1":
     "A Coachtimize azért készült, hogy ezeket a folyamatokat egyetlen rendszerbe rendezze. Segíti az ügyfélkezelést, az edzéstervek kiosztását, a hatékonyabb kommunikációt, és egy strukturált dashboardból teszi kezelhetővé a munkát.",
@@ -178,7 +191,7 @@ export const hu = {
   "project.coachtimize.role3": "Adatbázis-struktúra tervezése",
   "project.coachtimize.role4": "Frontend UI megvalósítás",
   "project.coachtimize.role5": "Workflow-alapú rendszertervezés",
-  "project.coachtimize.stackTitle": "Tech / Eszközök",
+  "project.coachtimize.stackTitle": "Tech stack",
   "project.coachtimize.stack1": "HTML",
   "project.coachtimize.stack2": "CSS",
   "project.coachtimize.stack3": "JavaScript",
@@ -194,11 +207,16 @@ export const hu = {
   "project.ai.meta1": "Állapot: Koncepció",
   "project.ai.meta2": "Fókusz: Automatizáció",
   "project.ai.meta3": "Típus: Üzleti workflow tervezés",
-  "project.ai.problemTitle": "A probléma",
+  "project.ai.problemTitle": "Milyen problémát old meg",
   "project.ai.problemText1":
     "A kisvállalkozások gyakran mulasztanak bejövő hívásokat csúcsidőben vagy munkaidőn kívül. Ez lassabb reakcióidőhöz, elveszett lehetőségekhez és kaotikus manuális utánkövetéshez vezet.",
   "project.ai.problemText2":
     "Sok esetben az ügyfél szándéka nem kerül tisztán rögzítésre, így mire a vállalkozás visszahív, a beszélgetés szinte a nulláról indul újra.",
+  "project.ai.whyTitle": "Miért építettem",
+  "project.ai.whyText1":
+    "Ezt a koncepciót azért raktam össze, mert a nem fogadott hívások a kisvállalkozásoknál valós bevételkiesést jelentenek, mégis sok automatizációs ötlet túl elméleti marad.",
+  "project.ai.whyText2":
+    "Olyan megközelítést akartam végiggondolni, ahol az AI nem dísz, hanem egy praktikus workflow-réteg: kevesebb kézi súrlódás, jobb kontextus és gyorsabb utánkövetés a valódi cél.",
   "project.ai.solutionTitle": "A megoldás",
   "project.ai.solutionText1":
     "Egy olyan workflow-koncepciót terveztem, amely a nem fogadott hívásokat nem elveszett lehetőségként, hanem strukturált leadként kezeli. A rendszer rögzíti az eseményt, összegyűjti a kérés kontextusát, majd egy használhatóbb utánkövetési folyamatba tereli.",
@@ -218,13 +236,15 @@ export const hu = {
   "project.ai.outcomeTitle": "Eredmény",
   "project.ai.outcomeText1":
     "Ez a projekt erősítette az automatizációs tervezésről, üzleti problémamegoldásról és arról alkotott gondolkodásomat, hogyan csökkenthetik a digitális rendszerek az operatív súrlódást ahelyett, hogy újabb káoszréteget adnának hozzá.",
+  "project.ai.outcomeText2":
+    "Különösen hasznos volt abban, hogy tisztábban lássam, mikor ad valódi értéket egy AI-réteg, és mikor kell inkább egyszerű, jól tervezett folyamatlogikára támaszkodni.",
   "project.ai.roleTitle": "Szerepem",
   "project.ai.role1": "Workflow-koncepció tervezés",
   "project.ai.role2": "Problémaelemzés",
   "project.ai.role3": "Rendszerstruktúra-gondolkodás",
   "project.ai.role4": "Felhasználói út irányának kialakítása",
   "project.ai.role5": "Automatizációs logika tervezése",
-  "project.ai.stackTitle": "Tech / Eszközök",
+  "project.ai.stackTitle": "Tech stack",
   "project.ai.stack1": "Workflow tervezés",
   "project.ai.stack2": "Automatizációs gondolkodás",
   "project.ai.stack3": "UX logika",
@@ -236,20 +256,25 @@ export const hu = {
   "project.portfolio.meta1": "Állapot: Élő projekt",
   "project.portfolio.meta2": "Fókusz: Frontend struktúra",
   "project.portfolio.meta3": "Típus: Személyes márka weboldal",
-  "project.portfolio.problemTitle": "A cél",
+  "project.portfolio.problemTitle": "Milyen problémát old meg",
   "project.portfolio.problemText1":
     "Olyan portfóliót akartam, ami modernnek és tudatosnak hat anélkül, hogy nehéz frameworkökre vagy túlbonyolított sablonokra támaszkodna. A site-nak gyorsnak, olvashatónak és könnyen bővíthetőnek kellett lennie.",
   "project.portfolio.problemText2":
     "Azt is tükröznie kellett, ahogyan az építésről gondolkodom: először a gyakorlatias struktúra, utána az ezt támogató vizuális polish.",
+  "project.portfolio.whyTitle": "Miért építettem",
+  "project.portfolio.whyText1":
+    "Azért építettem meg a saját portfóliómat, mert nem akartam egy generikus sablont használni arra, hogy fejlesztőként bemutassam magam. Olyan felületet szerettem volna, ami ugyanúgy a struktúráról, a döntésekről és a karbantarthatóságról szól, mint a vizuális első benyomásról.",
+  "project.portfolio.whyText2":
+    "Ez a projekt jó terep lett arra is, hogy valós környezetben gyakoroljam a modulárisabb frontend felépítést, a tartalmi hierarchiát és azt, hogyan lehet egy egyszerű statikus site-ot tudatosan bővíthetővé tenni.",
   "project.portfolio.solutionTitle": "A megközelítés",
   "project.portfolio.solutionText1":
-    "A site-ot sima HTML-lel, CSS-sel és JavaScripttel építettem, újrahasználható layout mintákra, egyszerű témarendszerre és dedikált projektoldalakra támaszkodva.",
+    "A site-ot sima HTML-lel, CSS-sel és JavaScripttel építettem, újrahasznosítható layout mintákra, egyszerű témarendszerre és dedikált projektoldalakra támaszkodva.",
   "project.portfolio.solutionText2":
     "Az eredmény egy könnyű portfólió lett, ami személyes, reszponzív és karbantartható marad.",
   "project.portfolio.featuresTitle": "Fő funkciók",
   "project.portfolio.feature1": "Reszponzív főoldal és projektoldal layout",
   "project.portfolio.feature2": "Sötét és világos téma mentett preferenciával",
-  "project.portfolio.feature3": "Újrahasználható, kártya-alapú tartalmi rendszer",
+  "project.portfolio.feature3": "Újrahasznosítható, kártya-alapú tartalmi rendszer",
   "project.portfolio.feature4": "Dedikált projektoldalak mélyebb kontextushoz",
   "project.portfolio.feature5": "Egyszerű, könnyen karbantartható fájlstruktúra",
   "project.portfolio.challengesTitle": "Kihívások és gondolkodás",
@@ -260,13 +285,15 @@ export const hu = {
   "project.portfolio.outcomeTitle": "Eredmény",
   "project.portfolio.outcomeText1":
     "Ez a projekt erősebb alapot adott a munkáim professzionális bemutatásához, és segített valódi portfóliókörnyezetben gyakorolni a frontend struktúrát, a tartalmi hierarchiát és a karbantartható styling döntéseket.",
+  "project.portfolio.outcomeText2":
+    "Különösen hasznos volt abban, hogy a saját oldalamat is ugyanazzal a szemlélettel kezeljem, mint bármelyik terméket: világos cél, következetes rendszer és fokozatosan fejleszthető alapok.",
   "project.portfolio.roleTitle": "Szerepem",
   "project.portfolio.role1": "Frontend design és megvalósítás",
   "project.portfolio.role2": "Layout és tartalmi struktúra tervezése",
   "project.portfolio.role3": "Témaváltó működésének kialakítása",
   "project.portfolio.role4": "Projektoldal-rendszer felépítése",
   "project.portfolio.role5": "Vizuális polish és reszponzivitás",
-  "project.portfolio.stackTitle": "Tech / Eszközök",
+  "project.portfolio.stackTitle": "Tech stack",
   "project.portfolio.stack1": "HTML",
   "project.portfolio.stack2": "CSS",
   "project.portfolio.stack3": "JavaScript",

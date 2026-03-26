@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="project.portfolio.meta.title">Portfólió weboldal | Pataki Attila Bence</title>
-    <meta name="description" content="Projektbemutató a személyes portfólió weboldalamról." data-i18n="project.portfolio.meta.description" data-i18n-attr="content" />
+    <meta
+      name="description"
+      content="Projektbemutató a személyes portfólió weboldalamról."
+      data-i18n="project.portfolio.meta.description"
+      data-i18n-attr="content"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/styles/base.css" />
     <link rel="stylesheet" href="../assets/styles/project-detail.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag("js", new Date());
       gtag("config", "G-XXXXXXX");
     </script>
@@ -18,52 +31,180 @@
   <body data-theme="dark">
     <header class="topbar">
       <div class="container topbar-inner">
-        <a href="../index.html" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+        <a
+          href="../index.html"
+          class="logo"
+          aria-label="Kezdőlap"
+          data-i18n="site.logoLabel"
+          data-i18n-attr="aria-label"
+          data-i18n-attr-only="true"
+          >PAB</a
+        >
         <div class="topbar-actions">
-          <a href="../index.html#projects" class="back-link" data-i18n="project.backToProjects">Vissza a projektekhez</a>
-          <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+          <a href="../index.html#projects" class="back-link" data-i18n="project.backToProjects"
+            >Vissza a projektekhez</a
+          >
+          <div
+            class="language-switcher"
+            aria-label="Nyelvválasztó"
+            data-i18n="lang.switcher"
+            data-i18n-attr="aria-label"
+            data-i18n-attr-only="true"
+          >
             <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
-            <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">HU</button>
+            <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">
+              HU
+            </button>
           </div>
           <button class="theme-toggle" id="themeToggle" aria-label="Váltás világos témára">
-            <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
-            <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"
+              ><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <path
+                  d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"
+                ></path></svg
+            ></span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"
+              ><svg viewBox="0 0 24 24">
+                <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg
+            ></span>
           </button>
         </div>
       </div>
     </header>
+
     <main>
       <section class="project-hero">
         <div class="container">
           <div class="hero-card">
             <p class="eyebrow" data-i18n="project.portfolio.eyebrow">Weboldal projekt</p>
             <h1 class="hero-title" data-i18n="project.portfolio.title">Portfólió weboldal</h1>
-            <p class="hero-description" data-i18n="project.portfolio.description">Egy könnyű személyes weboldal, amely azért készült, hogy tisztán kommunikálja a munkáimat és az irányomat, miközben minden projektnek saját teret ad a részletesebb bemutatáshoz.</p>
+            <p class="hero-description" data-i18n="project.portfolio.description">
+              Egy könnyű személyes weboldal, amely azért készült, hogy tisztán kommunikálja a munkáimat
+              és az irányomat, miközben minden projektnek saját teret ad a részletesebb bemutatáshoz.
+            </p>
             <div class="hero-meta">
               <span class="meta-pill" data-i18n="project.portfolio.meta1">Állapot: Élő projekt</span>
               <span class="meta-pill" data-i18n="project.portfolio.meta2">Fókusz: Frontend struktúra</span>
-              <span class="meta-pill" data-i18n="project.portfolio.meta3">Típus: Személyes márka weboldal</span>
+              <span class="meta-pill" data-i18n="project.portfolio.meta3"
+                >Típus: Személyes márka weboldal</span
+              >
             </div>
           </div>
         </div>
       </section>
+
       <section class="section">
         <div class="container content-grid">
           <div class="main-column">
-            <article class="panel"><h2 data-i18n="project.portfolio.problemTitle">A cél</h2><p data-i18n="project.portfolio.problemText1">Olyan portfóliót akartam, ami modernnek és tudatosnak hat anélkül, hogy nehéz frameworkökre vagy túlbonyolított sablonokra támaszkodna. A site-nak gyorsnak, olvashatónak és könnyen bővíthetőnek kellett lennie.</p><p data-i18n="project.portfolio.problemText2">Azt is tükröznie kellett, ahogyan az építésről gondolkodom: először a gyakorlatias struktúra, utána az ezt támogató vizuális polish.</p></article>
-            <article class="panel highlight-box"><h2 data-i18n="project.portfolio.solutionTitle">A megközelítés</h2><p data-i18n="project.portfolio.solutionText1">A site-ot sima HTML-lel, CSS-sel és JavaScripttel építettem, újrahasználható layout mintákra, egyszerű témarendszerre és dedikált projektoldalakra támaszkodva.</p><p data-i18n="project.portfolio.solutionText2">Az eredmény egy könnyű portfólió lett, ami személyes, reszponzív és karbantartható marad.</p></article>
-            <article class="panel"><h2 data-i18n="project.portfolio.featuresTitle">Fő funkciók</h2><ul class="feature-list"><li data-i18n="project.portfolio.feature1">Reszponzív főoldal és projektoldal layout</li><li data-i18n="project.portfolio.feature2">Sötét és világos téma mentett preferenciával</li><li data-i18n="project.portfolio.feature3">Újrahasználható, kártya-alapú tartalmi rendszer</li><li data-i18n="project.portfolio.feature4">Dedikált projektoldalak mélyebb kontextushoz</li><li data-i18n="project.portfolio.feature5">Egyszerű, könnyen karbantartható fájlstruktúra</li></ul></article>
-            <article class="panel"><h2 data-i18n="project.portfolio.challengesTitle">Kihívások és gondolkodás</h2><p data-i18n="project.portfolio.challengesText1">A fő kihívás a karakter és az egyszerűség egyensúlya volt. Egy portfóliónak megkülönböztethetőnek kell lennie, de közben elég tisztának is, hogy a munka maradjon a fókuszban.</p><p data-i18n="project.portfolio.challengesText2">Az is fontos volt, hogy a kód rendezett maradjon, így a jövőbeli módosítások, új projektek és designváltások ne fulladjanak felesleges takarításba.</p></article>
-            <article class="panel"><h2 data-i18n="project.portfolio.outcomeTitle">Eredmény</h2><p data-i18n="project.portfolio.outcomeText1">Ez a projekt erősebb alapot adott a munkáim professzionális bemutatásához, és segített valódi portfóliókörnyezetben gyakorolni a frontend struktúrát, a tartalmi hierarchiát és a karbantartható styling döntéseket.</p></article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.problemTitle">Milyen problémát old meg</h2>
+              <p data-i18n="project.portfolio.problemText1">
+                Olyan portfóliót akartam, ami modernnek és tudatosnak hat anélkül, hogy nehéz frameworkökre
+                vagy túlbonyolított sablonokra támaszkodna. A site-nak gyorsnak, olvashatónak és könnyen
+                bővíthetőnek kellett lennie.
+              </p>
+              <p data-i18n="project.portfolio.problemText2">
+                Azt is tükröznie kellett, ahogyan az építésről gondolkodom: először a gyakorlatias
+                struktúra, utána az ezt támogató vizuális polish.
+              </p>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.whyTitle">Miért építettem</h2>
+              <p data-i18n="project.portfolio.whyText1">
+                Azért építettem meg a saját portfóliómat, mert nem akartam egy generikus sablont használni
+                arra, hogy fejlesztőként bemutassam magam. Olyan felületet szerettem volna, ami ugyanúgy
+                a struktúráról, a döntésekről és a karbantarthatóságról szól, mint a vizuális első
+                benyomásról.
+              </p>
+              <p data-i18n="project.portfolio.whyText2">
+                Ez a projekt jó terep lett arra is, hogy valós környezetben gyakoroljam a modulárisabb
+                frontend felépítést, a tartalmi hierarchiát és azt, hogyan lehet egy egyszerű statikus
+                site-ot tudatosan bővíthetővé tenni.
+              </p>
+            </article>
+            <article class="panel highlight-box">
+              <h2 data-i18n="project.portfolio.solutionTitle">A megközelítés</h2>
+              <p data-i18n="project.portfolio.solutionText1">
+                A site-ot sima HTML-lel, CSS-sel és JavaScripttel építettem, újrahasznosítható layout
+                mintákra, egyszerű témarendszerre és dedikált projektoldalakra támaszkodva.
+              </p>
+              <p data-i18n="project.portfolio.solutionText2">
+                Az eredmény egy könnyű portfólió lett, ami személyes, reszponzív és karbantartható marad.
+              </p>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.featuresTitle">Fő funkciók</h2>
+              <ul class="feature-list">
+                <li data-i18n="project.portfolio.feature1">Reszponzív főoldal és projektoldal layout</li>
+                <li data-i18n="project.portfolio.feature2">Sötét és világos téma mentett preferenciával</li>
+                <li data-i18n="project.portfolio.feature3">Újrahasznosítható, kártya-alapú tartalmi rendszer</li>
+                <li data-i18n="project.portfolio.feature4">Dedikált projektoldalak mélyebb kontextushoz</li>
+                <li data-i18n="project.portfolio.feature5">Egyszerű, könnyen karbantartható fájlstruktúra</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.challengesTitle">Kihívások és gondolkodás</h2>
+              <p data-i18n="project.portfolio.challengesText1">
+                A fő kihívás a karakter és az egyszerűség egyensúlya volt. Egy portfóliónak
+                megkülönböztethetőnek kell lennie, de közben elég tisztának is, hogy a munka maradjon a
+                fókuszban.
+              </p>
+              <p data-i18n="project.portfolio.challengesText2">
+                Az is fontos volt, hogy a kód rendezett maradjon, így a jövőbeli módosítások, új projektek
+                és designváltások ne fulladjanak felesleges takarításba.
+              </p>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.outcomeTitle">Eredmény</h2>
+              <p data-i18n="project.portfolio.outcomeText1">
+                Ez a projekt erősebb alapot adott a munkáim professzionális bemutatásához, és segített
+                valódi portfóliókörnyezetben gyakorolni a frontend struktúrát, a tartalmi hierarchiát és a
+                karbantartható styling döntéseket.
+              </p>
+              <p data-i18n="project.portfolio.outcomeText2">
+                Különösen hasznos volt abban, hogy a saját oldalamat is ugyanazzal a szemlélettel kezeljem,
+                mint bármelyik terméket: világos cél, következetes rendszer és fokozatosan fejleszthető
+                alapok.
+              </p>
+            </article>
           </div>
           <aside class="side-column">
-            <article class="panel"><h2 data-i18n="project.portfolio.roleTitle">Szerepem</h2><ul class="role-list"><li data-i18n="project.portfolio.role1">Frontend design és megvalósítás</li><li data-i18n="project.portfolio.role2">Layout és tartalmi struktúra tervezése</li><li data-i18n="project.portfolio.role3">Témaváltó működésének kialakítása</li><li data-i18n="project.portfolio.role4">Projektoldal-rendszer felépítése</li><li data-i18n="project.portfolio.role5">Vizuális polish és reszponzivitás</li></ul></article>
-            <article class="panel"><h2 data-i18n="project.portfolio.stackTitle">Tech / Eszközök</h2><ul class="stack-list"><li data-i18n="project.portfolio.stack1">HTML</li><li data-i18n="project.portfolio.stack2">CSS</li><li data-i18n="project.portfolio.stack3">JavaScript</li><li data-i18n="project.portfolio.stack4">Reszponzív design</li><li data-i18n="project.portfolio.stack5">Git</li><li data-i18n="project.portfolio.stack6">GitHub</li></ul></article>
-            <article class="panel links"><h2 data-i18n="project.linksTitle">Linkek</h2><ul class="link-list"><li><a href="../index.html" data-i18n="project.links.home">Kezdőlap megnyitása</a></li><li><a href="../index.html#contact" data-i18n="project.links.contact">Kapcsolat szekció</a></li></ul></article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.roleTitle">Szerepem</h2>
+              <ul class="role-list">
+                <li data-i18n="project.portfolio.role1">Frontend design és megvalósítás</li>
+                <li data-i18n="project.portfolio.role2">Layout és tartalmi struktúra tervezése</li>
+                <li data-i18n="project.portfolio.role3">Témaváltó működésének kialakítása</li>
+                <li data-i18n="project.portfolio.role4">Projektoldal-rendszer felépítése</li>
+                <li data-i18n="project.portfolio.role5">Vizuális polish és reszponzivitás</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.stackTitle">Tech stack</h2>
+              <ul class="stack-badges" role="list">
+                <li class="meta-pill" data-i18n="project.portfolio.stack1">HTML</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack2">CSS</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack3">JavaScript</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack4">Reszponzív design</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack5">Git</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack6">GitHub</li>
+              </ul>
+            </article>
+            <article class="panel links">
+              <h2 data-i18n="project.linksTitle">Linkek</h2>
+              <ul class="link-list">
+                <li><a href="../index.html" data-i18n="project.links.home">Kezdőlap megnyitása</a></li>
+                <li>
+                  <a href="../index.html#contact" data-i18n="project.links.contact">Kapcsolat szekció</a>
+                </li>
+              </ul>
+            </article>
           </aside>
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container footer-inner">
         <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>

@@ -24,7 +24,8 @@ main {
 .project-card,
 .cta-box,
 .contact-info-card,
-.contact-form-card {
+.contact-form-card,
+.booking-card {
   background: linear-gradient(180deg, var(--surface) 0%, color-mix(in srgb, var(--surface) 84%, transparent) 100%);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
@@ -264,6 +265,43 @@ main {
 .form-actions .btn { min-width: 180px; }
 .form-actions .btn:disabled { opacity: 0.7; cursor: not-allowed; }
 
+.contact-booking-section {
+  padding-top: 0;
+  padding-bottom: 84px;
+}
+
+.booking-card {
+  padding: 34px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.booking-card h2 {
+  margin: 0 0 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.booking-copy p {
+  max-width: 58ch;
+  margin: 0;
+}
+
+.booking-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
+.booking-note {
+  margin-top: 16px;
+}
+
 @media (max-width: 1100px) {
   .hero-grid,
   .about-grid,
@@ -275,6 +313,14 @@ main {
 
   .hero-title {
     max-width: 100%;
+  }
+
+  .booking-card {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-actions {
+    justify-content: flex-start;
   }
 }
 
@@ -290,7 +336,8 @@ main {
   .project-card,
   .cta-box,
   .contact-info-card,
-  .contact-form-card {
+  .contact-form-card,
+  .booking-card {
     padding: 22px;
     border-radius: var(--radius-md);
   }
@@ -311,12 +358,14 @@ main {
   }
 
   .hero-actions,
-  .cta-actions {
+  .cta-actions,
+  .booking-actions {
     flex-direction: column;
   }
 
   .hero-actions .btn,
   .cta-actions .btn,
+  .booking-actions .btn,
   .form-actions .btn {
     width: 100%;
   }
