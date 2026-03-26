@@ -16,29 +16,42 @@
             <div class="container topbar-inner">
                 <a href="#" class="logo">PAB</a>
 
-                <nav class="nav">
+                <nav class="nav" id="siteNav">
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </nav>
 
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <span class="theme-icon theme-icon-sun" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="4.5"></circle>
-                            <path
-                                d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77">
-                            </path>
-                        </svg>
-                    </span>
+                <div class="header-actions">
+                    <button
+                        class="nav-toggle"
+                        id="navToggle"
+                        aria-label="Toggle navigation"
+                        aria-expanded="false"
+                        aria-controls="siteNav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
-                    <span class="theme-icon theme-icon-moon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none">
-                            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
-                        </svg>
-                    </span>
-                </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon theme-icon-sun" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="4.5"></circle>
+                                <path
+                                    d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77">
+                                </path>
+                            </svg>
+                        </span>
+
+                        <span class="theme-icon theme-icon-moon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
             </div>
         </header>
 
@@ -276,13 +289,14 @@
             <div class="container footer-inner">
                 <p>© 2026 Pataki Attila Bence</p>
                 <div class="footer-links">
-                    <a href="https://www.facebook.com/benceattila.pataki">Facebook</a>
-                    <a href="https://github.com/pataki2003">GitHub</a>
-                    <a href="https://www.instagram.com/pataky.jpg">Instagram</a>
+                    <a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </div>
             </div>
         </footer>
     </div>
+
     <script src="script.js"></script>
 </body>
 
