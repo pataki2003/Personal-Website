@@ -3,6 +3,9 @@ const body = document.body;
 const navToggle = document.getElementById("navToggle");
 const siteNav = document.getElementById("siteNav");
 const navLinks = document.querySelectorAll(".nav a");
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+const submitBtn = document.getElementById("contactSubmitBtn");
 
 const savedTheme = localStorage.getItem("theme");
 
@@ -73,4 +76,68 @@ if (navToggle && siteNav) {
             navToggle.setAttribute("aria-expanded", "false");
         }
     });
+}
+
+if (contactForm && formStatus && submitBtn) {
+    contactForm.addEventListener("submit", handleContactSubmit);
+}
+
+async function handleContactSubmit(event) {
+    event.preventDefault();
+
+    clearFormStatus();
+    setSubmittingState(true);
+
+    const payload = getContactPayload(contactForm);
+
+    try {
+        const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.error || "Something went wrong.");
+        }
+
+        contactForm.reset();
+        setFormStatus("Your message has been sent successfully.", "success");
+    } catch (error) {
+        setFormStatus(error.message || "Unable to send message.", "error");
+    } finally {
+        setSubmittingState(false);
+    }
+}
+
+function getContactPayload(form) {
+    const formData = new FormData(form);
+
+    return {
+        name: formData.get("name")?.toString().trim(),
+        email: formData.get("email")?.toString().trim(),
+        projectType: formData.get("projectType")?.toString().trim(),
+        budget: formData.get("budget")?.toString().trim(),
+        message: formData.get("message")?.toString().trim(),
+    };
+}
+
+function clearFormStatus() {
+    formStatus.textContent = "";
+    formStatus.classList.remove("is-success", "is-error");
+}
+
+function setFormStatus(message, type) {
+    formStatus.textContent = message;
+    formStatus.classList.toggle("is-success", type === "success");
+    formStatus.classList.toggle("is-error", type === "error");
+}
+
+function setSubmittingState(isSubmitting) {
+    submitBtn.disabled = isSubmitting;
+    submitBtn.textContent = isSubmitting ? "Sending..." : "Send message";
 }

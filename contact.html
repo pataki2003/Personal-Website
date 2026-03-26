@@ -62,7 +62,7 @@
           <div class="contact-grid">
             <div class="contact-info-card">
               <p class="eyebrow">Work with me</p>
-              <h1>Let’s build something useful.</h1>
+              <h1>Let's build something useful.</h1>
               <p class="contact-lead">
                 If you need a clean, practical digital system, a web application,
                 or workflow automation support, send me a message here.
@@ -81,7 +81,7 @@
 
                 <div class="contact-info-item">
                   <span class="contact-info-label">Response time</span>
-                  <p>Usually within 24–48 hours</p>
+                  <p>Usually within 24-48 hours</p>
                 </div>
 
                 <div class="contact-info-item">
@@ -121,10 +121,10 @@
                   <label for="budget">Budget range</label>
                   <select id="budget" name="budget">
                     <option value="">Select one</option>
-                    <option value="Under €500">Under €500</option>
-                    <option value="€500 - €1,000">€500 - €1,000</option>
-                    <option value="€1,000 - €3,000">€1,000 - €3,000</option>
-                    <option value="€3,000+">€3,000+</option>
+                    <option value="Under EUR 500">Under EUR 500</option>
+                    <option value="EUR 500 - EUR 1,000">EUR 500 - EUR 1,000</option>
+                    <option value="EUR 1,000 - EUR 3,000">EUR 1,000 - EUR 3,000</option>
+                    <option value="EUR 3,000+">EUR 3,000+</option>
                   </select>
                 </div>
 
@@ -154,7 +154,7 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <p>© 2026 Pataki Attila Bence</p>
+        <p>&copy; 2026 Pataki Attila Bence</p>
         <div class="footer-links">
           <a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -165,58 +165,6 @@
   </div>
 
   <script src="script.js"></script>
-  <script>
-    const contactForm = document.getElementById("contactForm");
-    const formStatus = document.getElementById("formStatus");
-    const submitBtn = document.getElementById("contactSubmitBtn");
-
-    if (contactForm) {
-      contactForm.addEventListener("submit", async (event) => {
-        event.preventDefault();
-
-        formStatus.textContent = "";
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Sending...";
-
-        const formData = new FormData(contactForm);
-        const payload = {
-          name: formData.get("name")?.toString().trim(),
-          email: formData.get("email")?.toString().trim(),
-          projectType: formData.get("projectType")?.toString().trim(),
-          budget: formData.get("budget")?.toString().trim(),
-          message: formData.get("message")?.toString().trim(),
-        };
-
-        try {
-          const response = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(payload),
-          });
-
-          const result = await response.json();
-
-          if (!response.ok) {
-            throw new Error(result.error || "Something went wrong.");
-          }
-
-          formStatus.textContent = "Your message has been sent successfully.";
-          formStatus.classList.add("is-success");
-          formStatus.classList.remove("is-error");
-          contactForm.reset();
-        } catch (error) {
-          formStatus.textContent = error.message || "Unable to send message.";
-          formStatus.classList.add("is-error");
-          formStatus.classList.remove("is-success");
-        } finally {
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Send message";
-        }
-      });
-    }
-  </script>
 </body>
 
 </html>
