@@ -1153,3 +1153,11 @@ body[data-theme="dark"] .form-row select:-webkit-autofill:focus {
         height: 38px;
     }
 }
+
+.hero-title .hero-line {
+    display: block;
+}
+
+.hero-title .hero-highlight {
+    color: var(--accent);
+}

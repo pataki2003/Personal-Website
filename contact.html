@@ -15,13 +15,13 @@
   <div class="site-shell">
     <header class="topbar">
       <div class="container topbar-inner">
-        <a href="index.html" class="logo">PAB</a>
+        <a href="index.html" class="logo" aria-label="Homepage">PAB</a>
 
         <nav class="nav" id="siteNav">
-          <a href="index.html#about">About</a>
-          <a href="index.html#skills">Skills</a>
-          <a href="index.html#projects">Projects</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+          <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+          <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="header-actions">
@@ -35,6 +35,11 @@
             <span></span>
             <span></span>
           </button>
+
+          <div class="language-switcher" id="languageSwitcher" aria-label="Language switcher">
+            <button type="button" class="lang-btn is-active" data-lang-btn="en">EN</button>
+            <button type="button" class="lang-btn" data-lang-btn="hu">HU</button>
+          </div>
 
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
             <span class="theme-icon theme-icon-sun" aria-hidden="true">
@@ -61,27 +66,27 @@
         <div class="container">
           <div class="contact-grid">
             <div class="contact-info-card">
-              <p class="eyebrow">Work with me</p>
-              <h1>Let's build something useful.</h1>
-              <p class="contact-lead">
+              <p class="eyebrow" data-i18n="contactPage.eyebrow">Work with me</p>
+              <h1 data-i18n="contactPage.title">Let’s build something useful.</h1>
+              <p class="contact-lead" data-i18n="contactPage.lead">
                 If you need a clean, practical digital system, a web application,
                 or workflow automation support, send me a message here.
               </p>
 
               <div class="contact-info-list">
                 <div class="contact-info-item">
-                  <span class="contact-info-label">Email</span>
+                  <span class="contact-info-label" data-i18n="contactPage.info.emailLabel">Email</span>
                   <a href="mailto:patakiattila987@gmail.com">patakiattila987@gmail.com</a>
                 </div>
 
                 <div class="contact-info-item">
-                  <span class="contact-info-label">Location</span>
-                  <p>Hungary</p>
+                  <span class="contact-info-label" data-i18n="contactPage.info.locationLabel">Location</span>
+                  <p data-i18n="contactPage.info.locationValue">Hungary</p>
                 </div>
 
                 <div class="contact-info-item">
-                  <span class="contact-info-label">Response time</span>
-                  <p>Usually within 24-48 hours</p>
+                  <span class="contact-info-label" data-i18n="contactPage.info.responseLabel">Response time</span>
+                  <p data-i18n="contactPage.info.responseValue">Usually within 24–48 hours</p>
                 </div>
 
                 <div class="contact-info-item">
@@ -96,50 +101,63 @@
             <div class="contact-form-card">
               <form id="contactForm" class="contact-form" novalidate>
                 <div class="form-row">
-                  <label for="name">Name</label>
-                  <input id="name" name="name" type="text" placeholder="Your name" required />
+                  <label for="name" data-i18n="contactPage.form.nameLabel">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your name"
+                    data-i18n-placeholder="contactPage.form.namePlaceholder"
+                    required />
                 </div>
 
                 <div class="form-row">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" placeholder="your@email.com" required />
+                  <label for="email" data-i18n="contactPage.form.emailLabel">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="your@email.com"
+                    data-i18n-placeholder="contactPage.form.emailPlaceholder"
+                    required />
                 </div>
 
                 <div class="form-row">
-                  <label for="projectType">Project type</label>
+                  <label for="projectType" data-i18n="contactPage.form.projectTypeLabel">Project type</label>
                   <select id="projectType" name="projectType" required>
-                    <option value="">Select one</option>
-                    <option value="Website">Website</option>
-                    <option value="Web App">Web App</option>
-                    <option value="Automation">Automation</option>
-                    <option value="Consultation">Consultation</option>
-                    <option value="Other">Other</option>
+                    <option value="" data-i18n="contactPage.form.projectTypePlaceholder">Select one</option>
+                    <option value="Website" data-i18n="contactPage.form.projectType.website">Website</option>
+                    <option value="Web App" data-i18n="contactPage.form.projectType.webApp">Web App</option>
+                    <option value="Automation" data-i18n="contactPage.form.projectType.automation">Automation</option>
+                    <option value="Consultation" data-i18n="contactPage.form.projectType.consultation">Consultation</option>
+                    <option value="Other" data-i18n="contactPage.form.projectType.other">Other</option>
                   </select>
                 </div>
 
                 <div class="form-row">
-                  <label for="budget">Budget range</label>
+                  <label for="budget" data-i18n="contactPage.form.budgetLabel">Budget range</label>
                   <select id="budget" name="budget">
-                    <option value="">Select one</option>
-                    <option value="Under EUR 500">Under EUR 500</option>
-                    <option value="EUR 500 - EUR 1,000">EUR 500 - EUR 1,000</option>
-                    <option value="EUR 1,000 - EUR 3,000">EUR 1,000 - EUR 3,000</option>
-                    <option value="EUR 3,000+">EUR 3,000+</option>
+                    <option value="" data-i18n="contactPage.form.budgetPlaceholder">Select one</option>
+                    <option value="Under EUR 500" data-i18n="contactPage.form.budget.1">Under EUR 500</option>
+                    <option value="EUR 500 - EUR 1,000" data-i18n="contactPage.form.budget.2">EUR 500 - EUR 1,000</option>
+                    <option value="EUR 1,000 - EUR 3,000" data-i18n="contactPage.form.budget.3">EUR 1,000 - EUR 3,000</option>
+                    <option value="EUR 3,000+" data-i18n="contactPage.form.budget.4">EUR 3,000+</option>
                   </select>
                 </div>
 
                 <div class="form-row">
-                  <label for="message">Message</label>
+                  <label for="message" data-i18n="contactPage.form.messageLabel">Message</label>
                   <textarea
                     id="message"
                     name="message"
                     rows="7"
                     placeholder="Tell me a bit about your project..."
+                    data-i18n-placeholder="contactPage.form.messagePlaceholder"
                     required></textarea>
                 </div>
 
                 <div class="form-actions">
-                  <button type="submit" class="btn btn-primary" id="contactSubmitBtn">
+                  <button type="submit" class="btn btn-primary" id="contactSubmitBtn" data-i18n="form.send">
                     Send message
                   </button>
                 </div>
@@ -154,7 +172,7 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <p>&copy; 2026 Pataki Attila Bence</p>
+        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
         <div class="footer-links">
           <a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">GitHub</a>
