@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work with me | Pataki Attila Bence</title>
+  <meta
+    name="description"
+    content="Get in touch with Pataki Attila Bence for web development, automation, and digital system projects." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-theme="dark">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="index.html" class="logo">PAB</a>
+
+        <nav class="nav" id="siteNav">
+          <a href="index.html#about">About</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="siteNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <path
+                  d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77">
+                </path>
+              </svg>
+            </span>
+
+            <span class="theme-icon theme-icon-moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-page">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info-card">
+              <p class="eyebrow">Work with me</p>
+              <h1>Let’s build something useful.</h1>
+              <p class="contact-lead">
+                If you need a clean, practical digital system, a web application,
+                or workflow automation support, send me a message here.
+              </p>
+
+              <div class="contact-info-list">
+                <div class="contact-info-item">
+                  <span class="contact-info-label">Email</span>
+                  <a href="mailto:patakiattila987@gmail.com">patakiattila987@gmail.com</a>
+                </div>
+
+                <div class="contact-info-item">
+                  <span class="contact-info-label">Location</span>
+                  <p>Hungary</p>
+                </div>
+
+                <div class="contact-info-item">
+                  <span class="contact-info-label">Response time</span>
+                  <p>Usually within 24–48 hours</p>
+                </div>
+
+                <div class="contact-info-item">
+                  <span class="contact-info-label">GitHub</span>
+                  <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">
+                    github.com/pataki2003
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-card">
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="your@email.com" required />
+                </div>
+
+                <div class="form-row">
+                  <label for="projectType">Project type</label>
+                  <select id="projectType" name="projectType" required>
+                    <option value="">Select one</option>
+                    <option value="Website">Website</option>
+                    <option value="Web App">Web App</option>
+                    <option value="Automation">Automation</option>
+                    <option value="Consultation">Consultation</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <label for="budget">Budget range</label>
+                  <select id="budget" name="budget">
+                    <option value="">Select one</option>
+                    <option value="Under €500">Under €500</option>
+                    <option value="€500 - €1,000">€500 - €1,000</option>
+                    <option value="€1,000 - €3,000">€1,000 - €3,000</option>
+                    <option value="€3,000+">€3,000+</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="7"
+                    placeholder="Tell me a bit about your project..."
+                    required></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary" id="contactSubmitBtn">
+                    Send message
+                  </button>
+                </div>
+
+                <p id="formStatus" class="form-status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 Pataki Attila Bence</p>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+    const submitBtn = document.getElementById("contactSubmitBtn");
+
+    if (contactForm) {
+      contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        formStatus.textContent = "";
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        const formData = new FormData(contactForm);
+        const payload = {
+          name: formData.get("name")?.toString().trim(),
+          email: formData.get("email")?.toString().trim(),
+          projectType: formData.get("projectType")?.toString().trim(),
+          budget: formData.get("budget")?.toString().trim(),
+          message: formData.get("message")?.toString().trim(),
+        };
+
+        try {
+          const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+
+          const result = await response.json();
+
+          if (!response.ok) {
+            throw new Error(result.error || "Something went wrong.");
+          }
+
+          formStatus.textContent = "Your message has been sent successfully.";
+          formStatus.classList.add("is-success");
+          formStatus.classList.remove("is-error");
+          contactForm.reset();
+        } catch (error) {
+          formStatus.textContent = error.message || "Unable to send message.";
+          formStatus.classList.add("is-error");
+          formStatus.classList.remove("is-success");
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send message";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
