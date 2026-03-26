@@ -28,7 +28,7 @@ Instead of using heavy frameworks, the focus was on creating a lightweight, main
 
 ## Project Structure
 
-
+```
 portfolio/
 │
 ├── index.html
@@ -41,7 +41,7 @@ portfolio/
   ├── fullstack-practice.html
   ├── project.css
   └── project.js
-
+```
 
 ## Purpose
 
