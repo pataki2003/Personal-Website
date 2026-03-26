@@ -244,7 +244,8 @@ export const hu = {
   "project.portfolio.solutionTitle": "A megközelítés",
   "project.portfolio.solutionText1":
     "A site-ot sima HTML-lel, CSS-sel és JavaScripttel építettem, újrahasználható layout mintákra, egyszerű témarendszerre és dedikált projektoldalakra támaszkodva.",
-  "project.portfolio.solutionText2": "Az eredmény egy könnyű portfólió lett, ami személyes, reszponzív és karbantartható marad.",
+  "project.portfolio.solutionText2":
+    "Az eredmény egy könnyű portfólió lett, ami személyes, reszponzív és karbantartható marad.",
   "project.portfolio.featuresTitle": "Fő funkciók",
   "project.portfolio.feature1": "Reszponzív főoldal és projektoldal layout",
   "project.portfolio.feature2": "Sötét és világos téma mentett preferenciával",
