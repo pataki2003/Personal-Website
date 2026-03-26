@@ -2,169 +2,288 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <title>Pataki Attila Bence</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pataki Attila Bence | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Pataki Attila Bence - Full-Stack Developer, AI Automation Builder, and Cybersecurity Learner." />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-    <!--Title-->
-    <section id="title">
-        <div class="container my-5">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">I'm Pataki Attila Bence</h1>
-                    <p class="lead">
-                        Full-Stack Developer • AI Automation Builder • Cybersecurity Learner
-                    </p>
-                    <p>
-                        I build modern web systems, AI automations, and practical digital solutions focused on
-                        efficiency and real-world use.
-                    </p>
-                </div>
-                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                    <img class="rounded-lg-3" src="./DSC_3229.jpg" alt="" width="400">
-                </div>
+<body data-theme="dark">
+    <div class="site-shell">
+        <header class="topbar">
+            <div class="container topbar-inner">
+                <a href="#" class="logo">PAB</a>
+
+                <nav class="nav">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon theme-icon-sun" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="4.5"></circle>
+                            <path
+                                d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77">
+                            </path>
+                        </svg>
+                    </span>
+
+                    <span class="theme-icon theme-icon-moon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
+                        </svg>
+                    </span>
+                </button>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!--Skills-->
-    <section id="skills">
-        <div class="container px-4 py-5 my-5">
-            <h2 class="pb-2 border-bottom">What I Do</h2>
+        <main>
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-text">
+                        <p class="eyebrow">Portfolio • Developer • Builder</p>
+                        <h1>
+                            I build useful
+                            <span>digital systems</span>
+                            that solve real problems.
+                        </h1>
+                        <p class="hero-description">
+                            I’m Pataki Attila Bence, a Full-Stack Developer focused on modern
+                            web applications, automation workflows, and practical software
+                            solutions with real business value.
+                        </p>
 
-            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-                <div class="col d-flex flex-column align-items-start gap-2">
-                    <h2 class="fw-bold text-body-emphasis">Building Systems That Actually Work</h2>
-                    <p class="text-body-secondary">
-                        I focus on creating modern web applications, automation systems, and efficient digital
-                        workflows.
-                        My goal is not just to code, but to build solutions that solve real problems.
-                    </p>
-                </div>
-
-                <div class="col">
-                    <div class="row row-cols-1 row-cols-sm-2 g-4">
-                        <div class="col d-flex flex-column gap-2">
-                            <div
-                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-
-                            </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Full-Stack Development</h4>
-                            <p>
-                                Building responsive web applications using JavaScript, React, Node.js, APIs, and
-                                databases.
-                            </p>
+                        <div class="hero-tags">
+                            <span>Full-Stack Development</span>
+                            <span>AI Automations</span>
+                            <span>APIs</span>
+                            <span>Cybersecurity Learning</span>
                         </div>
 
-                        <div class="col d-flex flex-column gap-2">
-                            <div
-                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Let’s Talk</a>
+                        </div>
+                    </div>
 
-                            </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Version Control</h4>
-                            <p>
-                                Using Git and GitHub to manage projects, collaborate, and maintain clean code structure.
-                            </p>
+                    <div class="hero-card">
+                        <div class="hero-image-wrap">
+                            <img src="images/profile.jpg" alt="Pataki Attila Bence" />
                         </div>
 
-                        <div class="col d-flex flex-column gap-2">
-                            <div
-                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-
-                            </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Python</h4>
+                        <div class="mini-card">
+                            <p class="mini-label">Current focus</p>
+                            <h3>Building systems that actually work</h3>
                             <p>
-                                Designing and integrating APIs to connect systems and automate workflows.
-                            </p>
-                        </div>
-
-                        <div class="col d-flex flex-column gap-2">
-                            <div
-                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-
-                            </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">API</h4>
-                            <p class="text-body-secondary">I Learned How to Work with Application Programming Interfaces
+                                Clean frontend, reliable backend logic, and automation that
+                                reduces manual work.
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section id="projects">
-        <div class="container px-4 py-5 my-5">
-            <h2 class="pb-2 border-bottom">Projects</h2>
+            <section class="section" id="about">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="section-label">About me</p>
+                        <h2>More than code. I like structure, clarity, and momentum.</h2>
+                        <p class="section-text">
+                            My goal is not just to create websites, but to design systems that
+                            are efficient, scalable, and useful in real-world situations. I’m
+                            especially interested in practical web development, APIs,
+                            automations, and the kind of digital tools that save time instead
+                            of creating chaos.
+                        </p>
+                    </div>
 
-            <div class="row g-4 py-5">
+                    <div class="about-grid">
+                        <article class="info-card">
+                            <h3>What I care about</h3>
+                            <p>
+                                I enjoy building products that feel clean on the surface and are
+                                reliable underneath. The best software is quiet, fast, and
+                                useful.
+                            </p>
+                        </article>
 
-                <div class="col-md-4">
-                    <h4>AI Call Handling Concept</h4>
-                    <p>
-                        Designed an automation system for handling missed calls, capturing customer requests, and
-                        improving response time for service businesses.
-                    </p>
+                        <article class="info-card">
+                            <h3>How I work</h3>
+                            <p>
+                                I prefer clear structure, readable code, practical solutions,
+                                and constant improvement. I like systems that can grow without
+                                collapsing into spaghetti.
+                            </p>
+                        </article>
+
+                        <article class="info-card">
+                            <h3>Direction</h3>
+                            <p>
+                                I’m developing myself in full-stack engineering, automation
+                                building, and cybersecurity, while focusing on projects with
+                                real utility and measurable value.
+                            </p>
+                        </article>
+                    </div>
                 </div>
+            </section>
 
-                <div class="col-md-4">
-                    <h4>Portfolio Website</h4>
-                    <p>
-                        Built a responsive personal website to showcase skills, projects, and technical direction.
-                    </p>
+            <section class="section section-alt" id="skills">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="section-label">Skills</p>
+                        <h2>Tools and areas I work with</h2>
+                    </div>
+
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <div class="skill-number">01</div>
+                            <h3>Frontend Development</h3>
+                            <p>
+                                Responsive interfaces using HTML, CSS, JavaScript, and modern
+                                component-based thinking.
+                            </p>
+                        </article>
+
+                        <article class="skill-card">
+                            <div class="skill-number">02</div>
+                            <h3>Backend Logic</h3>
+                            <p>
+                                Working with Node.js, APIs, application structure, and data flow
+                                that supports real use cases.
+                            </p>
+                        </article>
+
+                        <article class="skill-card">
+                            <div class="skill-number">03</div>
+                            <h3>Python & Automation</h3>
+                            <p>
+                                Building scripts and automation processes to reduce repetitive
+                                work and connect systems more efficiently.
+                            </p>
+                        </article>
+
+                        <article class="skill-card">
+                            <div class="skill-number">04</div>
+                            <h3>Version Control</h3>
+                            <p>
+                                Using Git and GitHub to manage code, track progress, and
+                                maintain a cleaner workflow during development.
+                            </p>
+                        </article>
+
+                        <article class="skill-card">
+                            <div class="skill-number">05</div>
+                            <h3>API Integration</h3>
+                            <p>
+                                Connecting services and applications through APIs to build more
+                                useful and scalable digital systems.
+                            </p>
+                        </article>
+
+                        <article class="skill-card">
+                            <div class="skill-number">06</div>
+                            <h3>Cybersecurity Learning</h3>
+                            <p>
+                                Expanding my knowledge in secure thinking, system awareness, and
+                                safer software practices.
+                            </p>
+                        </article>
+                    </div>
                 </div>
+            </section>
 
-                <div class="col-md-4">
-                    <h4>Full-Stack Practice Projects</h4>
-                    <p>
-                        Developed multiple web applications using React, Node.js, APIs, and databases to strengthen
-                        real-world development skills.
-                    </p>
+            <section class="section" id="projects">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="section-label">Projects</p>
+                        <h2>Selected work and ideas</h2>
+                        <p class="section-text">
+                            A few examples of the direction I’m building toward. These
+                            projects reflect my interest in automation, practical applications,
+                            and modern development.
+                        </p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card featured">
+                            <div class="project-top">
+                                <span class="project-badge">Concept</span>
+                                <h3>AI Call Handling System</h3>
+                            </div>
+                            <p>
+                                A business-focused automation concept designed to handle missed
+                                calls, capture customer requests, and improve response time with
+                                smarter workflows.
+                            </p>
+                            <a href="#" class="project-link">Project details</a>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-top">
+                                <span class="project-badge">Website</span>
+                                <h3>Portfolio Website</h3>
+                            </div>
+                            <p>
+                                A modern personal website built to present my skills, projects,
+                                and technical direction in a clear and professional way.
+                            </p>
+                            <a href="#" class="project-link">Project details</a>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-top">
+                                <span class="project-badge">Practice</span>
+                                <h3>Full-Stack Practice Projects</h3>
+                            </div>
+                            <p>
+                                Smaller applications and technical exercises focused on React,
+                                Node.js, APIs, and backend logic to strengthen real-world
+                                development ability.
+                            </p>
+                            <a href="#" class="project-link">Project details</a>
+                        </article>
+                    </div>
                 </div>
+            </section>
 
+            <section class="section cta-section" id="contact">
+                <div class="container">
+                    <div class="cta-box">
+                        <p class="section-label">Contact</p>
+                        <h2>Let’s build something clean, useful, and real.</h2>
+                        <p>
+                            If you’re looking for someone who enjoys creating practical
+                            digital systems, improving workflows, and building with purpose,
+                            let’s connect.
+                        </p>
+
+                        <div class="cta-actions">
+                            <a href="mailto:patakiattila987@gmail.com" class="btn btn-primary">Email Me</a>
+                            <a href="https://github.com/pataki2003" target="_blank" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p>© 2026 Pataki Attila Bence</p>
+                <div class="footer-links">
+                    <a href="https://www.facebook.com/benceattila.pataki">Facebook</a>
+                    <a href="https://github.com/pataki2003">GitHub</a>
+                    <a href="https://www.instagram.com/pataky.jpg">Instagram</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!--Get in Touch-->
-    <section id="ContactMe">
-        <div class="container my-5">
-            <div class="p-5 text-center bg-body-tertiary rounded-3">
-                <h1 class="text-body-emphasis">Let’s Build Something Useful</h1>
-                <p class="lead">
-                    If you are looking for someone to build, improve, or automate digital systems, let’s connect and
-                    talk.
-                </p>
-                <button type="button" class="btn btn-dark">Contact Me</button>
-            </div>
-        </div>
-
-    </section>
-
-    <!--Footer-->
-    <section id="footer">
-        <div class="footer">
-            <footer class="py-3 mt-4">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Linkedin</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Facebook</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Instagram</a></li>
-                </ul>
-                <p class="text-center  mb-0">© Pataki Attila Bence</p>
-            </footer>
-        </div>
-    </section>
-
-
-
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
