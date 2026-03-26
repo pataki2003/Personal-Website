@@ -77,7 +77,7 @@ export default async function handler(req, res) {
                 from: fromEmail,
                 to: [toEmail],
                 reply_to: email,
-                subject: `New portfolio message from ${name}`,
+                subject: `🚀 New Lead: ${projectType} (${budget || "No budget"})`,
                 html: emailHtml,
             }),
         });
