@@ -1,5 +1,8 @@
 const themeToggle = document.getElementById("themeToggle");
 const body = document.body;
+const navToggle = document.getElementById("navToggle");
+const projectNav = document.getElementById("projectNav");
+const navLinks = document.querySelectorAll(".project-nav a");
 
 const savedTheme = localStorage.getItem("theme");
 
@@ -34,4 +37,40 @@ function updateThemeAriaLabel() {
   } else {
     themeToggle.setAttribute("aria-label", "Switch to dark theme");
   }
+}
+
+/* MOBILE NAV */
+if (navToggle && projectNav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = projectNav.classList.toggle("is-open");
+    navToggle.classList.toggle("is-active", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      projectNav.classList.remove("is-open");
+      navToggle.classList.remove("is-active");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      projectNav.classList.remove("is-open");
+      navToggle.classList.remove("is-active");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    const clickedInsideNav = projectNav.contains(event.target);
+    const clickedToggle = navToggle.contains(event.target);
+
+    if (!clickedInsideNav && !clickedToggle && projectNav.classList.contains("is-open")) {
+      projectNav.classList.remove("is-open");
+      navToggle.classList.remove("is-active");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
 }
