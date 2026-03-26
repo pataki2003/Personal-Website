@@ -5,19 +5,25 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: #222831;
+    background: linear-gradient(135deg, #1f242d, #2c3440);
 }
 
 .container{
-    background-color: #EEEEEE;
-    border-radius: 1%
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 img {
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 footer, a, li, ul{
     background-color: #393E46;
     color: #222831;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease;
 }
