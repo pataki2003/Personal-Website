@@ -72,19 +72,25 @@ main {
   gap: 14px;
 }
 
-.hero-card { padding: 22px; }
+.hero-card {
+  padding: 22px;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-self: stretch;
+}
 
 .hero-image-wrap {
   border-radius: 28px;
   overflow: hidden;
-  aspect-ratio: 4 / 5;
-  margin-bottom: 18px;
+  min-height: 100%;
 }
 
 .hero-image-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 22%;
   transition: transform 320ms ease;
 }
 
@@ -97,6 +103,7 @@ main {
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--accent-soft), transparent), var(--surface-soft);
   border: 1px solid var(--line);
+  align-self: end;
 }
 
 .mini-label {
@@ -283,6 +290,15 @@ main {
 
   .hero-title {
     font-size: clamp(2.3rem, 11vw, 3.6rem);
+  }
+
+  .hero-card {
+    grid-template-rows: auto auto;
+  }
+
+  .hero-image-wrap {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
   }
 
   .hero-actions,
