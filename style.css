@@ -1102,3 +1102,54 @@ body[data-theme="dark"] .form-row select:-webkit-autofill:focus {
         width: 100%;
     }
 }
+
+.hero-title .hero-line {
+    display: block;
+}
+
+.hero-title .hero-highlight {
+    color: var(--accent);
+}
+
+.language-switcher {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px;
+    border: 1px solid var(--line);
+    background: var(--btn-secondary-bg);
+    border-radius: 14px;
+    gap: 4px;
+}
+
+.lang-btn {
+    min-width: 48px;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.lang-btn:hover {
+    color: var(--text);
+}
+
+.lang-btn.is-active {
+    background: var(--card);
+    color: var(--text);
+    box-shadow: var(--shadow-light);
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        padding: 3px;
+    }
+
+    .lang-btn {
+        min-width: 44px;
+        height: 38px;
+    }
+}
