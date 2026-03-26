@@ -1,169 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Call Handling System | Pataki Attila Bence</title>
-  <meta name="description" content="Project details for the AI Call Handling System concept by Pataki Attila Bence." />
-  <link rel="stylesheet" href="project.css" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "G-XXXXXXX");
-  </script>
-</head>
-
-<body data-theme="dark">
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="../index.html" class="logo" aria-label="Homepage">PAB</a>
-
-      <div class="topbar-actions">
-        <a href="../index.html#projects" class="back-link">← Back to projects</a>
-
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <span class="theme-icon theme-icon-sun" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="4.5"></circle>
-              <path
-                d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77">
-              </path>
-            </svg>
-          </span>
-
-          <span class="theme-icon theme-icon-moon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
-            </svg>
-          </span>
-        </button>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="project.ai.meta.title">AI Call Handling System | Pataki Attila Bence</title>
+    <meta name="description" content="Projektbemutató az AI Call Handling System koncepcióról." data-i18n="project.ai.meta.description" data-i18n-attr="content" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/project-detail.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX");
+    </script>
+  </head>
+  <body data-theme="dark">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="../index.html" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+        <div class="topbar-actions">
+          <a href="../index.html#projects" class="back-link" data-i18n="project.backToProjects">Vissza a projektekhez</a>
+          <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">HU</button>
+          </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="Váltás világos témára">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="project-hero">
-      <div class="container">
-        <div class="hero-card">
-          <p class="eyebrow">Concept Project</p>
-          <h1 class="hero-title">AI Call Handling System</h1>
-          <p class="hero-description">
-            A practical automation concept designed to capture missed customer calls,
-            structure incoming requests, and improve follow-up speed for small businesses.
-          </p>
-
-          <div class="hero-meta">
-            <span class="meta-pill">Status: Concept</span>
-            <span class="meta-pill">Focus: Automation</span>
-            <span class="meta-pill">Type: Business Workflow Design</span>
+    </header>
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow" data-i18n="project.ai.eyebrow">Koncepció projekt</p>
+            <h1 class="hero-title" data-i18n="project.ai.title">AI Call Handling System</h1>
+            <p class="hero-description" data-i18n="project.ai.description">Egy gyakorlatias automatizációs koncepció, amely a nem fogadott ügyfélhívásokat rögzíti, strukturálja a beérkező igényeket, és gyorsabb utánkövetést tesz lehetővé kisvállalkozásoknak.</p>
+            <div class="hero-meta">
+              <span class="meta-pill" data-i18n="project.ai.meta1">Állapot: Koncepció</span>
+              <span class="meta-pill" data-i18n="project.ai.meta2">Fókusz: Automatizáció</span>
+              <span class="meta-pill" data-i18n="project.ai.meta3">Típus: Üzleti workflow tervezés</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container content-grid">
-        <div class="main-column">
-          <article class="panel">
-            <h2>The Problem</h2>
-            <p>
-              Small businesses often miss incoming calls during busy hours or outside working time.
-              That usually leads to slower response times, lost opportunities, and a messy manual follow-up process.
-            </p>
-            <p>
-              In many cases, customer intent is not captured clearly, so even when the business calls back,
-              the conversation starts from zero again.
-            </p>
-          </article>
-
-          <article class="panel highlight-box">
-            <h2>The Solution</h2>
-            <p>
-              I designed a workflow concept that treats missed calls as structured opportunities instead of dead ends.
-              The system captures the event, collects the request context, and routes the inquiry into a more usable
-              follow-up process.
-            </p>
-            <p>
-              The goal is not only to respond faster, but to respond with better context and less manual friction.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h2>Key Features</h2>
-            <ul class="feature-list">
-              <li>Missed call capture logic</li>
-              <li>Structured customer request collection</li>
-              <li>Follow-up routing workflow</li>
-              <li>Clearer handoff for business response</li>
-              <li>Scalable automation direction for future expansion</li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h2>Challenges and Thinking</h2>
-            <p>
-              One of the main design questions was how to keep the system useful without making the flow too heavy.
-              If the process asks for too much input, people drop off. If it asks for too little, the follow-up becomes weak.
-            </p>
-            <p>
-              That balance between simplicity and usable context became the core design tension of the project.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h2>Outcome</h2>
-            <p>
-              This project strengthened my thinking around automation design, business problem-solving,
-              and how digital systems can reduce operational friction instead of adding more layers of chaos.
-            </p>
-          </article>
+      </section>
+      <section class="section">
+        <div class="container content-grid">
+          <div class="main-column">
+            <article class="panel"><h2 data-i18n="project.ai.problemTitle">A probléma</h2><p data-i18n="project.ai.problemText1">A kisvállalkozások gyakran mulasztanak bejövő hívásokat csúcsidőben vagy munkaidőn kívül. Ez lassabb reakcióidőhöz, elveszett lehetőségekhez és kaotikus manuális utánkövetéshez vezet.</p><p data-i18n="project.ai.problemText2">Sok esetben az ügyfél szándéka nem kerül tisztán rögzítésre, így mire a vállalkozás visszahív, a beszélgetés szinte a nulláról indul újra.</p></article>
+            <article class="panel highlight-box"><h2 data-i18n="project.ai.solutionTitle">A megoldás</h2><p data-i18n="project.ai.solutionText1">Egy olyan workflow-koncepciót terveztem, amely a nem fogadott hívásokat nem elveszett lehetőségként, hanem strukturált leadként kezeli. A rendszer rögzíti az eseményt, összegyűjti a kérés kontextusát, majd egy használhatóbb utánkövetési folyamatba tereli.</p><p data-i18n="project.ai.solutionText2">A cél nem csak a gyorsabb válasz, hanem a jobb kontextussal és kevesebb manuális súrlódással történő reagálás.</p></article>
+            <article class="panel"><h2 data-i18n="project.ai.featuresTitle">Fő funkciók</h2><ul class="feature-list"><li data-i18n="project.ai.feature1">Nem fogadott hívások rögzítési logikája</li><li data-i18n="project.ai.feature2">Strukturált ügyféligény-gyűjtés</li><li data-i18n="project.ai.feature3">Utánkövetési routing workflow</li><li data-i18n="project.ai.feature4">Tisztább átadás a vállalkozás válaszához</li><li data-i18n="project.ai.feature5">Skálázható automatizációs irány a jövőre</li></ul></article>
+            <article class="panel"><h2 data-i18n="project.ai.challengesTitle">Kihívások és gondolkodás</h2><p data-i18n="project.ai.challengesText1">Az egyik fő tervezési kérdés az volt, hogyan maradjon a rendszer hasznos anélkül, hogy túl nehézkessé válna. Ha túl sok információt kér, az emberek lemorzsolódnak. Ha túl keveset, az utánkövetés gyenge lesz.</p><p data-i18n="project.ai.challengesText2">Ez az egyensúly az egyszerűség és a használható kontextus között lett a projekt fő tervezési feszültsége.</p></article>
+            <article class="panel"><h2 data-i18n="project.ai.outcomeTitle">Eredmény</h2><p data-i18n="project.ai.outcomeText1">Ez a projekt erősítette az automatizációs tervezésről, üzleti problémamegoldásról és arról alkotott gondolkodásomat, hogyan csökkenthetik a digitális rendszerek az operatív súrlódást ahelyett, hogy újabb káoszréteget adnának hozzá.</p></article>
+          </div>
+          <aside class="side-column">
+            <article class="panel"><h2 data-i18n="project.ai.roleTitle">Szerepem</h2><ul class="role-list"><li data-i18n="project.ai.role1">Workflow-koncepció tervezés</li><li data-i18n="project.ai.role2">Problémaelemzés</li><li data-i18n="project.ai.role3">Rendszerstruktúra-gondolkodás</li><li data-i18n="project.ai.role4">Felhasználói út irányának kialakítása</li><li data-i18n="project.ai.role5">Automatizációs logika tervezése</li></ul></article>
+            <article class="panel"><h2 data-i18n="project.ai.stackTitle">Tech / Eszközök</h2><ul class="stack-list"><li data-i18n="project.ai.stack1">Workflow tervezés</li><li data-i18n="project.ai.stack2">Automatizációs gondolkodás</li><li data-i18n="project.ai.stack3">UX logika</li><li data-i18n="project.ai.stack4">API-orientált tervezés</li></ul></article>
+            <article class="panel links"><h2 data-i18n="project.linksTitle">Linkek</h2><ul class="link-list"><li><a href="../index.html#projects" data-i18n="project.links.projects">Vissza a portfólió projektekhez</a></li><li><a href="../index.html#contact" data-i18n="project.links.contact">Kapcsolat szekció</a></li></ul></article>
+          </aside>
         </div>
-
-        <aside class="side-column">
-          <article class="panel">
-            <h2>My Role</h2>
-            <ul class="role-list">
-              <li>Workflow concept design</li>
-              <li>Problem analysis</li>
-              <li>System structure thinking</li>
-              <li>User journey direction</li>
-              <li>Automation logic planning</li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h2>Tech / Tools</h2>
-            <ul class="stack-list">
-              <li>Workflow Design</li>
-              <li>Automation Thinking</li>
-              <li>UX Logic</li>
-              <li>API-Oriented Planning</li>
-            </ul>
-          </article>
-
-          <article class="panel links">
-            <h2>Links</h2>
-            <ul class="link-list">
-              <li><a href="../index.html#projects">Back to portfolio projects</a></li>
-              <li><a href="../index.html#contact">Contact section</a></li>
-            </ul>
-          </article>
-        </aside>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+        <a href="../index.html" data-i18n="project.returnHome">Vissza a kezdőlapra</a>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 Pataki Attila Bence</p>
-      <a href="../index.html">Return to homepage</a>
-    </div>
-  </footer>
-
-  <script src="project.js"></script>
-</body>
-
+    </footer>
+    <script type="module" src="../assets/scripts/project-page.js"></script>
+  </body>
 </html>

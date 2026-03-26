@@ -1,172 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Website | Pataki Attila Bence</title>
-  <meta
-    name="description"
-    content="Project details for the personal portfolio website by Pataki Attila Bence." />
-  <link rel="stylesheet" href="project.css" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "G-XXXXXXX");
-  </script>
-</head>
-
-<body data-theme="dark">
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="../index.html" class="logo" aria-label="Homepage">PAB</a>
-
-      <div class="topbar-actions">
-        <a href="../index.html#projects" class="back-link">← Back to projects</a>
-
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <span class="theme-icon theme-icon-sun" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="4.5"></circle>
-              <path
-                d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77">
-              </path>
-            </svg>
-          </span>
-
-          <span class="theme-icon theme-icon-moon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
-            </svg>
-          </span>
-        </button>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="project.portfolio.meta.title">Portfólió weboldal | Pataki Attila Bence</title>
+    <meta name="description" content="Projektbemutató a személyes portfólió weboldalamról." data-i18n="project.portfolio.meta.description" data-i18n-attr="content" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/project-detail.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX");
+    </script>
+  </head>
+  <body data-theme="dark">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="../index.html" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+        <div class="topbar-actions">
+          <a href="../index.html#projects" class="back-link" data-i18n="project.backToProjects">Vissza a projektekhez</a>
+          <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">HU</button>
+          </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="Váltás világos témára">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="project-hero">
-      <div class="container">
-        <div class="hero-card">
-          <p class="eyebrow">Website Project</p>
-          <h1 class="hero-title">Portfolio Website</h1>
-          <p class="hero-description">
-            A lightweight personal website built to present my work, communicate my direction clearly,
-            and give each project a cleaner space to tell its story.
-          </p>
-
-          <div class="hero-meta">
-            <span class="meta-pill">Status: Live Project</span>
-            <span class="meta-pill">Focus: Frontend Structure</span>
-            <span class="meta-pill">Type: Personal Brand Website</span>
+    </header>
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow" data-i18n="project.portfolio.eyebrow">Weboldal projekt</p>
+            <h1 class="hero-title" data-i18n="project.portfolio.title">Portfólió weboldal</h1>
+            <p class="hero-description" data-i18n="project.portfolio.description">Egy könnyű személyes weboldal, amely azért készült, hogy tisztán kommunikálja a munkáimat és az irányomat, miközben minden projektnek saját teret ad a részletesebb bemutatáshoz.</p>
+            <div class="hero-meta">
+              <span class="meta-pill" data-i18n="project.portfolio.meta1">Állapot: Élő projekt</span>
+              <span class="meta-pill" data-i18n="project.portfolio.meta2">Fókusz: Frontend struktúra</span>
+              <span class="meta-pill" data-i18n="project.portfolio.meta3">Típus: Személyes márka weboldal</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container content-grid">
-        <div class="main-column">
-          <article class="panel">
-            <h2>The Goal</h2>
-            <p>
-              I wanted a portfolio that felt modern and intentional without depending on heavy frameworks
-              or bloated templates. The site needed to be fast, readable, and easy to expand over time.
-            </p>
-            <p>
-              It also had to reflect how I think about building: practical structure first, then polish that supports clarity.
-            </p>
-          </article>
-
-          <article class="panel highlight-box">
-            <h2>The Approach</h2>
-            <p>
-              I built the site with plain HTML, CSS, and JavaScript, focusing on reusable layout patterns,
-              a simple theme system, and dedicated detail pages for individual projects.
-            </p>
-            <p>
-              The result is a portfolio that stays lightweight while still feeling personal, responsive, and maintainable.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h2>Key Features</h2>
-            <ul class="feature-list">
-              <li>Responsive homepage and project detail layout</li>
-              <li>Dark and light theme toggle with saved preference</li>
-              <li>Reusable card-based content system</li>
-              <li>Dedicated project pages for deeper context</li>
-              <li>Simple file structure that is easy to maintain</li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h2>Challenges and Thinking</h2>
-            <p>
-              The main challenge was balancing personality with simplicity. A portfolio should feel distinctive,
-              but it also needs to stay clean enough that the work remains the focus.
-            </p>
-            <p>
-              Another important part was keeping the code organized so future edits, new projects, and design changes
-              would not turn into unnecessary cleanup work.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h2>Outcome</h2>
-            <p>
-              This project gave me a stronger base for presenting my work professionally and helped me practice
-              frontend structure, content hierarchy, and maintainable styling decisions in a real portfolio context.
-            </p>
-          </article>
+      </section>
+      <section class="section">
+        <div class="container content-grid">
+          <div class="main-column">
+            <article class="panel"><h2 data-i18n="project.portfolio.problemTitle">A cél</h2><p data-i18n="project.portfolio.problemText1">Olyan portfóliót akartam, ami modernnek és tudatosnak hat anélkül, hogy nehéz frameworkökre vagy túlbonyolított sablonokra támaszkodna. A site-nak gyorsnak, olvashatónak és könnyen bővíthetőnek kellett lennie.</p><p data-i18n="project.portfolio.problemText2">Azt is tükröznie kellett, ahogyan az építésről gondolkodom: először a gyakorlatias struktúra, utána az ezt támogató vizuális polish.</p></article>
+            <article class="panel highlight-box"><h2 data-i18n="project.portfolio.solutionTitle">A megközelítés</h2><p data-i18n="project.portfolio.solutionText1">A site-ot sima HTML-lel, CSS-sel és JavaScripttel építettem, újrahasználható layout mintákra, egyszerű témarendszerre és dedikált projektoldalakra támaszkodva.</p><p data-i18n="project.portfolio.solutionText2">Az eredmény egy könnyű portfólió lett, ami személyes, reszponzív és karbantartható marad.</p></article>
+            <article class="panel"><h2 data-i18n="project.portfolio.featuresTitle">Fő funkciók</h2><ul class="feature-list"><li data-i18n="project.portfolio.feature1">Reszponzív főoldal és projektoldal layout</li><li data-i18n="project.portfolio.feature2">Sötét és világos téma mentett preferenciával</li><li data-i18n="project.portfolio.feature3">Újrahasználható, kártya-alapú tartalmi rendszer</li><li data-i18n="project.portfolio.feature4">Dedikált projektoldalak mélyebb kontextushoz</li><li data-i18n="project.portfolio.feature5">Egyszerű, könnyen karbantartható fájlstruktúra</li></ul></article>
+            <article class="panel"><h2 data-i18n="project.portfolio.challengesTitle">Kihívások és gondolkodás</h2><p data-i18n="project.portfolio.challengesText1">A fő kihívás a karakter és az egyszerűség egyensúlya volt. Egy portfóliónak megkülönböztethetőnek kell lennie, de közben elég tisztának is, hogy a munka maradjon a fókuszban.</p><p data-i18n="project.portfolio.challengesText2">Az is fontos volt, hogy a kód rendezett maradjon, így a jövőbeli módosítások, új projektek és designváltások ne fulladjanak felesleges takarításba.</p></article>
+            <article class="panel"><h2 data-i18n="project.portfolio.outcomeTitle">Eredmény</h2><p data-i18n="project.portfolio.outcomeText1">Ez a projekt erősebb alapot adott a munkáim professzionális bemutatásához, és segített valódi portfóliókörnyezetben gyakorolni a frontend struktúrát, a tartalmi hierarchiát és a karbantartható styling döntéseket.</p></article>
+          </div>
+          <aside class="side-column">
+            <article class="panel"><h2 data-i18n="project.portfolio.roleTitle">Szerepem</h2><ul class="role-list"><li data-i18n="project.portfolio.role1">Frontend design és megvalósítás</li><li data-i18n="project.portfolio.role2">Layout és tartalmi struktúra tervezése</li><li data-i18n="project.portfolio.role3">Témaváltó működésének kialakítása</li><li data-i18n="project.portfolio.role4">Projektoldal-rendszer felépítése</li><li data-i18n="project.portfolio.role5">Vizuális polish és reszponzivitás</li></ul></article>
+            <article class="panel"><h2 data-i18n="project.portfolio.stackTitle">Tech / Eszközök</h2><ul class="stack-list"><li data-i18n="project.portfolio.stack1">HTML</li><li data-i18n="project.portfolio.stack2">CSS</li><li data-i18n="project.portfolio.stack3">JavaScript</li><li data-i18n="project.portfolio.stack4">Reszponzív design</li><li data-i18n="project.portfolio.stack5">Git</li><li data-i18n="project.portfolio.stack6">GitHub</li></ul></article>
+            <article class="panel links"><h2 data-i18n="project.linksTitle">Linkek</h2><ul class="link-list"><li><a href="../index.html" data-i18n="project.links.home">Kezdőlap megnyitása</a></li><li><a href="../index.html#contact" data-i18n="project.links.contact">Kapcsolat szekció</a></li></ul></article>
+          </aside>
         </div>
-
-        <aside class="side-column">
-          <article class="panel">
-            <h2>My Role</h2>
-            <ul class="role-list">
-              <li>Frontend design and implementation</li>
-              <li>Layout and content structure planning</li>
-              <li>Theme toggle behavior</li>
-              <li>Project page system setup</li>
-              <li>Visual polish and responsiveness</li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h2>Tech / Tools</h2>
-            <ul class="stack-list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Responsive Design</li>
-              <li>Git</li>
-              <li>GitHub</li>
-            </ul>
-          </article>
-
-          <article class="panel links">
-            <h2>Links</h2>
-            <ul class="link-list">
-              <li><a href="../index.html">View the homepage</a></li>
-              <li><a href="../index.html#contact">Contact section</a></li>
-            </ul>
-          </article>
-        </aside>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+        <a href="../index.html" data-i18n="project.returnHome">Vissza a kezdőlapra</a>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 Pataki Attila Bence</p>
-      <a href="../index.html">Return to homepage</a>
-    </div>
-  </footer>
-
-  <script src="project.js"></script>
-</body>
-
+    </footer>
+    <script type="module" src="../assets/scripts/project-page.js"></script>
+  </body>
 </html>

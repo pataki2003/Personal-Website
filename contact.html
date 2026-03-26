@@ -1,188 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work with me | Pataki Attila Bence</title>
-  <meta
-    name="description"
-    content="Get in touch with Pataki Attila Bence for web development, automation, and digital system projects." />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body data-theme="dark">
-  <div class="site-shell">
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a href="index.html" class="logo" aria-label="Homepage">PAB</a>
-
-        <nav class="nav" id="siteNav">
-          <a href="index.html#about" data-i18n="nav.about">About</a>
-          <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
-          <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
-          <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        </nav>
-
-        <div class="header-actions">
-          <button
-            class="nav-toggle"
-            id="navToggle"
-            aria-label="Toggle navigation"
-            aria-expanded="false"
-            aria-controls="siteNav">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <div class="language-switcher" id="languageSwitcher" aria-label="Language switcher">
-            <button type="button" class="lang-btn is-active" data-lang-btn="en">EN</button>
-            <button type="button" class="lang-btn" data-lang-btn="hu">HU</button>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="contact.meta.title">Dolgozz velem | Pataki Attila Bence</title>
+    <meta
+      name="description"
+      content="Vedd fel a kapcsolatot Pataki Attila Bencével webfejlesztési, automatizációs és digitális rendszerépítési projektekhez."
+      data-i18n="contact.meta.description"
+      data-i18n-attr="content" />
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+  </head>
+  <body data-theme="dark">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a href="index.html" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <nav class="nav" id="siteNav">
+            <a href="index.html#about" data-i18n="nav.about">Rólam</a>
+            <a href="index.html#skills" data-i18n="nav.skills">Készségek</a>
+            <a href="index.html#projects" data-i18n="nav.projects">Projektek</a>
+            <a href="contact.html" data-i18n="nav.contact">Kapcsolat</a>
+          </nav>
+          <div class="header-actions">
+            <button class="nav-toggle" id="navToggle" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="siteNav">
+              <span></span><span></span><span></span>
+            </button>
+            <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+              <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">HU</button>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Váltás világos témára">
+              <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
+              <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
+            </button>
           </div>
-
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <span class="theme-icon theme-icon-sun" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="4.5"></circle>
-                <path
-                  d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77">
-                </path>
-              </svg>
-            </span>
-
-            <span class="theme-icon theme-icon-moon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
-              </svg>
-            </span>
-          </button>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <section class="contact-page">
-        <div class="container">
-          <div class="contact-grid">
-            <div class="contact-info-card">
-              <p class="eyebrow" data-i18n="contactPage.eyebrow">Work with me</p>
-              <h1 data-i18n="contactPage.title">Let’s build something useful.</h1>
-              <p class="contact-lead" data-i18n="contactPage.lead">
-                If you need a clean, practical digital system, a web application,
-                or workflow automation support, send me a message here.
-              </p>
-
-              <div class="contact-info-list">
-                <div class="contact-info-item">
-                  <span class="contact-info-label" data-i18n="contactPage.info.emailLabel">Email</span>
-                  <a href="mailto:patakiattila987@gmail.com">patakiattila987@gmail.com</a>
-                </div>
-
-                <div class="contact-info-item">
-                  <span class="contact-info-label" data-i18n="contactPage.info.locationLabel">Location</span>
-                  <p data-i18n="contactPage.info.locationValue">Hungary</p>
-                </div>
-
-                <div class="contact-info-item">
-                  <span class="contact-info-label" data-i18n="contactPage.info.responseLabel">Response time</span>
-                  <p data-i18n="contactPage.info.responseValue">Usually within 24–48 hours</p>
-                </div>
-
-                <div class="contact-info-item">
-                  <span class="contact-info-label">GitHub</span>
-                  <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">
-                    github.com/pataki2003
-                  </a>
+      <main>
+        <section class="contact-page">
+          <div class="container">
+            <div class="contact-grid">
+              <div class="contact-info-card">
+                <p class="eyebrow" data-i18n="contactPage.eyebrow">Dolgozz velem</p>
+                <h1 data-i18n="contactPage.title">Építsünk valami hasznosat.</h1>
+                <p class="contact-lead" data-i18n="contactPage.lead">Ha egy letisztult, gyakorlatias digitális rendszerre, webalkalmazásra vagy automatizációs támogatásra van szükséged, írj itt üzenetet.</p>
+                <div class="contact-info-list">
+                  <div class="contact-info-item">
+                    <span class="contact-info-label" data-i18n="contactPage.info.emailLabel">Email</span>
+                    <a href="mailto:patakiattila987@gmail.com">patakiattila987@gmail.com</a>
+                  </div>
+                  <div class="contact-info-item">
+                    <span class="contact-info-label" data-i18n="contactPage.info.locationLabel">Helyszín</span>
+                    <p data-i18n="contactPage.info.locationValue">Magyarország</p>
+                  </div>
+                  <div class="contact-info-item">
+                    <span class="contact-info-label" data-i18n="contactPage.info.responseLabel">Válaszidő</span>
+                    <p data-i18n="contactPage.info.responseValue">Általában 24-48 órán belül</p>
+                  </div>
+                  <div class="contact-info-item">
+                    <span class="contact-info-label" data-i18n="contactPage.info.githubLabel">GitHub</span>
+                    <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">github.com/pataki2003</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="contact-form-card">
-              <form id="contactForm" class="contact-form" novalidate>
-                <div class="form-row">
-                  <label for="name" data-i18n="contactPage.form.nameLabel">Name</label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Your name"
-                    data-i18n-placeholder="contactPage.form.namePlaceholder"
-                    required />
-                </div>
-
-                <div class="form-row">
-                  <label for="email" data-i18n="contactPage.form.emailLabel">Email</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="your@email.com"
-                    data-i18n-placeholder="contactPage.form.emailPlaceholder"
-                    required />
-                </div>
-
-                <div class="form-row">
-                  <label for="projectType" data-i18n="contactPage.form.projectTypeLabel">Project type</label>
-                  <select id="projectType" name="projectType" required>
-                    <option value="" data-i18n="contactPage.form.projectTypePlaceholder">Select one</option>
-                    <option value="Website" data-i18n="contactPage.form.projectType.website">Website</option>
-                    <option value="Web App" data-i18n="contactPage.form.projectType.webApp">Web App</option>
-                    <option value="Automation" data-i18n="contactPage.form.projectType.automation">Automation</option>
-                    <option value="Consultation" data-i18n="contactPage.form.projectType.consultation">Consultation</option>
-                    <option value="Other" data-i18n="contactPage.form.projectType.other">Other</option>
-                  </select>
-                </div>
-
-                <div class="form-row">
-                  <label for="budget" data-i18n="contactPage.form.budgetLabel">Budget range</label>
-                  <select id="budget" name="budget">
-                    <option value="" data-i18n="contactPage.form.budgetPlaceholder">Select one</option>
-                    <option value="Under EUR 500" data-i18n="contactPage.form.budget.1">Under EUR 500</option>
-                    <option value="EUR 500 - EUR 1,000" data-i18n="contactPage.form.budget.2">EUR 500 - EUR 1,000</option>
-                    <option value="EUR 1,000 - EUR 3,000" data-i18n="contactPage.form.budget.3">EUR 1,000 - EUR 3,000</option>
-                    <option value="EUR 3,000+" data-i18n="contactPage.form.budget.4">EUR 3,000+</option>
-                  </select>
-                </div>
-
-                <div class="form-row">
-                  <label for="message" data-i18n="contactPage.form.messageLabel">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="7"
-                    placeholder="Tell me a bit about your project..."
-                    data-i18n-placeholder="contactPage.form.messagePlaceholder"
-                    required></textarea>
-                </div>
-
-                <div class="form-actions">
-                  <button type="submit" class="btn btn-primary" id="contactSubmitBtn" data-i18n="form.send">
-                    Send message
-                  </button>
-                </div>
-
-                <p id="formStatus" class="form-status" aria-live="polite"></p>
-              </form>
+              <div class="contact-form-card">
+                <form id="contactForm" class="contact-form" novalidate>
+                  <div class="form-row">
+                    <label for="name" data-i18n="contactPage.form.nameLabel">Név</label>
+                    <input id="name" name="name" type="text" placeholder="Neved" data-i18n-placeholder="contactPage.form.namePlaceholder" required aria-invalid="false" />
+                  </div>
+                  <div class="form-row">
+                    <label for="email" data-i18n="contactPage.form.emailLabel">Email</label>
+                    <input id="email" name="email" type="email" placeholder="email@pelda.hu" data-i18n-placeholder="contactPage.form.emailPlaceholder" required aria-invalid="false" />
+                  </div>
+                  <div class="form-row">
+                    <label for="projectType" data-i18n="contactPage.form.projectTypeLabel">Projekt típusa</label>
+                    <select id="projectType" name="projectType" required aria-invalid="false">
+                      <option value="" data-i18n="contactPage.form.projectTypePlaceholder">Válassz egyet</option>
+                      <option value="Website" data-i18n="contactPage.form.projectType.website">Weboldal</option>
+                      <option value="Web App" data-i18n="contactPage.form.projectType.webApp">Webalkalmazás</option>
+                      <option value="Automation" data-i18n="contactPage.form.projectType.automation">Automatizáció</option>
+                      <option value="Consultation" data-i18n="contactPage.form.projectType.consultation">Konzultáció</option>
+                      <option value="Other" data-i18n="contactPage.form.projectType.other">Egyéb</option>
+                    </select>
+                  </div>
+                  <div class="form-row">
+                    <label for="budget" data-i18n="contactPage.form.budgetLabel">Költségkeret</label>
+                    <select id="budget" name="budget">
+                      <option value="" data-i18n="contactPage.form.budgetPlaceholder">Válassz egyet</option>
+                      <option value="Under EUR 500" data-i18n="contactPage.form.budget.1">500 EUR alatt</option>
+                      <option value="EUR 500 - EUR 1,000" data-i18n="contactPage.form.budget.2">500 - 1 000 EUR</option>
+                      <option value="EUR 1,000 - EUR 3,000" data-i18n="contactPage.form.budget.3">1 000 - 3 000 EUR</option>
+                      <option value="EUR 3,000+" data-i18n="contactPage.form.budget.4">3 000+ EUR</option>
+                    </select>
+                  </div>
+                  <div class="form-row">
+                    <label for="message" data-i18n="contactPage.form.messageLabel">Üzenet</label>
+                    <textarea id="message" name="message" rows="7" placeholder="Írj pár mondatot a projektedről..." data-i18n-placeholder="contactPage.form.messagePlaceholder" required aria-invalid="false"></textarea>
+                  </div>
+                  <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="contactSubmitBtn" data-i18n="form.send">Üzenet küldése</button>
+                  </div>
+                  <p id="formStatus" class="form-status" aria-live="polite"></p>
+                </form>
+              </div>
             </div>
           </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+          <div class="footer-links">
+            <a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer" data-i18n="footer.facebook">Facebook</a>
+            <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer" data-i18n="footer.github">GitHub</a>
+            <a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer" data-i18n="footer.instagram">Instagram</a>
+          </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
-        <div class="footer-links">
-          <a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-
+      </footer>
+    </div>
+    <script type="module" src="assets/scripts/main.js"></script>
+  </body>
 </html>

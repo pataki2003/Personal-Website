@@ -1,199 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coachtimize | Pataki Attila Bence</title>
-  <meta
-    name="description"
-    content="Project details for the Coachtimize full-stack coaching platform by Pataki Attila Bence." />
-  <link rel="stylesheet" href="project.css" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "G-XXXXXXX");
-  </script>
-</head>
-
-<body data-theme="dark">
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="../index.html" class="logo" aria-label="Homepage">PAB</a>
-
-      <div class="topbar-actions">
-        <a href="../index.html#projects" class="back-link">← Back to projects</a>
-
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <span class="theme-icon theme-icon-sun" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="4.5"></circle>
-              <path
-                d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77">
-              </path>
-            </svg>
-          </span>
-
-          <span class="theme-icon theme-icon-moon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="project-hero">
-      <div class="container">
-        <div class="hero-card">
-          <p class="eyebrow">Full-Stack Application</p>
-          <h1 class="hero-title">Coachtimize</h1>
-          <p class="hero-description">
-            A full-stack coaching platform built to help coaches manage clients,
-            assign workout plans, and communicate in one place. Designed with
-            structured backend logic, authentication, and a real workflow-oriented system architecture.
-          </p>
-
-          <div class="hero-meta">
-            <span class="meta-pill">Status: Built Project</span>
-            <span class="meta-pill">Focus: Full-Stack Development</span>
-            <span class="meta-pill">Type: Coaching Platform</span>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="project.coachtimize.meta.title">Coachtimize | Pataki Attila Bence</title>
+    <meta name="description" content="Projektbemutató a Coachtimize full-stack coaching platformról." data-i18n="project.coachtimize.meta.description" data-i18n-attr="content" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/project-detail.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX");
+    </script>
+  </head>
+  <body data-theme="dark">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="../index.html" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+        <div class="topbar-actions">
+          <a href="../index.html#projects" class="back-link" data-i18n="project.backToProjects">Vissza a projektekhez</a>
+          <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">HU</button>
           </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="Váltás világos témára">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
+          </button>
         </div>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="panel">
-          <h2>Product Preview</h2>
-          <div class="mockup-grid">
-            <div class="mockup">
-              <img src="../Images/coachtimize-login.png" alt="Coachtimize login screen" />
-            </div>
-
-            <div class="mockup">
-              <img src="../Images/coachtimize-dashboard.png" alt="Coachtimize dashboard" />
+    </header>
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow" data-i18n="project.coachtimize.eyebrow">Full-Stack alkalmazás</p>
+            <h1 class="hero-title" data-i18n="project.coachtimize.title">Coachtimize</h1>
+            <p class="hero-description" data-i18n="project.coachtimize.description">Egy full-stack coaching platform, amely segít az edzőknek ügyfeleket kezelni, edzésterveket kiosztani és egy helyen kommunikálni. Strukturált backend logikával, hitelesítéssel és workflow-alapú rendszerarchitektúrával készült.</p>
+            <div class="hero-meta">
+              <span class="meta-pill" data-i18n="project.coachtimize.meta1">Állapot: Elkészült projekt</span>
+              <span class="meta-pill" data-i18n="project.coachtimize.meta2">Fókusz: Full-Stack fejlesztés</span>
+              <span class="meta-pill" data-i18n="project.coachtimize.meta3">Típus: Coaching platform</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container content-grid">
-        <div class="main-column">
-          <article class="panel">
-            <h2>The Problem</h2>
-            <p>
-              Coaches often manage clients, workout plans, appointments, and communication
-              across multiple disconnected tools. That creates unnecessary friction,
-              makes follow-up harder, and turns even simple operations into manual overhead.
-            </p>
-            <p>
-              Without a centralized system, client information and coaching workflows
-              become harder to track consistently, especially when the number of clients grows.
-            </p>
-          </article>
-
-          <article class="panel highlight-box">
-            <h2>The Solution</h2>
-            <p>
-              Coachtimize was built as a full-stack platform to bring those workflows into one system.
-              It allows coaches to manage clients, assign workout plans, communicate more efficiently,
-              and work from a structured dashboard instead of scattered tools.
-            </p>
-            <p>
-              The goal was to create something that feels practical and product-like,
-              not just technically functional.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h2>Key Features</h2>
-            <ul class="feature-list">
-              <li>Client management and structured profile handling</li>
-              <li>Workout plan assignment for individual clients</li>
-              <li>Authentication and role-based access logic</li>
-              <li>Dashboard interface for workflow overview</li>
-              <li>Coach-client communication features</li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h2>Challenges and Thinking</h2>
-            <p>
-              One of the main challenges was designing a system that supports real coaching workflows
-              without becoming overloaded or hard to navigate. A platform like this needs clear data structure,
-              but also a frontend that feels understandable and efficient.
-            </p>
-            <p>
-              Another important part was thinking through how backend logic, authentication,
-              and user-facing actions connect into one coherent product experience.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h2>Outcome</h2>
-            <p>
-              This project gave me stronger hands-on experience in full-stack thinking,
-              backend structure, and building a system around a real-world use case.
-            </p>
-            <p>
-              More importantly, it helped me move beyond isolated features and think in terms
-              of workflows, user roles, and product architecture.
-            </p>
-          </article>
+      <section class="section">
+        <div class="container">
+          <div class="panel">
+            <h2 data-i18n="project.preview">Termék előnézet</h2>
+            <div class="mockup-grid">
+              <div class="mockup"><img src="../Images/coachtimize-login.png" alt="Coachtimize bejelentkezési képernyő" data-i18n="project.coachtimize.loginAlt" data-i18n-attr="alt" /></div>
+              <div class="mockup"><img src="../Images/coachtimize-dashboard.png" alt="Coachtimize dashboard" data-i18n="project.coachtimize.dashboardAlt" data-i18n-attr="alt" /></div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <aside class="side-column">
-          <article class="panel">
-            <h2>My Role</h2>
-            <ul class="role-list">
-              <li>Full-stack development</li>
-              <li>Backend logic design</li>
-              <li>Database structure planning</li>
-              <li>Frontend UI implementation</li>
-              <li>Workflow-oriented system thinking</li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h2>Tech / Tools</h2>
-            <ul class="stack-list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Node.js</li>
-              <li>Authentication Logic</li>
-              <li>Database Handling</li>
-            </ul>
-          </article>
-
-          <article class="panel links">
-            <h2>Links</h2>
-            <ul class="link-list">
-              <li><a href="../index.html#projects">Back to portfolio projects</a></li>
-              <li><a href="../index.html#contact">Contact section</a></li>
-            </ul>
-          </article>
-        </aside>
+      <section class="section">
+        <div class="container content-grid">
+          <div class="main-column">
+            <article class="panel"><h2 data-i18n="project.coachtimize.problemTitle">A probléma</h2><p data-i18n="project.coachtimize.problemText1">Az edzők gyakran több különálló eszközben kezelik az ügyfeleket, az edzésterveket, az időpontokat és a kommunikációt. Ez felesleges súrlódást okoz, megnehezíti a követést, és még az egyszerű műveleteket is manuális teherként hagyja meg.</p><p data-i18n="project.coachtimize.problemText2">Központosított rendszer nélkül az ügyféladatok és a coaching workflow-k egyre nehezebben követhetők következetesen, főleg ahogy nő az ügyfélszám.</p></article>
+            <article class="panel highlight-box"><h2 data-i18n="project.coachtimize.solutionTitle">A megoldás</h2><p data-i18n="project.coachtimize.solutionText1">A Coachtimize azért készült, hogy ezeket a folyamatokat egyetlen rendszerbe rendezze. Segíti az ügyfélkezelést, az edzéstervek kiosztását, a hatékonyabb kommunikációt, és egy strukturált dashboardból teszi kezelhetővé a munkát.</p><p data-i18n="project.coachtimize.solutionText2">A cél egy olyan termék volt, amely gyakorlatiasnak és valódi produktumnak érződik, nem csak technikailag működőnek.</p></article>
+            <article class="panel"><h2 data-i18n="project.coachtimize.featuresTitle">Fő funkciók</h2><ul class="feature-list"><li data-i18n="project.coachtimize.feature1">Ügyfélkezelés és strukturált profilok</li><li data-i18n="project.coachtimize.feature2">Személyre szabott edzéstervek kiosztása</li><li data-i18n="project.coachtimize.feature3">Hitelesítés és szerepkör alapú hozzáférés</li><li data-i18n="project.coachtimize.feature4">Dashboard a workflow áttekintéséhez</li><li data-i18n="project.coachtimize.feature5">Edző-ügyfél kommunikációs funkciók</li></ul></article>
+            <article class="panel"><h2 data-i18n="project.coachtimize.challengesTitle">Kihívások és gondolkodás</h2><p data-i18n="project.coachtimize.challengesText1">Az egyik fő kihívás egy olyan rendszer tervezése volt, amely támogatja a valódi coaching workflow-kat anélkül, hogy túlterhelt vagy nehezen használható lenne. Az ilyen platformhoz tiszta adatszerkezet kell, de közben érthető és hatékony frontend is.</p><p data-i18n="project.coachtimize.challengesText2">Ugyanilyen fontos volt végiggondolni, hogyan áll össze a backend logika, a hitelesítés és a felhasználói műveletek egy koherens termékélménnyé.</p></article>
+            <article class="panel"><h2 data-i18n="project.coachtimize.outcomeTitle">Eredmény</h2><p data-i18n="project.coachtimize.outcomeText1">Ez a projekt sokat erősített a full-stack gondolkodásomban, a backend struktúrában és abban, hogyan építsek rendszert egy valós felhasználási esetre.</p><p data-i18n="project.coachtimize.outcomeText2">Még fontosabb, hogy segített túllépni az elszigetelt feature-ökön, és workflow-kban, szerepkörökben és termékarchitektúrában gondolkodni.</p></article>
+          </div>
+          <aside class="side-column">
+            <article class="panel"><h2 data-i18n="project.coachtimize.roleTitle">Szerepem</h2><ul class="role-list"><li data-i18n="project.coachtimize.role1">Full-stack fejlesztés</li><li data-i18n="project.coachtimize.role2">Backend logika tervezése</li><li data-i18n="project.coachtimize.role3">Adatbázis-struktúra tervezése</li><li data-i18n="project.coachtimize.role4">Frontend UI megvalósítás</li><li data-i18n="project.coachtimize.role5">Workflow-alapú rendszertervezés</li></ul></article>
+            <article class="panel"><h2 data-i18n="project.coachtimize.stackTitle">Tech / Eszközök</h2><ul class="stack-list"><li data-i18n="project.coachtimize.stack1">HTML</li><li data-i18n="project.coachtimize.stack2">CSS</li><li data-i18n="project.coachtimize.stack3">JavaScript</li><li data-i18n="project.coachtimize.stack4">Node.js</li><li data-i18n="project.coachtimize.stack5">Hitelesítési logika</li><li data-i18n="project.coachtimize.stack6">Adatbázis-kezelés</li></ul></article>
+            <article class="panel links"><h2 data-i18n="project.linksTitle">Linkek</h2><ul class="link-list"><li><a href="../index.html#projects" data-i18n="project.links.projects">Vissza a portfólió projektekhez</a></li><li><a href="../index.html#contact" data-i18n="project.links.contact">Kapcsolat szekció</a></li></ul></article>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+        <a href="../index.html" data-i18n="project.returnHome">Vissza a kezdőlapra</a>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 Pataki Attila Bence</p>
-      <a href="../index.html">Return to homepage</a>
-    </div>
-  </footer>
-
-  <script src="project.js"></script>
-</body>
-
+    </footer>
+    <script type="module" src="../assets/scripts/project-page.js"></script>
+  </body>
 </html>
