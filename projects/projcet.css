@@ -733,3 +733,34 @@ body[data-theme="light"] .theme-icon-moon {
     gap: 12px;
   }
 }
+
+.mockup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.mockup {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.mockup img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mockup:hover {
+  transform: translateY(-6px);
+}
+
+@media (max-width: 768px) {
+  .mockup-grid {
+    grid-template-columns: 1fr;
+  }
+}
