@@ -1008,3 +1008,190 @@ body[data-theme="light"] .theme-icon-moon {
         font-size: 0.98rem;
     }
 }
+
+
+:root {
+    --radius-xl: 28px;
+    --radius-lg: 20px;
+    --radius-md: 14px;
+    --container: 1180px;
+    --shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.35);
+    --shadow-light: 0 20px 50px rgba(15, 23, 42, 0.08);
+    --transition: 0.3s ease;
+}
+
+/* DARK THEME */
+body[data-theme="dark"] {
+    --bg: #05070b;
+    --bg-soft: #0b1220;
+    --card: rgba(255, 255, 255, 0.04);
+    --card-strong: rgba(255, 255, 255, 0.08);
+    --text: #f8fbff;
+    --muted: #9fb0c7;
+    --line: rgba(148, 163, 184, 0.14);
+
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --accent-soft: rgba(59, 130, 246, 0.16);
+    --accent-soft-2: rgba(96, 165, 250, 0.12);
+
+    --success: #60a5fa;
+    --topbar-bg: rgba(5, 7, 11, 0.72);
+    --footer-bg: rgba(255, 255, 255, 0.02);
+    --tag-bg: rgba(255, 255, 255, 0.04);
+    --btn-secondary-bg: rgba(255, 255, 255, 0.03);
+    --btn-secondary-hover: rgba(255, 255, 255, 0.08);
+    --hero-bg:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.20), transparent 30%),
+        radial-gradient(circle at top right, rgba(96, 165, 250, 0.12), transparent 25%),
+        linear-gradient(180deg, #04060a 0%, #0a101b 100%);
+    --shadow: var(--shadow-dark);
+}
+
+/* LIGHT THEME */
+body[data-theme="light"] {
+    --bg: #eef4fb;
+    --bg-soft: #ffffff;
+    --card: rgba(255, 255, 255, 0.82);
+    --card-strong: rgba(255, 255, 255, 0.94);
+    --text: #0f172a;
+    --muted: #526277;
+    --line: rgba(15, 23, 42, 0.08);
+
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-soft: rgba(37, 99, 235, 0.10);
+    --accent-soft-2: rgba(96, 165, 250, 0.08);
+
+    --success: #2563eb;
+    --topbar-bg: rgba(255, 255, 255, 0.74);
+    --footer-bg: rgba(255, 255, 255, 0.55);
+    --tag-bg: rgba(15, 23, 42, 0.035);
+    --btn-secondary-bg: rgba(15, 23, 42, 0.04);
+    --btn-secondary-hover: rgba(15, 23, 42, 0.08);
+    --hero-bg:
+        radial-gradient(circle at top left, rgba(59, 130, 246, 0.10), transparent 30%),
+        radial-gradient(circle at top right, rgba(147, 197, 253, 0.10), transparent 26%),
+        linear-gradient(180deg, #f8fbff 0%, #eaf1f9 100%);
+    --shadow: var(--shadow-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system;
+    background: var(--hero-bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(calc(100% - 40px), var(--container));
+    margin: 0 auto;
+}
+
+/* ===================== PROJECTS GRID UPGRADE ===================== */
+
+.projects-grid {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.project-card {
+    flex: 1;
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    transition:
+        flex 0.4s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 1.35rem;
+}
+
+.project-card p {
+    color: var(--muted);
+    margin-bottom: 22px;
+    transition: opacity 0.3s ease;
+}
+
+.project-link {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* glow */
+.project-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, var(--accent-soft), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* NORMAL STATE */
+.projects-grid .project-card {
+    opacity: 1;
+}
+
+/* HOVER SYSTEM */
+.projects-grid:hover .project-card {
+    flex: 0.9;
+    opacity: 0.7;
+}
+
+.projects-grid:hover .project-card:hover {
+    flex: 1.8;
+    opacity: 1;
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.projects-grid:hover .project-card:hover::after {
+    opacity: 1;
+}
+
+.projects-grid:hover .project-card:not(:hover) p {
+    opacity: 0.5;
+}
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 768px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .project-card {
+        flex: none;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
