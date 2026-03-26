@@ -32,7 +32,10 @@ main {
   border-radius: var(--radius-lg);
 }
 
-.hero-text { padding: 42px; }
+.hero-text {
+  min-height: 100%;
+  padding: 42px;
+}
 .hero-title { max-width: 9ch; font-size: clamp(3rem, 7vw, 5.6rem); margin-bottom: 22px; }
 .hero-line { display: block; }
 .hero-highlight { color: var(--accent); }
@@ -73,10 +76,11 @@ main {
 }
 
 .hero-card {
-  padding: 22px;
+  min-height: 100%;
+  padding: 20px;
   display: grid;
   grid-template-rows: minmax(0, 1fr) auto;
-  gap: 18px;
+  gap: 20px;
   align-self: stretch;
 }
 
@@ -84,13 +88,16 @@ main {
   border-radius: 28px;
   overflow: hidden;
   min-height: 100%;
+  background:
+    radial-gradient(circle at top, color-mix(in srgb, var(--accent-soft) 60%, transparent), transparent 58%),
+    color-mix(in srgb, var(--surface-strong) 78%, transparent);
 }
 
 .hero-image-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center 20%;
   transition: transform 320ms ease;
 }
 
@@ -99,7 +106,7 @@ main {
 }
 
 .mini-card {
-  padding: 20px;
+  padding: 22px;
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--accent-soft), transparent), var(--surface-soft);
   border: 1px solid var(--line);
@@ -293,6 +300,8 @@ main {
   }
 
   .hero-card {
+    min-height: 0;
+    gap: 16px;
     grid-template-rows: auto auto;
   }
 
