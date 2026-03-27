@@ -1,5 +1,5 @@
 // Replace this URL with your live booking page before deploying.
-export const BOOKING_URL = "https://calendly.com/your-calendly-handle/intro-call";
+export const BOOKING_URL = "https://calendly.com/pataky02/intro-call";
 
 export function initBookingLinks() {
   document.querySelectorAll("[data-booking-link]").forEach((element) => {
