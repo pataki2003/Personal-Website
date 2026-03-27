@@ -9,7 +9,7 @@
 }
 
 
-body[data-theme="light"] {
+:root[data-theme="light"] {
   --bg: #f4efe6;
   --bg-soft: rgba(255, 251, 245, 0.9);
   --surface: rgba(255, 252, 247, 0.88);
@@ -33,7 +33,7 @@ body[data-theme="light"] {
   --shadow: var(--shadow-light);
 }
 
-body[data-theme="dark"] {
+:root[data-theme="dark"] {
   --bg: #08111f;
   --bg-soft: rgba(9, 19, 36, 0.84);
   --surface: rgba(10, 20, 38, 0.78);
@@ -63,6 +63,16 @@ body[data-theme="dark"] {
 
 html {
   scroll-behavior: smooth;
+  background: #08111f;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  background: #08111f;
 }
 
 body {
@@ -274,22 +284,22 @@ select {
   stroke-linejoin: round;
 }
 
-body[data-theme="dark"] .theme-icon-sun {
+:root[data-theme="dark"] .theme-icon-sun {
   opacity: 1;
   transform: rotate(0deg) scale(1);
 }
 
-body[data-theme="dark"] .theme-icon-moon {
+:root[data-theme="dark"] .theme-icon-moon {
   opacity: 0;
   transform: rotate(-90deg) scale(0.6);
 }
 
-body[data-theme="light"] .theme-icon-sun {
+:root[data-theme="light"] .theme-icon-sun {
   opacity: 0;
   transform: rotate(90deg) scale(0.6);
 }
 
-body[data-theme="light"] .theme-icon-moon {
+:root[data-theme="light"] .theme-icon-moon {
   opacity: 1;
   transform: rotate(0deg) scale(1);
 }

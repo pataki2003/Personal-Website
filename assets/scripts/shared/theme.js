@@ -1,6 +1,7 @@
 const THEME_KEY = "theme";
 
 export function initTheme() {
+  const root = document.documentElement;
   const body = document.body;
   const themeToggle = document.getElementById("themeToggle");
   let labelResolver = null;
@@ -13,7 +14,7 @@ export function initTheme() {
 
   function updateThemeLabel() {
     if (!themeToggle) return;
-    const currentTheme = body.getAttribute("data-theme") || "dark";
+    const currentTheme = root.getAttribute("data-theme") || "dark";
     const fallbackLabel =
       currentTheme === "dark" ? "Switch to light theme" : "Switch to dark theme";
     themeToggle.setAttribute(
@@ -23,6 +24,8 @@ export function initTheme() {
   }
 
   function applyTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    root.style.colorScheme = theme;
     body.setAttribute("data-theme", theme);
     localStorage.setItem(THEME_KEY, theme);
     updateThemeLabel();
@@ -32,13 +35,13 @@ export function initTheme() {
 
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
-      const nextTheme = body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
       applyTheme(nextTheme);
     });
   }
 
   return {
-    getTheme: () => body.getAttribute("data-theme") || "dark",
+    getTheme: () => root.getAttribute("data-theme") || "dark",
     setLabelResolver(resolver) {
       labelResolver = resolver;
       updateThemeLabel();

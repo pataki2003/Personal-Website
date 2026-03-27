@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
     <title data-i18n="project.coachtimize.meta.title">Coachtimize | Pataki Attila Bence</title>
     <meta name="description" content="Projektbemutató a Coachtimize full-stack coaching platformról." data-i18n="project.coachtimize.meta.description" data-i18n-attr="content" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
