@@ -1,21 +1,31 @@
 # Personal Portfolio Website
 
-A bilingual personal portfolio built with plain HTML, CSS, and JavaScript. The site is designed to stay lightweight while still supporting shared theme logic, shared translations, dedicated project pages, and a contact flow backed by a serverless API route.
+A lightweight bilingual portfolio site built with plain HTML, CSS, and JavaScript modules. The project is static-first, with shared frontend logic for theme and language handling, dedicated project detail pages, a booking CTA, and a serverless contact endpoint for inbound leads.
 
-## What The Site Includes
+## What This Repo Contains
 
-- Responsive homepage, contact page, and project detail pages
+- `index.html` for the homepage
+- `contact.html` for the contact form and booking section
+- `projects/*.html` for project detail pages
+- Shared frontend modules for theme, i18n, mobile nav, booking links, and contact form handling
+- `api/contact.js` for sending contact form submissions through Resend
+
+## Features
+
+- English and Hungarian content with shared client-side translations
 - Dark and light theme toggle with saved preference
-- English and Hungarian translations with shared client-side i18n
-- Shared styling tokens and reusable page-level layout styles
-- Contact form that posts to `/api/contact`
+- Responsive navigation and page layouts
+- Dedicated detail pages for featured projects
+- Contact form validation and submission to `/api/contact`
+- Booking CTA powered by a shared external scheduling URL
 
-## Tech Stack
+## Stack
 
 - HTML
 - CSS
-- JavaScript modules
-- Vercel-style serverless function for contact handling
+- JavaScript ES modules
+- Vercel-style serverless function
+- Resend API for contact email delivery
 
 ## Project Structure
 
@@ -35,6 +45,7 @@ Personal-Website/
 |   |   |   |-- hu.js
 |   |   |   `-- translations.js
 |   |   `-- shared/
+|   |       |-- booking.js
 |   |       |-- contact-form.js
 |   |       |-- i18n.js
 |   |       |-- nav.js
@@ -46,28 +57,45 @@ Personal-Website/
 |-- Images/
 |   |-- coachtimize-dashboard.png
 |   |-- coachtimize-login.png
-|   `-- profile.jpg
+|   |-- facebook.svg
+|   |-- instagram.svg
+|   |-- profile.jpg
+|   `-- twitter.svg
 `-- projects/
     |-- ai-call-handling.html
     |-- coachtimize.html
     `-- portfolio-website.html
 ```
 
-## Frontend Architecture
+## Frontend Entry Points
 
-- `assets/scripts/main.js` is the entrypoint for the homepage and contact page.
-- `assets/scripts/project-page.js` is the entrypoint for project detail pages.
-- `assets/scripts/shared/theme.js` owns theme persistence and toggle labels.
-- `assets/scripts/shared/i18n.js` owns language state, translation application, and active language button state.
-- `assets/scripts/shared/nav.js` handles the mobile navigation menu.
-- `assets/scripts/shared/contact-form.js` validates and submits the contact form.
-- `assets/styles/base.css` contains shared tokens, layout primitives, header/footer styles, and shared controls.
-- `assets/styles/home.css` contains homepage and contact-page-specific layout and component styles.
-- `assets/styles/project-detail.css` contains project-page-specific layout and panel styling.
+- `assets/scripts/main.js` boots the homepage and contact page
+- `assets/scripts/project-page.js` boots the project detail pages
+- `assets/scripts/shared/theme.js` manages theme state and toggle labels
+- `assets/scripts/shared/i18n.js` manages language state and translation updates
+- `assets/scripts/shared/nav.js` controls the mobile navigation menu
+- `assets/scripts/shared/booking.js` injects the live booking URL into all `[data-booking-link]` elements
+- `assets/scripts/shared/contact-form.js` validates and submits the contact form
 
-## Contact API
+## Local Development
 
-The frontend sends this payload shape to `/api/contact`:
+This repo does not need a build step for the frontend. Run it from a simple static server so the ES modules load correctly.
+
+Examples:
+
+```powershell
+python -m http.server 5500
+```
+
+```powershell
+npx serve .
+```
+
+Then open `http://localhost:5500` or the port your server prints.
+
+## Contact Form Setup
+
+The contact form sends this payload to `/api/contact`:
 
 - `name`
 - `email`
@@ -75,21 +103,31 @@ The frontend sends this payload shape to `/api/contact`:
 - `budget`
 - `message`
 
-The API route in `api/contact.js` expects these environment variables:
+`api/contact.js` expects these environment variables:
 
 - `RESEND_API_KEY`
 - `CONTACT_TO_EMAIL`
 - `CONTACT_FROM_EMAIL`
 
-If any of them are missing, the route returns an error instead of sending email.
+Important:
 
-## Local Verification
+- A plain static server will not execute `api/contact.js`
+- For full contact form behavior, deploy to a platform that supports this serverless route, such as Vercel
+- If the environment variables are missing, the endpoint returns an error instead of sending mail
 
-- Open `index.html` and `contact.html` through a simple static server so ES modules load correctly.
-- Verify both languages switch correctly and that `theme` and `language` are persisted in `localStorage`.
-- Test the contact form with valid and invalid data.
-- Review the project pages to make sure shared theme and i18n behavior stays consistent.
+## Project-Specific Configuration
 
-## Status
+- Booking link: update `BOOKING_URL` in `assets/scripts/shared/booking.js`
+- Analytics: replace `G-XXXXXXX` anywhere the analytics snippet is present, or remove the snippet if you do not use Google Analytics
 
-The site is in a polished, lightweight state with a modular frontend structure that is easier to maintain and easier to migrate later if a framework is introduced.
+## Quick Verification Checklist
+
+- Open the homepage, contact page, and each project page from a static server
+- Verify both languages switch correctly
+- Verify the selected theme persists between reloads
+- Verify booking buttons open the expected external scheduling page
+- Test the contact form in a deployed environment with the required env vars set
+
+## Notes
+
+The site is intentionally framework-free and easy to maintain. Most updates can be made by editing HTML content, shared styles, or one of the small frontend modules in `assets/scripts/shared`.
