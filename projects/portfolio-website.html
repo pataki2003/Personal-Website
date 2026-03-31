@@ -48,24 +48,66 @@
     </script>
   </head>
   <body data-theme="dark">
-    <header class="topbar">
+            <header class="topbar">
       <div class="container topbar-inner">
         <a
           href="../index.html"
           class="logo"
-          aria-label="Kezdőlap"
+          aria-label="Homepage"
           data-i18n="site.logoLabel"
           data-i18n-attr="aria-label"
           data-i18n-attr-only="true"
           >PAB</a
         >
+        <nav class="nav nav-overlay-only" id="siteNav">
+          <div class="nav-menu">
+            <div class="nav-links">
+              <a href="../index.html#about" data-i18n="nav.about">About</a>
+              <a href="../index.html#skills" data-i18n="nav.skills">Skills</a>
+              <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+              <a href="../contact.html" data-i18n="nav.contact">Contact</a>
+            </div>
+            <div class="nav-mobile-controls">
+              <a href="../index.html#projects" class="nav-mobile-secondary" data-i18n="project.backToProjects"
+                >Back to projects</a
+              >
+              <div class="nav-mobile-group">
+                <p class="nav-mobile-label" data-i18n="lang.switcher">Language</p>
+                <div
+                  class="language-switcher"
+                  aria-label="Language switcher"
+                  data-i18n="lang.switcher"
+                  data-i18n-attr="aria-label"
+                  data-i18n-attr-only="true"
+                >
+                  <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+                  <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">
+                    HU
+                  </button>
+                </div>
+              </div>
+              <div class="nav-mobile-group">
+                <p class="nav-mobile-label" data-i18n="currency.switcher">Currency</p>
+                <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+                  <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+                  <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
         <div class="topbar-actions">
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <a href="../index.html#projects" class="back-link" data-i18n="project.backToProjects"
-            >Vissza a projektekhez</a
+            >Back to projects</a
           >
           <div
             class="language-switcher"
-            aria-label="Nyelvválasztó"
+            aria-label="Language switcher"
             data-i18n="lang.switcher"
             data-i18n-attr="aria-label"
             data-i18n-attr-only="true"
@@ -75,11 +117,11 @@
               HU
             </button>
           </div>
-          <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+          <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
             <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
             <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
           </div>
-          <button class="theme-toggle" id="themeToggle" aria-label="Váltás világos témára">
+          <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
             <span class="theme-icon theme-icon-sun" aria-hidden="true"
               ><svg viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="4.5"></circle>

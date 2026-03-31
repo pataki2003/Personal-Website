@@ -1,37 +1,70 @@
+const MOBILE_BREAKPOINT = 768;
+
 export function initMobileNav() {
   const navToggle = document.getElementById("navToggle");
   const siteNav = document.getElementById("siteNav");
-  const navLinks = Array.from(document.querySelectorAll(".nav a"));
 
   if (!navToggle || !siteNav) return;
+
+  const navLinks = Array.from(siteNav.querySelectorAll("a"));
+
+  function isMobileViewport() {
+    return window.innerWidth <= MOBILE_BREAKPOINT;
+  }
+
+  function syncNavAccessibility(isOpen = siteNav.classList.contains("is-open")) {
+    const isMobile = isMobileViewport();
+    document.body.classList.toggle("is-nav-open", isMobile && isOpen);
+    siteNav.setAttribute("aria-hidden", String(isMobile ? !isOpen : false));
+    siteNav.inert = isMobile && !isOpen;
+  }
 
   function closeNav() {
     siteNav.classList.remove("is-open");
     navToggle.classList.remove("is-active");
     navToggle.setAttribute("aria-expanded", "false");
+    syncNavAccessibility(false);
+  }
+
+  function openNav() {
+    siteNav.classList.add("is-open");
+    navToggle.classList.add("is-active");
+    navToggle.setAttribute("aria-expanded", "true");
+    syncNavAccessibility(true);
   }
 
   navToggle.addEventListener("click", () => {
-    const isOpen = siteNav.classList.toggle("is-open");
-    navToggle.classList.toggle("is-active", isOpen);
-    navToggle.setAttribute("aria-expanded", String(isOpen));
+    if (siteNav.classList.contains("is-open")) {
+      closeNav();
+      return;
+    }
+
+    openNav();
   });
 
   navLinks.forEach((link) => link.addEventListener("click", closeNav));
 
-  document.addEventListener("click", (event) => {
-    const target = event.target;
-    if (!(target instanceof Node)) return;
-    const clickedInsideNav = siteNav.contains(target);
-    const clickedToggle = navToggle.contains(target);
-    if (!clickedInsideNav && !clickedToggle && siteNav.classList.contains("is-open")) {
+  siteNav.addEventListener("click", (event) => {
+    if (event.target === siteNav) closeNav();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
       closeNav();
+      navToggle.focus();
     }
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 768) closeNav();
+    if (window.innerWidth > MOBILE_BREAKPOINT) {
+      closeNav();
+      return;
+    }
+
+    syncNavAccessibility();
   });
 
-  return { closeNav };
+  syncNavAccessibility(false);
+
+  return { closeNav, openNav };
 }
