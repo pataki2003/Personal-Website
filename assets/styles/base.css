@@ -161,6 +161,7 @@ select {
   align-items: center;
   gap: 12px;
   z-index: 2;
+  margin-left: auto;
 }
 
 .nav {
@@ -475,6 +476,13 @@ select {
 
   .nav-toggle {
     display: inline-block;
+  }
+
+  .header-actions,
+  .topbar-actions {
+    grid-column: 3;
+    justify-self: end;
+    margin-left: 0;
   }
 
   .nav {
