@@ -36,37 +36,19 @@
   </head>
   <body data-theme="dark">
     <div class="site-shell">
-                  <header class="topbar">
+                        <header class="topbar">
         <div class="container topbar-inner">
           <a href="index.html" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
           <nav class="nav" id="siteNav">
-            <div class="nav-menu">
-              <div class="nav-links">
-                <a href="index.html#about" data-i18n="nav.about">About</a>
-                <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
-                <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
-                <a href="contact.html" data-i18n="nav.contact">Contact</a>
-              </div>
-              <div class="nav-mobile-controls">
-                <div class="nav-mobile-group">
-                  <p class="nav-mobile-label" data-i18n="lang.switcher">Language</p>
-                  <div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
-                    <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
-                    <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">HU</button>
-                  </div>
-                </div>
-                <div class="nav-mobile-group">
-                  <p class="nav-mobile-label" data-i18n="currency.switcher">Currency</p>
-                  <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
-                    <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
-                    <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
-                  </div>
-                </div>
-              </div>
+            <div class="nav-links">
+              <a href="index.html#about" data-i18n="nav.about">About</a>
+              <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+              <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+              <a href="contact.html" data-i18n="nav.contact">Contact</a>
             </div>
           </nav>
           <div class="header-actions">
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay">
               <span></span><span></span><span></span>
             </button>
             <div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
@@ -84,6 +66,40 @@
           </div>
         </div>
       </header>
+
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+        <div class="mobile-nav-shell">
+          <div class="mobile-nav-header">
+            <a href="index.html" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+            <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="mobile-nav-links" aria-label="Mobile navigation">
+            <a href="index.html#about" data-i18n="nav.about">About</a>
+            <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+            <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          </nav>
+          <div class="mobile-nav-footer">
+            <div class="mobile-nav-group">
+              <p class="mobile-nav-label" data-i18n="lang.switcher">Language</p>
+              <div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+                <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+                <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">HU</button>
+              </div>
+            </div>
+            <div class="mobile-nav-group">
+              <p class="mobile-nav-label" data-i18n="currency.switcher">Currency</p>
+              <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+                <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+                <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <main>
         <section class="contact-page">
