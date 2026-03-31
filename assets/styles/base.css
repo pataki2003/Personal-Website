@@ -526,15 +526,52 @@ select {
 
   .header-actions,
   .topbar-actions {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: end;
+    justify-items: end;
+    align-items: center;
     gap: 10px;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+  }
+
+  .header-actions .nav-toggle,
+  .topbar-actions .back-link {
+    order: 1;
+  }
+
+  .header-actions .theme-toggle,
+  .topbar-actions .theme-toggle {
+    order: 2;
+  }
+
+  .header-actions .language-switcher,
+  .topbar-actions .language-switcher {
+    order: 3;
+  }
+
+  .header-actions .currency-switcher,
+  .topbar-actions .currency-switcher {
+    order: 4;
   }
 
   .theme-toggle,
   .nav-toggle {
     width: 48px;
     height: 48px;
+  }
+
+  .back-link {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 14px;
+    white-space: nowrap;
+  }
+
+  .language-switcher,
+  .currency-switcher {
+    min-width: 0;
   }
 
   .lang-btn {
