@@ -53,6 +53,10 @@
               <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
               <button type="button" class="lang-btn is-active" data-lang-btn="hu" aria-pressed="true">HU</button>
             </div>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+            </div>
             <button class="theme-toggle" id="themeToggle" aria-label="Váltás világos témára">
               <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
               <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
@@ -114,10 +118,10 @@
                     <label for="budget" data-i18n="contactPage.form.budgetLabel">Költségkeret</label>
                     <select id="budget" name="budget">
                       <option value="" data-i18n="contactPage.form.budgetPlaceholder">Válassz egyet</option>
-                      <option value="Under EUR 500" data-i18n="contactPage.form.budget.1">500 EUR alatt</option>
-                      <option value="EUR 500 - EUR 1,000" data-i18n="contactPage.form.budget.2">500 - 1 000 EUR</option>
-                      <option value="EUR 1,000 - EUR 3,000" data-i18n="contactPage.form.budget.3">1 000 - 3 000 EUR</option>
-                      <option value="EUR 3,000+" data-i18n="contactPage.form.budget.4">3 000+ EUR</option>
+                      <option value="Under EUR 500" data-budget-tier="1">500 EUR alatt</option>
+                      <option value="EUR 500 - EUR 1,000" data-budget-tier="2">500 - 1 000 EUR</option>
+                      <option value="EUR 1,000 - EUR 3,000" data-budget-tier="3">1 000 - 3 000 EUR</option>
+                      <option value="EUR 3,000+" data-budget-tier="4">3 000+ EUR</option>
                     </select>
                   </div>
                   <div class="form-row">

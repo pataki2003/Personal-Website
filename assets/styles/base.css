@@ -312,6 +312,7 @@ select {
   border: 1px solid var(--line);
   border-radius: 16px;
   background: var(--surface-soft);
+  flex-shrink: 0;
 }
 
 .lang-btn {
@@ -518,6 +519,8 @@ select {
   .header-actions,
   .topbar-actions {
     gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   .theme-toggle,

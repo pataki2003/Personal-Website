@@ -1,11 +1,13 @@
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export function initContactForm({ t }) {
+export function initContactForm({ t, getCurrency = () => "EUR" }) {
   const form = document.getElementById("contactForm");
   const formStatus = document.getElementById("formStatus");
   const submitButton = document.getElementById("contactSubmitBtn");
 
   if (!form || !formStatus || !submitButton) return;
+
+  const budgetSelect = form.elements.namedItem("budget");
 
   function clearStatus() {
     formStatus.textContent = "";
@@ -25,6 +27,34 @@ export function initContactForm({ t }) {
 
   function updateIdleLabel() {
     if (!submitButton.disabled) submitButton.textContent = t("form.send");
+  }
+
+  function updateBudgetOptions() {
+    if (!(budgetSelect instanceof HTMLSelectElement)) return;
+
+    const selectedOption = budgetSelect.options[budgetSelect.selectedIndex];
+    const selectedTier = selectedOption?.dataset.budgetTier || "";
+    const currencyKey = getCurrency()?.toLowerCase() === "huf" ? "huf" : "eur";
+
+    Array.from(budgetSelect.querySelectorAll("[data-budget-tier]")).forEach((option) => {
+      if (!(option instanceof HTMLOptionElement)) return;
+      const tier = option.dataset.budgetTier;
+      if (!tier) return;
+      const label = t(`contactPage.form.budget.${currencyKey}.${tier}`);
+      option.textContent = label;
+      option.value = label;
+    });
+
+    if (selectedTier) {
+      const nextOption = budgetSelect.querySelector(`[data-budget-tier="${selectedTier}"]`);
+      if (nextOption instanceof HTMLOptionElement) {
+        nextOption.selected = true;
+        budgetSelect.value = nextOption.value;
+      }
+      return;
+    }
+
+    budgetSelect.selectedIndex = 0;
   }
 
   function markValidity(field, isValid) {
@@ -101,6 +131,7 @@ export function initContactForm({ t }) {
       if (!response.ok) throw new Error(result.error || t("form.genericError"));
 
       form.reset();
+      updateBudgetOptions();
       ["name", "email", "projectType", "message"].forEach((fieldName) => {
         const field = form.elements.namedItem(fieldName);
         if (field instanceof HTMLElement) markValidity(field, true);
@@ -114,6 +145,12 @@ export function initContactForm({ t }) {
     }
   });
 
-  document.addEventListener("app:languagechange", updateIdleLabel);
+  document.addEventListener("app:languagechange", () => {
+    updateIdleLabel();
+    updateBudgetOptions();
+  });
+  document.addEventListener("app:currencychange", updateBudgetOptions);
+
+  updateBudgetOptions();
   updateIdleLabel();
 }
