@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.pataki-dev.hu/sitemap.xml

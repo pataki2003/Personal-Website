@@ -7,19 +7,21 @@ export const hu = {
   "currency.option.eur": "Euró",
   "currency.option.huf": "Magyar forint",
   "site.logoLabel": "Kezdőlap",
-  "site.meta.title": "Pataki Attila Bence | Portfólió",
+  "site.meta.title": "Full-stack webfejlesztő és AI automatizáció | Pataki Attila Bence",
   "site.meta.description":
-    "Pataki Attila Bence portfóliója - full-stack fejlesztő, AI automatizációkat építő és kiberbiztonság iránt érdeklődő alkotó.",
-  "contact.meta.title": "Dolgozz velem | Pataki Attila Bence",
+    "Dolgozz Pataki Attila Bencével gyors weboldalakon, webalkalmazásokon, AI automatizációkon, API integrációkon és gyakorlatias digitális rendszereken.",
+  "contact.meta.title": "Kapcsolat és projektindítás | Pataki Attila Bence",
   "contact.meta.description":
-    "Vedd fel a kapcsolatot Pataki Attila Bencével webfejlesztési, automatizációs és digitális rendszerépítési projektekhez.",
-  "project.coachtimize.meta.title": "Coachtimize | Pataki Attila Bence",
+    "Indíts webfejlesztési, automatizációs vagy API integrációs projektet Pataki Attila Bencével. Küldj projektbriefet vagy foglalj rövid egyeztetést.",
+  "project.coachtimize.meta.title": "Coachtimize coaching platform | Full-stack esettanulmány",
   "project.coachtimize.meta.description":
-    "Projektbemutató a Coachtimize full-stack coaching platformról.",
-  "project.ai.meta.title": "AI Call Handling System | Pataki Attila Bence",
-  "project.ai.meta.description": "Projektbemutató az AI Call Handling System koncepcióról.",
-  "project.portfolio.meta.title": "Portfólió weboldal | Pataki Attila Bence",
-  "project.portfolio.meta.description": "Projektbemutató a személyes portfólió weboldalamról.",
+    "Full-stack esettanulmány a Coachtimize coaching platformról ügyfélkezeléssel, edzésterv workflow-val és strukturált backend logikával.",
+  "project.ai.meta.title": "AI Call Handling System | AI automatizáció koncepció",
+  "project.ai.meta.description":
+    "Automatizációs esettanulmány egy AI híváskezelő workflow-ról, amely segíti a kisvállalkozásokat a nem fogadott hívások és leadek követésében.",
+  "project.portfolio.meta.title": "Portfólió weboldal | Statikus frontend esettanulmány",
+  "project.portfolio.meta.description":
+    "Statikus frontend esettanulmány egy gyors, kétnyelvű portfólió weboldalról, projektoldalakkal és lead-fókuszú kapcsolatfelvétellel.",
   "nav.about": "Rólam",
   "nav.skills": "Készségek",
   "nav.projects": "Projektek",
@@ -53,6 +55,19 @@ export const hu = {
   "about.card3.title": "Irány",
   "about.card3.text":
     "Jelenleg full-stack fejlesztésben, automatizációkban és kiberbiztonságban fejlődöm, miközben olyan projekteken dolgozom, amelyeknek valódi haszna és mérhető értéke van.",
+  "services.label": "Szolgáltatások",
+  "services.title": "Gyakorlatias rendszerek, amelyekben segíteni tudok",
+  "services.description":
+    "Kisebb, hasznos digitális rendszerekre fókuszálok, amelyek csökkentik a manuális munkát, érthetőbbé teszik az ajánlatodat és tiszta kapcsolatfelvételi utat adnak az ügyfeleknek.",
+  "services.card1.title": "Weboldal és webalkalmazás fejlesztés",
+  "services.card1.text":
+    "Reszponzív üzleti weboldalak, portfóliók és könnyű webalkalmazások tiszta struktúrával és karbantartható frontend kóddal.",
+  "services.card2.title": "AI automatizáció",
+  "services.card2.text":
+    "Workflow-koncepciók és automatizációk, amelyek rögzítik az igényeket, rendszerezik az információt és csökkentik az ismétlődő manuális utánkövetést.",
+  "services.card3.title": "API és backend integráció",
+  "services.card3.text":
+    "Node.js logika, serverless endpointok, adatfolyam-tervezés és praktikus integrációk különböző eszközök és szolgáltatások között.",
   "skills.label": "Készségek",
   "skills.title": "Eszközök és területek, amelyekkel dolgozom",
   "skills.card1.title": "Frontend fejlesztés",
@@ -158,6 +173,11 @@ export const hu = {
   "project.links.home": "Kezdőlap megnyitása",
   "project.preview": "Termék előnézet",
   "project.linksTitle": "Linkek",
+  "project.cta.title": "Hasonló rendszert építenél?",
+  "project.cta.text":
+    "Ha weboldalra, webalkalmazásra, automatizációs workflow-ra vagy API integrációra van szükséged egy valós üzleti probléma megoldásához, küldd el a projekt kontextusát, és segítek tisztázni a következő lépést.",
+  "project.cta.primary": "Projekt indítása",
+  "project.cta.secondary": "Vissza a projektekhez",
   "project.coachtimize.eyebrow": "Full-Stack alkalmazás",
   "project.coachtimize.title": "Coachtimize",
   "project.coachtimize.description":

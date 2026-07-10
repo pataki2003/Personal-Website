@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Full-Stack Web Developer &amp; AI Automation | Pataki Attila Bence</title>
+    <meta name="description" content="Work with Pataki Attila Bence on fast websites, web applications, AI automation, API integrations, and practical digital systems for small businesses." />
+    <link rel="canonical" href="https://www.pataki-dev.hu/en/" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Full-Stack Web Developer &amp; AI Automation | Pataki Attila Bence" />
+    <meta property="og:description" content="Work with Pataki Attila Bence on fast websites, web applications, AI automation, API integrations, and practical digital systems for small businesses." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/en/" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Full-Stack Web Developer &amp; AI Automation | Pataki Attila Bence" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Full-Stack Web Developer &amp; AI Automation | Pataki Attila Bence" />
+    <meta name="twitter:description" content="Work with Pataki Attila Bence on fast websites, web applications, AI automation, API integrations, and practical digital systems for small businesses." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/home.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.pataki-dev.hu/#pataki-attila-bence",
+    "name": "Pataki Attila Bence",
+    "url": "https://www.pataki-dev.hu/",
+    "image": "https://www.pataki-dev.hu/Images/profile-1440.jpg",
+    "jobTitle": "Full-stack web developer and AI automation builder",
+    "sameAs": [
+      "https://github.com/pataki2003",
+      "https://www.facebook.com/benceattila.pataki",
+      "https://www.instagram.com/pataky.jpg"
+    ],
+    "knowsAbout": [
+      "Full-stack web development",
+      "AI automation",
+      "API integration",
+      "Backend logic"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.pataki-dev.hu/#website",
+    "url": "https://www.pataki-dev.hu/",
+    "name": "Pataki Dev",
+    "description": "Work with Pataki Attila Bence on fast websites, web applications, AI automation, API integrations, and practical digital systems for small businesses.",
+    "inLanguage": "en",
+    "availableLanguage": [
+      "hu",
+      "en"
+    ],
+    "publisher": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    }
+  }
+]
+    </script>
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+                        <header class="topbar">
+        <div class="container topbar-inner">
+          <a href="index.html" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <nav class="nav" id="siteNav">
+            <div class="nav-links">
+              <a href="#about" data-i18n="nav.about">About</a>
+              <a href="#skills" data-i18n="nav.skills">Skills</a>
+              <a href="#projects" data-i18n="nav.projects">Projects</a>
+              <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </div>
+          </nav>
+          <div class="header-actions">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="language-switcher" id="languageSwitcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="index.html" aria-pressed="true">EN</button>
+              <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="../index.html" aria-pressed="false">HU</button>
+            </div>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+              <span class="theme-icon theme-icon-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="4.5"></circle>
+                  <path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path>
+                </svg>
+              </span>
+              <span class="theme-icon theme-icon-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+        <div class="mobile-nav-shell">
+          <div class="mobile-nav-header">
+            <a href="index.html" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+            <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="mobile-nav-links" aria-label="Mobile navigation">
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#projects" data-i18n="nav.projects">Projects</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </nav>
+          <div class="mobile-nav-footer">
+            <div class="mobile-nav-group">
+              <p class="mobile-nav-label" data-i18n="lang.switcher">Language switcher</p>
+              <div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+                <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="index.html" aria-pressed="true">EN</button>
+                <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="../index.html" aria-pressed="false">HU</button>
+              </div>
+            </div>
+            <div class="mobile-nav-group">
+              <p class="mobile-nav-label" data-i18n="currency.switcher">Currency selector</p>
+              <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+                <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+                <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-text">
+              <p class="eyebrow" data-i18n="hero.eyebrow">Portfolio • Developer • Builder</p>
+              <h1 class="hero-title">
+                <span class="hero-line" data-i18n="hero.titleLine1">I build useful</span>
+                <span class="hero-line hero-highlight" data-i18n="hero.titleHighlight">digital systems</span>
+                <span class="hero-line" data-i18n="hero.titleLine3">that solve real problems.</span>
+              </h1>
+              <p class="hero-description" data-i18n="hero.description">I'm Pataki Attila Bence, a full-stack developer focused on modern web applications, automation workflows, and software that creates real business value.</p>
+              <div class="hero-tags">
+                <span data-i18n="hero.tag1">Full-Stack Development</span>
+                <span data-i18n="hero.tag2">AI Automations</span>
+                <span data-i18n="hero.tag3">APIs</span>
+                <span data-i18n="hero.tag4">Cybersecurity Learning</span>
+              </div>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">View projects</a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="hero.letsTalk">Let's talk</a>
+              </div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-image-wrap">
+                <img
+                  src="../Images/profile-960.jpg"
+                  srcset="../Images/profile-640.jpg 640w, ../Images/profile-960.jpg 960w, ../Images/profile-1440.jpg 1440w"
+                  sizes="(max-width: 768px) calc(100vw - 44px), 420px"
+                  alt="Pataki Attila Bence"
+                  width="1440"
+                  height="1080"
+                  decoding="async"
+                  fetchpriority="high" />
+              </div>
+              <div class="mini-card">
+                <p class="mini-label" data-i18n="hero.miniLabel">Current focus</p>
+                <h3 data-i18n="hero.miniTitle">Building systems that actually work</h3>
+                <p data-i18n="hero.miniText">Clean frontend, reliable backend logic, and automation that reduces manual work.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="container">
+            <div class="section-heading">
+              <p class="section-label" data-i18n="about.label">About me</p>
+              <h2 data-i18n="about.title">More than code. I care about structure, clarity, and momentum.</h2>
+              <p class="section-text" data-i18n="about.description">My goal is not just to create websites, but to design systems that are efficient, scalable, and useful in real-world situations. I'm especially interested in practical web development, APIs, automations, and digital tools that save time instead of creating chaos.</p>
+            </div>
+            <div class="about-grid">
+              <article class="info-card">
+                <h3 data-i18n="about.card1.title">What I care about</h3>
+                <p data-i18n="about.card1.text">I enjoy building products that feel clean on the surface and reliable underneath. The best software is quiet, fast, and useful.</p>
+              </article>
+              <article class="info-card">
+                <h3 data-i18n="about.card2.title">How I work</h3>
+                <p data-i18n="about.card2.text">I prefer clear structure, readable code, practical solutions, and constant improvement. I like systems that can grow without collapsing into spaghetti.</p>
+              </article>
+              <article class="info-card">
+                <h3 data-i18n="about.card3.title">Direction</h3>
+                <p data-i18n="about.card3.text">I'm developing myself in full-stack engineering, automation building, and cybersecurity while focusing on projects with real utility and measurable value.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section section-alt" id="services">
+          <div class="container">
+            <div class="section-heading">
+              <p class="section-label" data-i18n="services.label">Services</p>
+              <h2 data-i18n="services.title">Practical systems I can help you build</h2>
+              <p class="section-text" data-i18n="services.description">I focus on small, useful digital builds that reduce manual work, make your offer easier to understand, and give clients a clear path to contact you.</p>
+            </div>
+            <div class="services-grid">
+              <article class="service-card"><h3 data-i18n="services.card1.title">Website &amp; Web App Development</h3><p data-i18n="services.card1.text">Responsive business websites, portfolio sites, and lightweight web applications with clean structure and maintainable frontend code.</p></article>
+              <article class="service-card"><h3 data-i18n="services.card2.title">AI Automation</h3><p data-i18n="services.card2.text">Workflow concepts and automations that capture requests, organize information, and reduce repetitive manual follow-up.</p></article>
+              <article class="service-card"><h3 data-i18n="services.card3.title">API &amp; Backend Integration</h3><p data-i18n="services.card3.text">Node.js logic, serverless endpoints, data flow planning, and practical integrations between tools and services.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <div class="container">
+            <div class="section-heading">
+              <p class="section-label" data-i18n="skills.label">Skills</p>
+              <h2 data-i18n="skills.title">Tools and areas I work with</h2>
+            </div>
+            <div class="skills-grid">
+              <article class="skill-card"><div class="skill-number">01</div><h3 data-i18n="skills.card1.title">Frontend Development</h3><p data-i18n="skills.card1.text">Responsive interfaces using HTML, CSS, JavaScript, and modern component-based thinking.</p></article>
+              <article class="skill-card"><div class="skill-number">02</div><h3 data-i18n="skills.card2.title">Backend Logic</h3><p data-i18n="skills.card2.text">Working with Node.js, APIs, application structure, and data flow that supports real use cases.</p></article>
+              <article class="skill-card"><div class="skill-number">03</div><h3 data-i18n="skills.card3.title">Python &amp; Automation</h3><p data-i18n="skills.card3.text">Building scripts and automation processes to reduce repetitive work and connect systems more efficiently.</p></article>
+              <article class="skill-card"><div class="skill-number">04</div><h3 data-i18n="skills.card4.title">Version Control</h3><p data-i18n="skills.card4.text">Using Git and GitHub to manage code, track progress, and maintain a cleaner workflow during development.</p></article>
+              <article class="skill-card"><div class="skill-number">05</div><h3 data-i18n="skills.card5.title">API Integration</h3><p data-i18n="skills.card5.text">Connecting services and applications through APIs to build more useful and scalable digital systems.</p></article>
+              <article class="skill-card"><div class="skill-number">06</div><h3 data-i18n="skills.card6.title">Cybersecurity Learning</h3><p data-i18n="skills.card6.text">Expanding my knowledge in secure thinking, system awareness, and safer software practices.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="container">
+            <div class="section-heading">
+              <p class="section-label" data-i18n="projects.label">Projects</p>
+              <h2 data-i18n="projects.title">Selected work and ideas</h2>
+              <p class="section-text" data-i18n="projects.description">A few examples of the direction I'm building toward. These projects reflect my interest in automation, practical applications, and modern development.</p>
+            </div>
+            <div class="projects-grid">
+              <article class="project-card">
+                <div class="project-top"><span class="project-badge" data-i18n="projects.card1.badge">Full-Stack App</span><h3 data-i18n="projects.card1.title">Coachtimize</h3></div>
+                <p data-i18n="projects.card1.text">A full-stack coaching platform designed to help coaches manage clients, assign workout plans, and communicate in real time.</p>
+                <a href="projects/coachtimize.html" class="project-link" data-i18n="projects.details">Project details</a>
+              </article>
+              <article class="project-card">
+                <div class="project-top"><span class="project-badge" data-i18n="projects.card2.badge">Concept</span><h3 data-i18n="projects.card2.title">AI Call Handling System</h3></div>
+                <p data-i18n="projects.card2.text">A business-focused automation concept designed to handle missed calls, capture customer requests, and improve response time with smarter workflows.</p>
+                <a href="projects/ai-call-handling.html" class="project-link" data-i18n="projects.details">Project details</a>
+              </article>
+              <article class="project-card">
+                <div class="project-top"><span class="project-badge" data-i18n="projects.card3.badge">Website</span><h3 data-i18n="projects.card3.title">Portfolio Website</h3></div>
+                <p data-i18n="projects.card3.text">A modern personal website built to present my skills, projects, and technical direction in a clear and professional way.</p>
+                <a href="projects/portfolio-website.html" class="project-link" data-i18n="projects.details">Project details</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cta-section" id="contact">
+          <div class="container">
+            <div class="cta-box">
+              <p class="section-label" data-i18n="contact.label">Contact</p>
+              <h2 data-i18n="contact.title">Let's build something clean, useful, and real.</h2>
+              <p data-i18n="contact.description">If you're looking for someone who enjoys creating practical digital systems, improving workflows, and building with purpose, let's connect.</p>
+              <div class="cta-actions">
+                <a href="contact.html" class="btn btn-primary" data-i18n="contact.workWithMe">Work with me</a>
+                <a href="contact.html#booking" class="btn btn-secondary" data-booking-link data-i18n="booking.cta">Book a call</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+          <div class="footer-links">
+            <a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer" data-i18n="footer.facebook">Facebook</a>
+            <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer" data-i18n="footer.github">GitHub</a>
+            <a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer" data-i18n="footer.instagram">Instagram</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="../assets/scripts/main.js"></script>
+  </body>
+</html>

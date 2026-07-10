@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Portfolio Website | Static Frontend Case Study</title>
+    <meta name="description" content="Static frontend case study for a fast bilingual portfolio website with reusable structure, project pages, and lead-focused contact paths." />
+    <link rel="canonical" href="https://www.pataki-dev.hu/en/projects/portfolio-website.html" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/portfolio-website.html" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/portfolio-website.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/portfolio-website.html" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Portfolio Website | Static Frontend Case Study" />
+    <meta property="og:description" content="Static frontend case study for a fast bilingual portfolio website with reusable structure, project pages, and lead-focused contact paths." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/en/projects/portfolio-website.html" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Portfolio Website | Static Frontend Case Study" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio Website | Static Frontend Case Study" />
+    <meta name="twitter:description" content="Static frontend case study for a fast bilingual portfolio website with reusable structure, project pages, and lead-focused contact paths." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles/base.css" />
+    <link rel="stylesheet" href="../../assets/styles/project-detail.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://www.pataki-dev.hu/en/projects/portfolio-website.html#case-study",
+    "url": "https://www.pataki-dev.hu/en/projects/portfolio-website.html",
+    "name": "Portfolio Website",
+    "headline": "Portfolio Website | Static Frontend Case Study",
+    "description": "Static frontend case study for a fast bilingual portfolio website with reusable structure, project pages, and lead-focused contact paths.",
+    "inLanguage": "en",
+    "creator": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "isPartOf": {
+      "@id": "https://www.pataki-dev.hu/#website"
+    },
+    "image": "https://www.pataki-dev.hu/Images/og-pataki-dev.jpg",
+    "keywords": "web development, automation, full-stack, API integration"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Homepage",
+        "item": "https://www.pataki-dev.hu/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projects",
+        "item": "https://www.pataki-dev.hu/en/#projects"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Portfolio Website",
+        "item": "https://www.pataki-dev.hu/en/projects/portfolio-website.html"
+      }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="dark">
+                <header class="topbar">
+      <div class="container topbar-inner">
+        <a
+          href="../index.html"
+          class="logo"
+          aria-label="Homepage"
+          data-i18n="site.logoLabel"
+          data-i18n-attr="aria-label"
+          data-i18n-attr-only="true"
+          >PAB</a
+        >
+        <div class="topbar-actions">
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="../index.html#projects" class="back-link" data-i18n="project.backToProjects"
+            >Back to projects</a>
+          <div
+            class="language-switcher"
+            aria-label="Language switcher"
+            data-i18n="lang.switcher"
+            data-i18n-attr="aria-label"
+            data-i18n-attr-only="true"
+          >
+            <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="portfolio-website.html" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="../../projects/portfolio-website.html" aria-pressed="false">HU</button>
+          </div>
+          <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+            <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+          </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"
+              ><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <path
+                  d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"
+                ></path></svg
+            ></span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"
+              ><svg viewBox="0 0 24 24">
+                <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg
+            ></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+      <div class="mobile-nav-shell">
+        <div class="mobile-nav-header">
+          <a
+            href="../index.html"
+            class="logo"
+            aria-label="Homepage"
+            data-i18n="site.logoLabel"
+            data-i18n-attr="aria-label"
+            data-i18n-attr-only="true"
+            >PAB</a
+          >
+          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobile navigation">
+          <a href="../index.html#about" data-i18n="nav.about">About</a>
+          <a href="../index.html#skills" data-i18n="nav.skills">Skills</a>
+          <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+          <a href="../contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="mobile-nav-footer">
+          <a href="../index.html#projects" class="mobile-nav-secondary" data-i18n="project.backToProjects"
+            >Back to projects</a>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-label" data-i18n="lang.switcher">Language switcher</p>
+            <div
+              class="language-switcher"
+              aria-label="Language switcher"
+              data-i18n="lang.switcher"
+              data-i18n-attr="aria-label"
+              data-i18n-attr-only="true"
+            >
+              <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="portfolio-website.html" aria-pressed="true">EN</button>
+              <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="../../projects/portfolio-website.html" aria-pressed="false">HU</button>
+            </div>
+          </div>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-label" data-i18n="currency.switcher">Currency selector</p>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow" data-i18n="project.portfolio.eyebrow">Website Project</p>
+            <h1 class="hero-title" data-i18n="project.portfolio.title">Portfolio Website</h1>
+            <p class="hero-description" data-i18n="project.portfolio.description">A lightweight personal website built to present my work, communicate my direction clearly, and give each project a cleaner space to tell its story.</p>
+            <div class="hero-meta">
+              <span class="meta-pill" data-i18n="project.portfolio.meta1">Status: Live project</span>
+              <span class="meta-pill" data-i18n="project.portfolio.meta2">Focus: Frontend Structure</span>
+              <span class="meta-pill" data-i18n="project.portfolio.meta3"
+                >Type: Personal Brand Website</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container content-grid">
+          <div class="main-column">
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.problemTitle">What problem it solves</h2>
+              <p data-i18n="project.portfolio.problemText1">I wanted a portfolio that felt modern and intentional without depending on heavy frameworks or bloated templates. The site needed to be fast, readable, and easy to expand over time.</p>
+              <p data-i18n="project.portfolio.problemText2">It also had to reflect how I think about building: practical structure first, then polish that supports clarity.</p>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.whyTitle">Why I built it</h2>
+              <p data-i18n="project.portfolio.whyText1">I built my own portfolio because I did not want to rely on a generic template to represent my work as a developer. I wanted the site itself to show the same attention to structure, decisions, and maintainability that I value in product work.</p>
+              <p data-i18n="project.portfolio.whyText2">It also became a good environment for practicing modular frontend structure, content hierarchy, and how to make a simple static site feel intentionally extendable.</p>
+            </article>
+            <article class="panel highlight-box">
+              <h2 data-i18n="project.portfolio.solutionTitle">The Approach</h2>
+              <p data-i18n="project.portfolio.solutionText1">I built the site with plain HTML, CSS, and JavaScript, focusing on reusable layout patterns, a simple theme system, and dedicated detail pages for individual projects.</p>
+              <p data-i18n="project.portfolio.solutionText2">The result is a portfolio that stays lightweight while still feeling personal, responsive, and maintainable.</p>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.featuresTitle">Key Features</h2>
+              <ul class="feature-list">
+                <li data-i18n="project.portfolio.feature1">Responsive homepage and project detail layout</li>
+                <li data-i18n="project.portfolio.feature2">Dark and light theme toggle with saved preference</li>
+                <li data-i18n="project.portfolio.feature3">Reusable card-based content system</li>
+                <li data-i18n="project.portfolio.feature4">Dedicated project pages for deeper context</li>
+                <li data-i18n="project.portfolio.feature5">Simple file structure that is easy to maintain</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.challengesTitle">Challenges and Thinking</h2>
+              <p data-i18n="project.portfolio.challengesText1">The main challenge was balancing personality with simplicity. A portfolio should feel distinctive, but it also needs to stay clean enough that the work remains the focus.</p>
+              <p data-i18n="project.portfolio.challengesText2">Another important part was keeping the code organized so future edits, new projects, and design changes would not turn into unnecessary cleanup work.</p>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.outcomeTitle">Outcome</h2>
+              <p data-i18n="project.portfolio.outcomeText1">This project gave me a stronger base for presenting my work professionally and helped me practice frontend structure, content hierarchy, and maintainable styling decisions in a real portfolio context.</p>
+              <p data-i18n="project.portfolio.outcomeText2">It was especially useful for treating my own site like a product: clear goals, a consistent system, and foundations that can evolve without rewrites.</p>
+            </article>
+          </div>
+          <aside class="side-column">
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.roleTitle">My Role</h2>
+              <ul class="role-list">
+                <li data-i18n="project.portfolio.role1">Frontend design and implementation</li>
+                <li data-i18n="project.portfolio.role2">Layout and content structure planning</li>
+                <li data-i18n="project.portfolio.role3">Theme toggle behavior</li>
+                <li data-i18n="project.portfolio.role4">Project page system setup</li>
+                <li data-i18n="project.portfolio.role5">Visual polish and responsiveness</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <h2 data-i18n="project.portfolio.stackTitle">Tech stack</h2>
+              <ul class="stack-badges" role="list">
+                <li class="meta-pill" data-i18n="project.portfolio.stack1">HTML</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack2">CSS</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack3">JavaScript</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack4">Responsive Design</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack5">Git</li>
+                <li class="meta-pill" data-i18n="project.portfolio.stack6">GitHub</li>
+              </ul>
+            </article>
+            <article class="panel links">
+              <h2 data-i18n="project.linksTitle">Links</h2>
+              <ul class="link-list">
+                <li><a href="../index.html" data-i18n="project.links.home">View the homepage</a></li>
+                <li>
+                  <a href="../index.html#contact" data-i18n="project.links.contact">Contact section</a>
+                </li>
+              </ul>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section project-cta-section">
+        <div class="container">
+          <div class="panel project-cta">
+            <h2 data-i18n="project.cta.title">Planning a similar system?</h2>
+            <p data-i18n="project.cta.text">If you need a website, web app, automation workflow, or API integration that solves a real business problem, send me the project context and I will help shape the next step.</p>
+            <div class="project-cta-actions">
+              <a href="../contact.html" class="btn btn-primary" data-i18n="project.cta.primary">Start a project</a>
+              <a href="../index.html#projects" class="btn btn-secondary" data-i18n="project.cta.secondary">Back to projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+        <a href="../index.html" data-i18n="project.returnHome">Return to homepage</a>
+      </div>
+    </footer>
+    <script type="module" src="../../assets/scripts/project-page.js"></script>
+  </body>
+</html>

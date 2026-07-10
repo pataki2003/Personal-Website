@@ -7,21 +7,21 @@ export const en = {
   "currency.option.eur": "Euro",
   "currency.option.huf": "Hungarian forint",
   "site.logoLabel": "Homepage",
-  "site.meta.title": "Pataki Attila Bence | Portfolio",
+  "site.meta.title": "Full-Stack Web Developer & AI Automation | Pataki Attila Bence",
   "site.meta.description":
-    "Portfolio of Pataki Attila Bence - Full-Stack Developer, AI automation builder, and cybersecurity learner.",
-  "contact.meta.title": "Work with me | Pataki Attila Bence",
+    "Work with Pataki Attila Bence on fast websites, web applications, AI automation, API integrations, and practical digital systems for small businesses.",
+  "contact.meta.title": "Contact for Web Development & Automation | Pataki Attila Bence",
   "contact.meta.description":
-    "Get in touch with Pataki Attila Bence for web development, automation, and digital system projects.",
-  "project.coachtimize.meta.title": "Coachtimize | Pataki Attila Bence",
+    "Start a web development, automation, or API integration project with Pataki Attila Bence. Send a brief or book a short discovery call.",
+  "project.coachtimize.meta.title": "Coachtimize Coaching Platform | Full-Stack Case Study",
   "project.coachtimize.meta.description":
-    "Project details for the Coachtimize full-stack coaching platform by Pataki Attila Bence.",
-  "project.ai.meta.title": "AI Call Handling System | Pataki Attila Bence",
+    "Full-stack case study for Coachtimize, a coaching platform concept focused on client management, workout workflows, and structured backend logic.",
+  "project.ai.meta.title": "AI Call Handling System | Automation Concept",
   "project.ai.meta.description":
-    "Project details for the AI Call Handling System concept by Pataki Attila Bence.",
-  "project.portfolio.meta.title": "Portfolio Website | Pataki Attila Bence",
+    "Automation case study for an AI call handling workflow that helps small businesses capture missed calls, structure requests, and follow up faster.",
+  "project.portfolio.meta.title": "Portfolio Website | Static Frontend Case Study",
   "project.portfolio.meta.description":
-    "Project details for the personal portfolio website by Pataki Attila Bence.",
+    "Static frontend case study for a fast bilingual portfolio website with reusable structure, project pages, and lead-focused contact paths.",
   "nav.about": "About",
   "nav.skills": "Skills",
   "nav.projects": "Projects",
@@ -55,6 +55,19 @@ export const en = {
   "about.card3.title": "Direction",
   "about.card3.text":
     "I'm developing myself in full-stack engineering, automation building, and cybersecurity while focusing on projects with real utility and measurable value.",
+  "services.label": "Services",
+  "services.title": "Practical systems I can help you build",
+  "services.description":
+    "I focus on small, useful digital builds that reduce manual work, make your offer easier to understand, and give clients a clear path to contact you.",
+  "services.card1.title": "Website & Web App Development",
+  "services.card1.text":
+    "Responsive business websites, portfolio sites, and lightweight web applications with clean structure and maintainable frontend code.",
+  "services.card2.title": "AI Automation",
+  "services.card2.text":
+    "Workflow concepts and automations that capture requests, organize information, and reduce repetitive manual follow-up.",
+  "services.card3.title": "API & Backend Integration",
+  "services.card3.text":
+    "Node.js logic, serverless endpoints, data flow planning, and practical integrations between tools and services.",
   "skills.label": "Skills",
   "skills.title": "Tools and areas I work with",
   "skills.card1.title": "Frontend Development",
@@ -160,6 +173,11 @@ export const en = {
   "project.links.home": "View the homepage",
   "project.preview": "Product preview",
   "project.linksTitle": "Links",
+  "project.cta.title": "Planning a similar system?",
+  "project.cta.text":
+    "If you need a website, web app, automation workflow, or API integration that solves a real business problem, send me the project context and I will help shape the next step.",
+  "project.cta.primary": "Start a project",
+  "project.cta.secondary": "Back to projects",
   "project.coachtimize.eyebrow": "Full-Stack Application",
   "project.coachtimize.title": "Coachtimize",
   "project.coachtimize.description":

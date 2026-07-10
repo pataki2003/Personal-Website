@@ -33,11 +33,9 @@ export function initI18n({ translations, defaultLanguage = "en" }) {
     return isSupportedLanguage(language) ? language : "";
   }
 
-  function detectBrowserLanguage(fallback) {
-    const browserLanguage = navigator.language?.toLowerCase() || "";
-    if (browserLanguage.startsWith("hu") && isSupportedLanguage("hu")) return "hu";
-    if (isSupportedLanguage("en")) return "en";
-    return fallback;
+  function getDocumentLanguage() {
+    const language = document.documentElement.lang?.trim().toLowerCase() || "";
+    return isSupportedLanguage(language) ? language : "";
   }
 
   function resolveInitialLanguage(fallback) {
@@ -51,12 +49,15 @@ export function initI18n({ translations, defaultLanguage = "en" }) {
       return queryLanguage;
     }
 
-    const storedLanguage = getStoredLanguage();
-    if (storedLanguage) return storedLanguage;
+    const documentLanguage = getDocumentLanguage();
+    if (documentLanguage) {
+      persistLanguage(documentLanguage);
+      return documentLanguage;
+    }
 
-    const detectedLanguage = detectBrowserLanguage(resolvedFallback);
-    persistLanguage(detectedLanguage);
-    return detectedLanguage;
+    const storedLanguage = getStoredLanguage() || resolvedFallback;
+    persistLanguage(storedLanguage);
+    return storedLanguage;
   }
 
   function t(key) {
@@ -106,6 +107,17 @@ export function initI18n({ translations, defaultLanguage = "en" }) {
 
   function setLanguage(language) {
     if (!isSupportedLanguage(language)) return;
+
+    const targetButton = langButtons.find(
+      (button) => button.getAttribute("data-lang-btn") === language
+    );
+    const targetUrl = targetButton?.getAttribute("data-lang-url") || "";
+    if (targetUrl && language !== state.currentLanguage) {
+      persistLanguage(language);
+      window.location.href = targetUrl;
+      return;
+    }
+
     state.currentLanguage = language;
     persistLanguage(language);
     applyTranslations();

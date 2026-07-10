@@ -126,19 +126,22 @@ main {
 .section-alt { background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--surface-soft) 45%, transparent)); }
 
 .about-grid,
-.skills-grid {
+.skills-grid,
+.services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .info-card,
+.service-card,
 .skill-card,
 .project-card {
   transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
 .info-card:hover,
+.service-card:hover,
 .skill-card:hover,
 .project-card:hover {
   transform: translateY(-4px);
@@ -146,11 +149,20 @@ main {
 }
 
 .info-card,
+.service-card,
 .skill-card {
   padding: 28px;
 }
 
+.service-card {
+  background: linear-gradient(180deg, var(--surface) 0%, color-mix(in srgb, var(--surface) 84%, transparent) 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
 .info-card h3,
+.service-card h3,
 .skill-card h3,
 .project-card h3 {
   margin: 0 0 12px;
@@ -305,6 +317,7 @@ main {
 @media (max-width: 1100px) {
   .hero-grid,
   .about-grid,
+  .services-grid,
   .skills-grid,
   .projects-grid,
   .contact-grid {
@@ -332,6 +345,7 @@ main {
   .hero-text,
   .hero-card,
   .info-card,
+  .service-card,
   .skill-card,
   .project-card,
   .cta-box,
