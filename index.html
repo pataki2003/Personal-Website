@@ -24,6 +24,7 @@
     </script>
     <title>Full-stack webfejlesztő és AI automatizáció | Pataki Attila Bence</title>
     <meta name="description" content="Dolgozz Pataki Attila Bencével gyors weboldalakon, webalkalmazásokon, AI automatizációkon, API integrációkon és gyakorlatias digitális rendszereken." />
+    <meta name="author" content="Pataki Attila Bence" />
     <link rel="canonical" href="https://www.pataki-dev.hu/" />
     <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/" />
     <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/" />
@@ -38,6 +39,7 @@
     <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:alt" content="Full-stack webfejlesztő és AI automatizáció | Pataki Attila Bence" />
     <meta property="og:locale" content="hu_HU" />
     <meta property="og:locale:alternate" content="en_US" />
@@ -45,6 +47,7 @@
     <meta name="twitter:title" content="Full-stack webfejlesztő és AI automatizáció | Pataki Attila Bence" />
     <meta name="twitter:description" content="Dolgozz Pataki Attila Bencével gyors weboldalakon, webalkalmazásokon, AI automatizációkon, API integrációkon és gyakorlatias digitális rendszereken." />
     <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="Full-stack webfejlesztő és AI automatizáció | Pataki Attila Bence" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -98,7 +101,7 @@
     <div class="site-shell">
                         <header class="topbar">
         <div class="container topbar-inner">
-          <a href="index.html" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
           <nav class="nav" id="siteNav">
             <div class="nav-links">
               <a href="#about" data-i18n="nav.about">Rólam</a>
@@ -114,8 +117,8 @@
               <span></span>
             </button>
             <div class="language-switcher" id="languageSwitcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
-              <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="en/" aria-pressed="false">EN</button>
-              <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="index.html" aria-pressed="true">HU</button>
+              <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/" aria-pressed="false">EN</button>
+              <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/" aria-pressed="true">HU</button>
             </div>
             <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
               <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
@@ -141,7 +144,7 @@
       <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
         <div class="mobile-nav-shell">
           <div class="mobile-nav-header">
-            <a href="index.html" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+            <a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
             <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
               <span></span>
               <span></span>
@@ -157,8 +160,8 @@
             <div class="mobile-nav-group">
               <p class="mobile-nav-label" data-i18n="lang.switcher">Nyelvválasztó</p>
               <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
-                <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="en/" aria-pressed="false">EN</button>
-                <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="index.html" aria-pressed="true">HU</button>
+                <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/" aria-pressed="false">EN</button>
+                <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/" aria-pressed="true">HU</button>
               </div>
             </div>
             <div class="mobile-nav-group">
@@ -283,17 +286,17 @@
               <article class="project-card">
                 <div class="project-top"><span class="project-badge" data-i18n="projects.card1.badge">Full-Stack app</span><h3 data-i18n="projects.card1.title">Coachtimize</h3></div>
                 <p data-i18n="projects.card1.text">Egy full-stack coaching platform, amely segíti az edzőket az ügyfelek kezelésében, edzéstervek kiosztásában és a valós idejű kommunikációban.</p>
-                <a href="projects/coachtimize.html" class="project-link" data-i18n="projects.details">Projekt részletei</a>
+                <a href="/projects/coachtimize.html" class="project-link" data-i18n="projects.details">Projekt részletei</a>
               </article>
               <article class="project-card">
                 <div class="project-top"><span class="project-badge" data-i18n="projects.card2.badge">Koncepció</span><h3 data-i18n="projects.card2.title">AI Call Handling System</h3></div>
                 <p data-i18n="projects.card2.text">Egy üzleti fókuszú automatizációs koncepció, amely a nem fogadott hívások kezelését, az ügyféligények rögzítését és a gyorsabb reakcióidőt támogatja.</p>
-                <a href="projects/ai-call-handling.html" class="project-link" data-i18n="projects.details">Projekt részletei</a>
+                <a href="/projects/ai-call-handling.html" class="project-link" data-i18n="projects.details">Projekt részletei</a>
               </article>
               <article class="project-card">
                 <div class="project-top"><span class="project-badge" data-i18n="projects.card3.badge">Weboldal</span><h3 data-i18n="projects.card3.title">Portfólió weboldal</h3></div>
                 <p data-i18n="projects.card3.text">Egy modern személyes weboldal, amely világosan és professzionálisan mutatja be a készségeimet, projektjeimet és technikai irányomat.</p>
-                <a href="projects/portfolio-website.html" class="project-link" data-i18n="projects.details">Projekt részletei</a>
+                <a href="/projects/portfolio-website.html" class="project-link" data-i18n="projects.details">Projekt részletei</a>
               </article>
             </div>
           </div>
@@ -306,8 +309,8 @@
               <h2 data-i18n="contact.title">Építsünk valami letisztultat, hasznosat és valósat.</h2>
               <p data-i18n="contact.description">Ha olyan embert keresel, aki szeret gyakorlatias digitális rendszereket építeni, workflow-kat javítani és céllal fejleszteni, kapcsolódjunk.</p>
               <div class="cta-actions">
-                <a href="contact.html" class="btn btn-primary" data-i18n="contact.workWithMe">Dolgozz velem</a>
-                <a href="contact.html#booking" class="btn btn-secondary" data-booking-link data-i18n="booking.cta">Időpontfoglalás</a>
+                <a href="/contact.html" class="btn btn-primary" data-i18n="contact.workWithMe">Dolgozz velem</a>
+                <a href="/contact.html#booking" class="btn btn-secondary" data-booking-link data-i18n="booking.cta">Időpontfoglalás</a>
               </div>
             </div>
           </div>

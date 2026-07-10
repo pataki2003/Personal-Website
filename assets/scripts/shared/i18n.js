@@ -27,12 +27,6 @@ export function initI18n({ translations, defaultLanguage = "en" }) {
     }
   }
 
-  function getQueryLanguage() {
-    const language =
-      new URLSearchParams(window.location.search).get("lang")?.trim().toLowerCase() || "";
-    return isSupportedLanguage(language) ? language : "";
-  }
-
   function getDocumentLanguage() {
     const language = document.documentElement.lang?.trim().toLowerCase() || "";
     return isSupportedLanguage(language) ? language : "";
@@ -42,12 +36,6 @@ export function initI18n({ translations, defaultLanguage = "en" }) {
     const resolvedFallback = isSupportedLanguage(fallback)
       ? fallback
       : Object.keys(translations)[0] || "en";
-
-    const queryLanguage = getQueryLanguage();
-    if (queryLanguage) {
-      persistLanguage(queryLanguage);
-      return queryLanguage;
-    }
 
     const documentLanguage = getDocumentLanguage();
     if (documentLanguage) {
