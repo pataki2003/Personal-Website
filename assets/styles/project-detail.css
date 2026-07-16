@@ -46,8 +46,9 @@
   align-items: center;
   padding: 10px 14px;
   border-radius: 999px;
-  border: 1px solid var(--line);
-  background: var(--surface-soft);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-text);
+  background: color-mix(in srgb, var(--accent-soft) 72%, var(--surface-soft));
 }
 
 .back-link {
@@ -134,7 +135,7 @@
 }
 
 .links a {
-  color: var(--accent);
+  color: var(--accent-link);
   font-weight: 700;
 }
 

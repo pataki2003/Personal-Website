@@ -68,7 +68,9 @@ main {
 .hero-tags span,
 .project-badge,
 .meta-pill {
-  background: var(--surface-soft);
+  color: var(--accent-text);
+  background: color-mix(in srgb, var(--accent-soft) 72%, var(--surface-soft));
+  border-color: var(--accent-border);
 }
 
 .hero-actions,
@@ -171,7 +173,8 @@ main {
 .skill-number {
   margin-bottom: 16px;
   background: linear-gradient(135deg, var(--accent-soft), var(--accent-soft-2));
-  color: var(--accent);
+  border-color: var(--accent-border);
+  color: var(--accent-text);
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -206,7 +209,7 @@ main {
 
 .project-top { margin-bottom: 18px; }
 .project-badge { margin-bottom: 14px; font-size: 0.86rem; font-weight: 700; }
-.project-link { width: fit-content; font-weight: 700; color: var(--accent); }
+.project-link { width: fit-content; font-weight: 700; color: var(--accent-link); }
 
 .cta-section { padding-bottom: 88px; }
 .cta-box { padding: 48px; text-align: center; }
@@ -230,7 +233,7 @@ main {
 .contact-info-label {
   display: block;
   margin-bottom: 8px;
-  color: var(--accent);
+  color: var(--accent-label);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -262,8 +265,8 @@ main {
 .form-row input:focus,
 .form-row select:focus,
 .form-row textarea:focus {
-  border-color: color-mix(in srgb, var(--accent) 62%, white);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-soft) 72%, transparent);
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-soft) 70%, transparent);
 }
 
 .form-row [aria-invalid="true"] {
