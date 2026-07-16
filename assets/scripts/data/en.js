@@ -92,19 +92,19 @@ export const en = {
   "projects.title": "Selected work and ideas",
   "projects.description":
     "A few examples of the direction I'm building toward. These projects reflect my interest in automation, practical applications, and modern development.",
-  "projects.details": "Project details",
-  "projects.card1.badge": "Full-Stack App",
-  "projects.card1.title": "Coachtimize",
+  "projects.details": "View project",
+  "projects.card1.badge": "Business Website",
+  "projects.card1.title": "MEDIABOX",
   "projects.card1.text":
-    "A full-stack coaching platform designed to help coaches manage clients, assign workout plans, and communicate in real time.",
-  "projects.card2.badge": "Concept",
-  "projects.card2.title": "AI Call Handling System",
+    "A responsive website built for a nationwide pizza-box advertising service, with separate communication for advertisers and pizzeria partners. The website focuses on clear service presentation and lead generation.",
+  "projects.card2.badge": "Service Website",
+  "projects.card2.title": "Personal Trainer Website",
   "projects.card2.text":
-    "A business-focused automation concept designed to handle missed calls, capture customer requests, and improve response time with smarter workflows.",
-  "projects.card3.badge": "Website",
-  "projects.card3.title": "Portfolio Website",
+    "A modern and mobile-friendly website created for a personal trainer, featuring service presentation, consultation calls to action, and a trust-focused content structure.",
+  "projects.card3.badge": "Unity Gameplay Systems",
+  "projects.card3.title": "Rush Market",
   "projects.card3.text":
-    "A modern personal website built to present my skills, projects, and technical direction in a clear and professional way.",
+    "A Unity-based business management game prototype for which I develop player interaction, inventory, order management, shelf restocking, and package handling systems.",
   "contact.label": "Contact",
   "contact.title": "Let's build something clean, useful, and real.",
   "contact.description":

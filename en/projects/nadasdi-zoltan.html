@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Nádasdi Zoltán Personal Trainer Website | Project</title>
+    <meta name="description" content="Modern, mobile-friendly service website for a personal trainer, with service presentation and consultation calls to action." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Nádasdi Zoltán Personal Trainer Website | Project" />
+    <meta property="og:description" content="Modern, mobile-friendly service website for a personal trainer, with service presentation and consultation calls to action." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Nádasdi Zoltán Personal Trainer Website | Project" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nádasdi Zoltán Personal Trainer Website | Project" />
+    <meta name="twitter:description" content="Modern, mobile-friendly service website for a personal trainer, with service presentation and consultation calls to action." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="Nádasdi Zoltán Personal Trainer Website | Project" />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles/base.css" />
+    <link rel="stylesheet" href="../../assets/styles/project-detail.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html#case-study",
+    "url": "https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html",
+    "name": "Nádasdi Zoltán Personal Trainer Website",
+    "headline": "Nádasdi Zoltán Personal Trainer Website | Project",
+    "description": "Modern, mobile-friendly service website for a personal trainer, with service presentation and consultation calls to action.",
+    "inLanguage": "en",
+    "creator": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "isPartOf": {
+      "@id": "https://www.pataki-dev.hu/#website"
+    },
+    "image": "https://www.pataki-dev.hu/Images/personal_trainer.png",
+    "keywords": "web development, automation, full-stack, API integration, Unity"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.pataki-dev.hu/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projects",
+        "item": "https://www.pataki-dev.hu/en/#projects"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Nádasdi Zoltán Personal Trainer Website",
+        "item": "https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html"
+      }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="dark">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="/en/" class="logo" aria-label="Home" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+        <div class="topbar-actions">
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="/en/#projects" class="back-link" data-i18n="project.backToProjects">Back to projects</a>
+          <div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/projects/nadasdi-zoltan.html" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/projects/nadasdi-zoltan.html" aria-pressed="false">HU</button>
+          </div>
+          <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+            <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+          </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+      <div class="mobile-nav-shell">
+        <div class="mobile-nav-header">
+          <a href="/en/" class="logo" aria-label="Home" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobile navigation">
+          <a href="/en/#about" data-i18n="nav.about">About</a>
+          <a href="/en/#skills" data-i18n="nav.skills">Skills</a>
+          <a href="/en/#projects" data-i18n="nav.projects">Projects</a>
+          <a href="/en/contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="mobile-nav-footer">
+          <a href="/en/#projects" class="mobile-nav-secondary" data-i18n="project.backToProjects">Back to projects</a>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-label" data-i18n="lang.switcher">Language switcher</p>
+            <div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/projects/nadasdi-zoltan.html" aria-pressed="true">EN</button>
+              <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/projects/nadasdi-zoltan.html" aria-pressed="false">HU</button>
+            </div>
+          </div>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-label" data-i18n="currency.switcher">Currency selector</p>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow">Service Website</p>
+            <h1 class="hero-title">Nádasdi Zoltán Personal Trainer Website</h1>
+            <p class="hero-description">A modern, mobile-friendly introductory website created for a personal trainer. It clearly presents the services, the first-session process, and the available contact options.</p>
+            <div class="hero-meta">
+              <span class="meta-pill">Client project</span>
+              <span class="meta-pill">Service website</span>
+              <span class="meta-pill">Mobile-friendly design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel">
+            <h2>Product preview</h2>
+            <div class="mockup-grid mockup-grid-single">
+              <div class="mockup project-preview-image"><img src="../../Images/personal_trainer.png" alt="Nádasdi Zoltán personal trainer website screenshot" width="1920" height="3887" loading="lazy" decoding="async" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container content-grid">
+          <div class="main-column">
+            <article class="panel"><h2>The problem</h2><p>For a personal trainer, it is important that visitors quickly understand who the service is for, how the collaboration works, and how they can get started.</p></article>
+            <article class="panel highlight-box"><h2>The solution</h2><p>The website leads visitors through a simple, trust-building user path from the introduction to services, FAQs, and finally the consultation request.</p></article>
+            <article class="panel"><h2>Key features</h2><ul class="feature-list"><li>Service presentation</li><li>Consultation calls to action</li><li>First-session process explanation</li><li>Frequently asked questions</li><li>Responsive layout</li><li>Contact options</li><li>Mobile-optimized navigation</li></ul></article>
+            <article class="panel"><h2>Outcome</h2><p>The result is a clean, easy-to-use service website that supports the trainer's professional presentation and guides interested visitors toward consultation.</p></article>
+          </div>
+          <aside class="side-column">
+            <article class="panel"><h2>My role</h2><ul class="role-list"><li>Website structure planning</li><li>Frontend development</li><li>Responsive design</li><li>Content hierarchy planning</li><li>CTA and user path planning</li></ul></article>
+            <article class="panel"><h2>Tech stack</h2><ul class="stack-badges" role="list"><li class="meta-pill">HTML</li><li class="meta-pill">CSS</li><li class="meta-pill">JavaScript</li><li class="meta-pill">Responsive design</li><li class="meta-pill">Vercel</li></ul></article>
+            <article class="panel links"><h2 data-i18n="project.linksTitle">Links</h2><ul class="link-list"><li><a href="/en/#projects" data-i18n="project.links.projects">Back to portfolio projects</a></li><li><a href="/en/contact.html">Contact page</a></li></ul></article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section project-cta-section">
+        <div class="container">
+          <div class="panel project-cta">
+            <h2 data-i18n="project.cta.title">Planning a similar system?</h2>
+            <p data-i18n="project.cta.text">If you need a website, web app, automation workflow, or API integration that solves a real business problem, send me the project context and I will help shape the next step.</p>
+            <div class="project-cta-actions">
+              <a href="/en/contact.html" class="btn btn-primary" data-i18n="project.cta.primary">Start a project</a>
+              <a href="/en/#projects" class="btn btn-secondary" data-i18n="project.cta.secondary">Back to projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+        <a href="/en/" data-i18n="project.returnHome">Return to homepage</a>
+      </div>
+    </footer>
+    <script type="module" src="../../assets/scripts/project-page.js"></script>
+  </body>
+</html>

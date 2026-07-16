@@ -207,6 +207,85 @@ main {
   pointer-events: none;
 }
 
+.project-card-media {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 22px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius-md) - 6px);
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--accent-soft) 72%, transparent), transparent 62%),
+    var(--surface-soft);
+}
+
+.project-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 320ms ease;
+}
+
+.project-card:hover .project-card-media img {
+  transform: scale(1.035);
+}
+
+.project-card-media-placeholder {
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.system-preview {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  overflow: hidden;
+  border-radius: calc(var(--radius-md) - 10px);
+  background:
+    linear-gradient(color-mix(in srgb, var(--accent-border) 32%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--accent-border) 32%, transparent) 1px, transparent 1px),
+    color-mix(in srgb, var(--accent-soft) 48%, var(--surface-soft));
+  background-size: 28px 28px;
+}
+
+.system-preview::before {
+  content: "";
+  position: absolute;
+  inset: 18% 10%;
+  border: 1px solid color-mix(in srgb, var(--accent-border) 72%, transparent);
+  border-radius: 999px;
+  opacity: 0.72;
+}
+
+.system-preview-compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 16px;
+}
+
+.system-node {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid var(--accent-border);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface-strong) 78%, var(--accent-soft));
+  color: var(--accent-text);
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .project-top { margin-bottom: 18px; }
 .project-badge { margin-bottom: 14px; font-size: 0.86rem; font-weight: 700; }
 .project-link { width: fit-content; font-weight: 700; color: var(--accent-link); }

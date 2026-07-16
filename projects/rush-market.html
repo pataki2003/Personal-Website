@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Rush Market | Unity játékrendszerek</title>
+    <meta name="description" content="Unity üzletmenedzsment-játék prototípus játékrendszerekkel, inventory, rendeléskezelés, polcfeltöltés és csomagkezelés fókuszokkal." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/projects/rush-market.html" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/rush-market.html" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/rush-market.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/rush-market.html" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Rush Market | Unity játékrendszerek" />
+    <meta property="og:description" content="Unity üzletmenedzsment-játék prototípus játékrendszerekkel, inventory, rendeléskezelés, polcfeltöltés és csomagkezelés fókuszokkal." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/projects/rush-market.html" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Rush Market | Unity játékrendszerek" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rush Market | Unity játékrendszerek" />
+    <meta name="twitter:description" content="Unity üzletmenedzsment-játék prototípus játékrendszerekkel, inventory, rendeléskezelés, polcfeltöltés és csomagkezelés fókuszokkal." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="Rush Market | Unity játékrendszerek" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/project-detail.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://www.pataki-dev.hu/projects/rush-market.html#case-study",
+    "url": "https://www.pataki-dev.hu/projects/rush-market.html",
+    "name": "Rush Market",
+    "headline": "Rush Market | Unity játékrendszerek",
+    "description": "Unity üzletmenedzsment-játék prototípus játékrendszerekkel, inventory, rendeléskezelés, polcfeltöltés és csomagkezelés fókuszokkal.",
+    "inLanguage": "hu",
+    "creator": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "isPartOf": {
+      "@id": "https://www.pataki-dev.hu/#website"
+    },
+    "image": "https://www.pataki-dev.hu/Images/og-pataki-dev.jpg",
+    "keywords": "webfejlesztés, automatizáció, full-stack, API integráció, Unity"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Kezdőlap",
+        "item": "https://www.pataki-dev.hu/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projektek",
+        "item": "https://www.pataki-dev.hu/#projects"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Rush Market",
+        "item": "https://www.pataki-dev.hu/projects/rush-market.html"
+      }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="dark">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+        <div class="topbar-actions">
+          <button class="nav-toggle" id="navToggle" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="mobileNavOverlay">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="/#projects" class="back-link" data-i18n="project.backToProjects">Vissza a projektekhez</a>
+          <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/projects/rush-market.html" aria-pressed="false">EN</button>
+            <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/projects/rush-market.html" aria-pressed="true">HU</button>
+          </div>
+          <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+            <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+          </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="Téma váltása">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+      <div class="mobile-nav-shell">
+        <div class="mobile-nav-header">
+          <a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Menü bezárása">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobil navigáció">
+          <a href="/#about" data-i18n="nav.about">Rólam</a>
+          <a href="/#skills" data-i18n="nav.skills">Készségek</a>
+          <a href="/#projects" data-i18n="nav.projects">Projektek</a>
+          <a href="/contact.html" data-i18n="nav.contact">Kapcsolat</a>
+        </nav>
+        <div class="mobile-nav-footer">
+          <a href="/#projects" class="mobile-nav-secondary" data-i18n="project.backToProjects">Vissza a projektekhez</a>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-label" data-i18n="lang.switcher">Nyelvválasztó</p>
+            <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/projects/rush-market.html" aria-pressed="false">EN</button>
+              <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/projects/rush-market.html" aria-pressed="true">HU</button>
+            </div>
+          </div>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-label" data-i18n="currency.switcher">Pénznem választó</p>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow">Unity játékrendszerek</p>
+            <h1 class="hero-title">Rush Market</h1>
+            <p class="hero-description">Egy Unityben készülő, üzletmenedzsmentre és rendeléskezelésre épülő játék prototípusa. A projektben elsősorban az egymással összekapcsolódó játékrendszerek és játékos-interakciók fejlesztéséért felelek.</p>
+            <div class="hero-meta">
+              <span class="meta-pill">Fejlesztés alatt</span>
+              <span class="meta-pill">Unity</span>
+              <span class="meta-pill">Gameplay systems</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel">
+            <h2>Rendszer előnézet</h2>
+            <div class="technical-preview" role="img" aria-label="Rush Market játékrendszerek technikai diagramja">
+              <div class="technical-preview-grid">
+                <span class="technical-node">Player Interaction</span>
+                <span class="technical-node">Inventory</span>
+                <span class="technical-node">Orders</span>
+                <span class="technical-node">Packing</span>
+                <span class="technical-node">Shelf System</span>
+                <span class="technical-node">Courier Handoff</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container content-grid">
+          <div class="main-column">
+            <article class="panel"><h2>A projekt</h2><p>A Rush Market egy nyugodtabb tempójú üzletmenedzsment-játék, amelyben a játékos rendeléseket teljesít, termékeket kezel, polcokat tölt fel, csomagokat készít össze és futároknak adja át azokat.</p></article>
+            <article class="panel highlight-box"><h2>Technikai gondolkodás</h2><p>A projekt egyik fő kihívása az volt, hogy az egyes játékrendszerek ne elszigetelt funkcióként működjenek, hanem egy összefüggő játékfolyamat részei legyenek. A termékfelvétel, a készlet, a rendelés, a csomagolás és az átadás ugyanazon adatmodellekre és állapotokra épül.</p></article>
+            <article class="panel"><h2>Rendszerek és funkciók</h2><ul class="feature-list"><li>First-person interaction system</li><li>ProductData ScriptableObject rendszer</li><li>Player inventory</li><li>Order generation</li><li>Packing table workflow</li><li>Shelf product placement</li><li>Courier handoff</li><li>Aktív rendelések UI-ja</li></ul></article>
+            <article class="panel"><h2>Következő lépések</h2><ul class="feature-list"><li>Fejlettebb rendelésgenerálás</li><li>Progresszió és gazdasági rendszer</li><li>Automatikus polcelrendezés</li><li>További termék- és üzletkezelési funkciók</li><li>Játékélmény és vizuális visszajelzések fejlesztése</li></ul></article>
+          </div>
+          <aside class="side-column">
+            <article class="panel"><h2>Szerepem</h2><ul class="role-list"><li>Unity gameplay rendszerek fejlesztése</li><li>Játékos-interakciós rendszer</li><li>Inventory rendszer</li><li>Rendelésgenerálás és rendelésállapotok</li><li>Packing workflow</li><li>Polcfeltöltési rendszer</li><li>UI és HUD logika</li><li>Git és GitHub workflow</li></ul></article>
+            <article class="panel"><h2>Tech stack</h2><ul class="stack-badges" role="list"><li class="meta-pill">Unity 6</li><li class="meta-pill">C#</li><li class="meta-pill">ScriptableObject</li><li class="meta-pill">Git</li><li class="meta-pill">GitHub</li><li class="meta-pill">Blender</li><li class="meta-pill">Unity UI</li></ul></article>
+            <article class="panel links"><h2 data-i18n="project.linksTitle">Linkek</h2><ul class="link-list"><li><a href="/#projects" data-i18n="project.links.projects">Vissza a portfólió projektekhez</a></li><li><a href="/contact.html">Kapcsolat oldal</a></li></ul></article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section project-cta-section">
+        <div class="container">
+          <div class="panel project-cta">
+            <h2 data-i18n="project.cta.title">Hasonló rendszert építenél?</h2>
+            <p data-i18n="project.cta.text">Ha weboldalra, webalkalmazásra, automatizációs workflow-ra vagy API integrációra van szükséged egy valós üzleti probléma megoldásához, küldd el a projekt kontextusát, és segítek tisztázni a következő lépést.</p>
+            <div class="project-cta-actions">
+              <a href="/contact.html" class="btn btn-primary" data-i18n="project.cta.primary">Projekt indítása</a>
+              <a href="/#projects" class="btn btn-secondary" data-i18n="project.cta.secondary">Vissza a projektekhez</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+        <a href="/" data-i18n="project.returnHome">Vissza a kezdőlapra</a>
+      </div>
+    </footer>
+    <script type="module" src="../assets/scripts/project-page.js"></script>
+  </body>
+</html>

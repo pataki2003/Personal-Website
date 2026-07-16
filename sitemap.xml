@@ -70,4 +70,46 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/portfolio-website.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/portfolio-website.html" />
   </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/projects/mediabox.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/mediabox.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/mediabox.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/mediabox.html" />
+  </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/en/projects/mediabox.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/mediabox.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/mediabox.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/mediabox.html" />
+  </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/projects/nadasdi-zoltan.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+  </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+  </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/projects/rush-market.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/rush-market.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/rush-market.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/rush-market.html" />
+  </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/en/projects/rush-market.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/rush-market.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/rush-market.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/rush-market.html" />
+  </url>
 </urlset>

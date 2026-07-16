@@ -92,19 +92,19 @@ export const hu = {
   "projects.title": "Kiemelt munkák és ötletek",
   "projects.description":
     "Néhány példa arra az irányra, amerre építkezem. Ezek a projektek az automatizáció, a gyakorlatias alkalmazások és a modern fejlesztés iránti érdeklődésemet mutatják.",
-  "projects.details": "Projekt részletei",
-  "projects.card1.badge": "Full-Stack app",
-  "projects.card1.title": "Coachtimize",
+  "projects.details": "Projekt megtekintése",
+  "projects.card1.badge": "Üzleti weboldal",
+  "projects.card1.title": "MEDIABOX",
   "projects.card1.text":
-    "Egy full-stack coaching platform, amely segíti az edzőket az ügyfelek kezelésében, edzéstervek kiosztásában és a valós idejű kommunikációban.",
-  "projects.card2.badge": "Koncepció",
-  "projects.card2.title": "AI Call Handling System",
+    "Országos pizzásdoboz-reklám szolgáltatáshoz készített reszponzív weboldal, külön kommunikációval a hirdetők és pizzériapartnerek számára. Az oldal célja a szolgáltatás érthető bemutatása és az ajánlatkérések támogatása.",
+  "projects.card2.badge": "Szolgáltatói weboldal",
+  "projects.card2.title": "Személyi edzői weboldal",
   "projects.card2.text":
-    "Egy üzleti fókuszú automatizációs koncepció, amely a nem fogadott hívások kezelését, az ügyféligények rögzítését és a gyorsabb reakcióidőt támogatja.",
-  "projects.card3.badge": "Weboldal",
-  "projects.card3.title": "Portfólió weboldal",
+    "Modern és mobilbarát weboldal egy személyi edző számára, szolgáltatásbemutatással, konzultációs felhívásokkal és bizalomépítő tartalmi struktúrával.",
+  "projects.card3.badge": "Unity játékrendszerek",
+  "projects.card3.title": "Rush Market",
   "projects.card3.text":
-    "Egy modern személyes weboldal, amely világosan és professzionálisan mutatja be a készségeimet, projektjeimet és technikai irányomat.",
+    "Unityben készülő üzletmenedzsment-játék prototípus, amelyhez játékos-interakciós, készletkezelési, rendelési, polcfeltöltési és csomagkezelési rendszereket fejlesztek.",
   "contact.label": "Kapcsolat",
   "contact.title": "Építsünk valami letisztultat, hasznosat és valósat.",
   "contact.description":

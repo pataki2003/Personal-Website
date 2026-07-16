@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Nádasdi Zoltán személyi edzői weboldala | Projekt</title>
+    <meta name="description" content="Modern, mobilbarát szolgáltatói weboldal személyi edző számára, szolgáltatásbemutatással és konzultációs CTA-kkal." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/nadasdi-zoltan.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Nádasdi Zoltán személyi edzői weboldala | Projekt" />
+    <meta property="og:description" content="Modern, mobilbarát szolgáltatói weboldal személyi edző számára, szolgáltatásbemutatással és konzultációs CTA-kkal." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/projects/nadasdi-zoltan.html" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Nádasdi Zoltán személyi edzői weboldala | Projekt" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nádasdi Zoltán személyi edzői weboldala | Projekt" />
+    <meta name="twitter:description" content="Modern, mobilbarát szolgáltatói weboldal személyi edző számára, szolgáltatásbemutatással és konzultációs CTA-kkal." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="Nádasdi Zoltán személyi edzői weboldala | Projekt" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/project-detail.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://www.pataki-dev.hu/projects/nadasdi-zoltan.html#case-study",
+    "url": "https://www.pataki-dev.hu/projects/nadasdi-zoltan.html",
+    "name": "Nádasdi Zoltán személyi edzői weboldala",
+    "headline": "Nádasdi Zoltán személyi edzői weboldala | Projekt",
+    "description": "Modern, mobilbarát szolgáltatói weboldal személyi edző számára, szolgáltatásbemutatással és konzultációs CTA-kkal.",
+    "inLanguage": "hu",
+    "creator": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "isPartOf": {
+      "@id": "https://www.pataki-dev.hu/#website"
+    },
+    "image": "https://www.pataki-dev.hu/Images/personal_trainer.png",
+    "keywords": "webfejlesztés, automatizáció, full-stack, API integráció, Unity"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Kezdőlap",
+        "item": "https://www.pataki-dev.hu/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projektek",
+        "item": "https://www.pataki-dev.hu/#projects"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Nádasdi Zoltán személyi edzői weboldala",
+        "item": "https://www.pataki-dev.hu/projects/nadasdi-zoltan.html"
+      }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="dark">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+        <div class="topbar-actions">
+          <button class="nav-toggle" id="navToggle" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="mobileNavOverlay">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="/#projects" class="back-link" data-i18n="project.backToProjects">Vissza a projektekhez</a>
+          <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/projects/nadasdi-zoltan.html" aria-pressed="false">EN</button>
+            <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/projects/nadasdi-zoltan.html" aria-pressed="true">HU</button>
+          </div>
+          <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+            <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+            <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+          </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="Téma váltása">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+      <div class="mobile-nav-shell">
+        <div class="mobile-nav-header">
+          <a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Menü bezárása">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobil navigáció">
+          <a href="/#about" data-i18n="nav.about">Rólam</a>
+          <a href="/#skills" data-i18n="nav.skills">Készségek</a>
+          <a href="/#projects" data-i18n="nav.projects">Projektek</a>
+          <a href="/contact.html" data-i18n="nav.contact">Kapcsolat</a>
+        </nav>
+        <div class="mobile-nav-footer">
+          <a href="/#projects" class="mobile-nav-secondary" data-i18n="project.backToProjects">Vissza a projektekhez</a>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-label" data-i18n="lang.switcher">Nyelvválasztó</p>
+            <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/projects/nadasdi-zoltan.html" aria-pressed="false">EN</button>
+              <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/projects/nadasdi-zoltan.html" aria-pressed="true">HU</button>
+            </div>
+          </div>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-label" data-i18n="currency.switcher">Pénznem választó</p>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
+              <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow">Szolgáltatói weboldal</p>
+            <h1 class="hero-title">Nádasdi Zoltán személyi edzői weboldala</h1>
+            <p class="hero-description">Egy személyi edző számára készített modern, mobilbarát bemutatkozó weboldal, amely világosan mutatja be a szolgáltatásokat, az első alkalom folyamatát és a kapcsolatfelvételi lehetőségeket.</p>
+            <div class="hero-meta">
+              <span class="meta-pill">Ügyfélprojekt</span>
+              <span class="meta-pill">Szolgáltatói weboldal</span>
+              <span class="meta-pill">Mobilbarát design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel">
+            <h2>Termék előnézet</h2>
+            <div class="mockup-grid mockup-grid-single">
+              <div class="mockup project-preview-image"><img src="../Images/personal_trainer.png" alt="Nádasdi Zoltán személyi edzői weboldal képernyőképe" width="1920" height="3887" loading="lazy" decoding="async" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container content-grid">
+          <div class="main-column">
+            <article class="panel"><h2>A probléma</h2><p>Egy személyi edző számára fontos, hogy az érdeklődők gyorsan megértsék, kinek szól a szolgáltatás, hogyan zajlik az együttműködés és miként lehet jelentkezni.</p></article>
+            <article class="panel highlight-box"><h2>A megoldás</h2><p>A weboldal egy egyszerű, bizalomépítő felhasználói útvonalat vezet végig a bemutatkozástól a szolgáltatásokon és a gyakori kérdéseken át a konzultációs jelentkezésig.</p></article>
+            <article class="panel"><h2>Fő funkciók</h2><ul class="feature-list"><li>Szolgáltatások bemutatása</li><li>Konzultációs CTA-k</li><li>Első alkalom folyamatának bemutatása</li><li>Gyakori kérdések</li><li>Reszponzív kialakítás</li><li>Kapcsolatfelvételi lehetőségek</li><li>Mobilra optimalizált navigáció</li></ul></article>
+            <article class="panel"><h2>Eredmény</h2><p>Egy letisztult, könnyen használható szolgáltatói weboldal készült, amely segíti a személyi edző szakmai bemutatkozását és az érdeklődők konzultációra terelését.</p></article>
+          </div>
+          <aside class="side-column">
+            <article class="panel"><h2>Szerepem</h2><ul class="role-list"><li>Oldalstruktúra megtervezése</li><li>Frontend fejlesztés</li><li>Reszponzív design</li><li>Tartalmi hierarchia kialakítása</li><li>CTA-k és felhasználói útvonal megtervezése</li></ul></article>
+            <article class="panel"><h2>Tech stack</h2><ul class="stack-badges" role="list"><li class="meta-pill">HTML</li><li class="meta-pill">CSS</li><li class="meta-pill">JavaScript</li><li class="meta-pill">Reszponzív design</li><li class="meta-pill">Vercel</li></ul></article>
+            <article class="panel links"><h2 data-i18n="project.linksTitle">Linkek</h2><ul class="link-list"><li><a href="/#projects" data-i18n="project.links.projects">Vissza a portfólió projektekhez</a></li><li><a href="/contact.html">Kapcsolat oldal</a></li></ul></article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section project-cta-section">
+        <div class="container">
+          <div class="panel project-cta">
+            <h2 data-i18n="project.cta.title">Hasonló rendszert építenél?</h2>
+            <p data-i18n="project.cta.text">Ha weboldalra, webalkalmazásra, automatizációs workflow-ra vagy API integrációra van szükséged egy valós üzleti probléma megoldásához, küldd el a projekt kontextusát, és segítek tisztázni a következő lépést.</p>
+            <div class="project-cta-actions">
+              <a href="/contact.html" class="btn btn-primary" data-i18n="project.cta.primary">Projekt indítása</a>
+              <a href="/#projects" class="btn btn-secondary" data-i18n="project.cta.secondary">Vissza a projektekhez</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+        <a href="/" data-i18n="project.returnHome">Vissza a kezdőlapra</a>
+      </div>
+    </footer>
+    <script type="module" src="../assets/scripts/project-page.js"></script>
+  </body>
+</html>
