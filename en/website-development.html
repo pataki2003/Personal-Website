@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Custom Website Development for Businesses | Pataki Attila Bence</title>
+    <meta name="description" content="Custom responsive website development for businesses: clear structure, fast loading, focused messaging, technical SEO basics, and lead-ready contact paths." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/en/website-development" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/weboldal-keszites" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/website-development" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/weboldal-keszites" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Custom Website Development for Businesses | Pataki Attila Bence" />
+    <meta property="og:description" content="Custom responsive website development for businesses: clear structure, fast loading, focused messaging, technical SEO basics, and lead-ready contact paths." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/en/website-development" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Custom website development for businesses" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Custom Website Development for Businesses | Pataki Attila Bence" />
+    <meta name="twitter:description" content="Custom responsive website development for businesses: clear structure, fast loading, focused messaging, technical SEO basics, and lead-ready contact paths." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="Custom website development for businesses" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/home.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.pataki-dev.hu/en/website-development#service",
+    "name": "Custom Website Development for Businesses",
+    "serviceType": "Website development",
+    "url": "https://www.pataki-dev.hu/en/website-development",
+    "description": "Responsive business and service website development with clear content structure, fast loading, and lead-ready contact paths.",
+    "provider": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "areaServed": "Hungary",
+    "inLanguage": "en"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is a custom website useful for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is useful for service providers and small businesses that need clearer messaging, stronger trust signals, and a better path from visitor interest to contact."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the work include both design and implementation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The work covers structure, frontend implementation, responsive behavior, technical SEO basics, and preparation for publishing."
+        }
+      }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a href="/en/" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <nav class="nav" id="siteNav">
+            <div class="nav-links">
+              <a href="/en/#about" data-i18n="nav.about">About</a>
+              <a href="/en/#services" data-i18n="nav.services">Services</a>
+              <a href="/en/projects" data-i18n="nav.projects">Projects</a>
+              <a href="/en/blog" data-i18n="nav.blog">Blog</a>
+              <a href="/en/contact" data-i18n="nav.contact">Contact</a>
+            </div>
+          </nav>
+          <div class="header-actions">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay"><span></span><span></span><span></span></button>
+            <div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
+              <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/website-development" aria-pressed="true">EN</button>
+              <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/weboldal-keszites" aria-pressed="false">HU</button>
+            </div>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Switch theme"><span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span><span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span></button>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+        <div class="mobile-nav-shell">
+          <div class="mobile-nav-header"><a href="/en/" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu"><span></span><span></span></button></div>
+          <nav class="mobile-nav-links" aria-label="Mobile navigation">
+            <a href="/en/#about" data-i18n="nav.about">About</a>
+            <a href="/en/#services" data-i18n="nav.services">Services</a>
+            <a href="/en/projects" data-i18n="nav.projects">Projects</a>
+            <a href="/en/blog" data-i18n="nav.blog">Blog</a>
+            <a href="/en/contact" data-i18n="nav.contact">Contact</a>
+          </nav>
+          <div class="mobile-nav-footer">
+            <div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="lang.switcher">Language switcher</p><div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/website-development" aria-pressed="true">EN</button><button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/weboldal-keszites" aria-pressed="false">HU</button></div></div>
+            <div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="currency.switcher">Currency selector</p><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div></div>
+          </div>
+        </div>
+      </div>
+      <main>
+        <section class="content-hero">
+          <div class="container">
+            <div class="content-hero-card">
+              <p class="eyebrow">Website development</p>
+              <h1>Custom website development for businesses</h1>
+              <p class="section-text">I build business and service websites that do more than look polished. The goal is a clear offer, a fast page, and a path that helps visitors understand why they should contact you.</p>
+              <div class="article-meta"><span class="meta-pill">Responsive website</span><span class="meta-pill">Technical SEO basics</span><span class="meta-pill">Lead focused</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container content-grid-two">
+            <article class="content-panel">
+              <h2>When does a custom website make sense?</h2>
+              <p>If your current website is slow, generic, hard to expand, or simply unclear about what you offer, a stronger structure can make the whole experience easier to understand.</p>
+              <p>A custom website works best when it supports a real business goal: inquiries, consultations, trust building, or a focused presentation of a service.</p>
+            </article>
+            <aside class="content-panel highlight-box">
+              <h2>Focus</h2>
+              <ul class="content-list">
+                <li>Business websites and service landing pages</li>
+                <li>Mobile-friendly, fast frontend implementation</li>
+                <li>Clear content hierarchy</li>
+                <li>Contact paths and calls to action</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+        <section class="section section-alt">
+          <div class="container">
+            <div class="section-heading"><p class="section-label">Process</p><h2>A clean development flow</h2></div>
+            <div class="resource-grid">
+              <article class="resource-card"><h3>1. Goal and offer clarity</h3><p>We clarify who the website is for, what questions it must answer, and which contact action counts as success.</p></article>
+              <article class="resource-card"><h3>2. Structure and implementation</h3><p>The responsive HTML/CSS/JavaScript site is built with stable layout, clear sections, and technical SEO basics.</p></article>
+              <article class="resource-card"><h3>3. Publishing checks</h3><p>Before launch, I check mobile views, metadata, links, performance, and the inquiry path.</p></article>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container content-grid-two">
+            <article class="content-panel">
+              <h2>Related services</h2>
+              <ul class="content-list">
+                <li><a class="project-link" href="/en/web-application-development">Custom web application development</a></li>
+                <li><a class="project-link" href="/en/ai-automation">AI automation for businesses</a></li>
+                <li><a class="project-link" href="/en/projects">Web development projects</a></li>
+              </ul>
+            </article>
+            <article class="content-panel">
+              <h2>FAQ</h2>
+              <ul class="faq-list">
+                <li><strong>Who is it useful for?</strong> Service providers and small businesses that need clearer messaging and a better path from interest to contact.</li>
+                <li><strong>What does the work include?</strong> Structure, frontend implementation, responsive behavior, technical SEO basics, and publishing preparation.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="section cta-section">
+          <div class="container">
+            <div class="cta-box">
+              <p class="section-label">Project inquiry</p>
+              <h2>Let’s build a website that is clear from a business angle too.</h2>
+              <p>Send a short note about the service, audience, and goal of the website.</p>
+              <div class="cta-actions"><a href="/en/contact" class="btn btn-primary">Start a project</a><a href="/en/blog/website-development-costs" class="btn btn-secondary">Website cost article</a></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"><div class="container footer-inner"><p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p><div class="footer-links"><a href="/en/projects">Projects</a><a href="/en/blog">Blog</a><a href="/en/contact">Contact</a></div></div></footer>
+    </div>
+    <script type="module" src="../assets/scripts/main.js"></script>
+  </body>
+</html>

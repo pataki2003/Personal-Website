@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>WordPress vagy egyedi weboldal? | Pataki Attila Bence</title>
+    <meta name="description" content="Mikor elég a WordPress, mikor hasznosabb az egyedi weboldal, és hogyan dönts vállalkozásként teljesítmény, rugalmasság és karbantarthatóság alapján." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/blog/wordpress-vagy-egyedi-weboldal" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/blog/wordpress-vagy-egyedi-weboldal" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/blog/wordpress-vs-custom-website" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/blog/wordpress-vagy-egyedi-weboldal" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="WordPress vagy egyedi weboldal? | Pataki Attila Bence" />
+    <meta property="og:description" content="Mikor elég a WordPress, mikor hasznosabb az egyedi weboldal, és hogyan dönts vállalkozásként teljesítmény, rugalmasság és karbantarthatóság alapján." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/blog/wordpress-vagy-egyedi-weboldal" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="WordPress vagy egyedi weboldal?" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WordPress vagy egyedi weboldal? | Pataki Attila Bence" />
+    <meta name="twitter:description" content="Mikor elég a WordPress, mikor hasznosabb az egyedi weboldal, és hogyan dönts vállalkozásként teljesítmény, rugalmasság és karbantarthatóság alapján." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="WordPress vagy egyedi weboldal?" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/home.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://www.pataki-dev.hu/blog/wordpress-vagy-egyedi-weboldal#article",
+    "mainEntityOfPage": "https://www.pataki-dev.hu/blog/wordpress-vagy-egyedi-weboldal",
+    "headline": "WordPress vagy egyedi weboldal?",
+    "description": "Döntési szempontok WordPress és egyedi weboldal között.",
+    "image": "https://www.pataki-dev.hu/Images/og-pataki-dev.jpg",
+    "datePublished": "2026-07-16",
+    "dateModified": "2026-07-16",
+    "author": { "@id": "https://www.pataki-dev.hu/#pataki-attila-bence" },
+    "publisher": { "@id": "https://www.pataki-dev.hu/#pataki-attila-bence" },
+    "inLanguage": "hu"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Kezdőlap", "item": "https://www.pataki-dev.hu/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.pataki-dev.hu/blog" },
+      { "@type": "ListItem", "position": 3, "name": "WordPress vagy egyedi weboldal?", "item": "https://www.pataki-dev.hu/blog/wordpress-vagy-egyedi-weboldal" }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+      <header class="topbar"><div class="container topbar-inner"><a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><nav class="nav" id="siteNav"><div class="nav-links"><a href="/#about" data-i18n="nav.about">Rólam</a><a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/projektek" data-i18n="nav.projects">Projektek</a><a href="/blog" data-i18n="nav.blog">Blog</a><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a></div></nav><div class="header-actions"><button class="nav-toggle" id="navToggle" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="mobileNavOverlay"><span></span><span></span><span></span></button><div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/blog/wordpress-vs-custom-website" aria-pressed="false">EN</button><button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/blog/wordpress-vagy-egyedi-weboldal" aria-pressed="true">HU</button></div><button class="theme-toggle" id="themeToggle" aria-label="Téma váltása"><span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span><span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span></button></div></div></header>
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert><div class="mobile-nav-shell"><div class="mobile-nav-header"><a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Menü bezárása"><span></span><span></span></button></div><nav class="mobile-nav-links" aria-label="Mobil navigáció"><a href="/#about" data-i18n="nav.about">Rólam</a><a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/projektek" data-i18n="nav.projects">Projektek</a><a href="/blog" data-i18n="nav.blog">Blog</a><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a></nav><div class="mobile-nav-footer"><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="lang.switcher">Nyelvválasztó</p><div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/blog/wordpress-vs-custom-website" aria-pressed="false">EN</button><button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/blog/wordpress-vagy-egyedi-weboldal" aria-pressed="true">HU</button></div></div></div></div></div>
+      <main>
+        <article>
+          <section class="content-hero"><div class="container"><div class="content-hero-card"><p class="eyebrow">Egyedi fejlesztés</p><h1>WordPress vagy egyedi weboldal?</h1><p class="section-text">Nincs univerzális válasz. A jó döntés attól függ, mennyire egyedi az ajánlatod, milyen gyorsaságra és kontrollra van szükséged, és ki fogja később karbantartani az oldalt.</p><div class="article-meta"><span class="meta-pill">2026. július 16.</span><span class="meta-pill">WordPress</span><span class="meta-pill">Egyedi weboldal</span></div></div></div></section>
+          <section class="section"><div class="container content-grid-two"><div class="content-panel article-body">
+            <p>A WordPress sok helyzetben teljesen jó választás. Ha gyakran frissülő blogra, egyszerű tartalomkezelésre vagy kész bővítményekre van szükség, gyors indulást adhat. A probléma akkor kezdődik, amikor egy sablonra túl sok egyedi üzleti logikát, designigényt vagy teljesítményelvárást próbálunk ráépíteni.</p>
+            <h2>Mikor elég a WordPress?</h2>
+            <p>Ha az oldal főleg tartalmat publikál, több embernek kell szerkesztenie, és a működés jól lefedhető megbízható bővítményekkel, a WordPress praktikus lehet. Ilyenkor fontos a jó tárhely, a kevés és karbantartott plugin, valamint a rendszeres frissítés.</p>
+            <h2>Mikor jobb az egyedi weboldal?</h2>
+            <p>Egyedi fejlesztés akkor erősebb, ha pontosan kontrollálni kell a frontend struktúrát, a teljesítményt, a vizuális rendszert vagy az API-kapcsolatokat. Egy statikus vagy könnyű egyedi oldal kevesebb mozgó alkatrésszel működik, ezért gyors, átlátható és jól optimalizálható lehet.</p>
+            <h2>SEO szempontból nem a platform dönt</h2>
+            <p>Önmagában a WordPress vagy az egyedi HTML nem garantál jó SEO-t. A keresőbarát alaphoz tiszta információs architektúra, egyedi title és description, gyors betöltés, mobilbarát layout, értelmes belső linkelés és jó tartalom kell. A platform csak eszköz.</p>
+            <h2>Karbantartás és tulajdonosi kontroll</h2>
+            <p>WordPressnél számolni kell frissítésekkel, bővítményekkel és biztonsági figyelemmel. Egyedi statikus oldalon kevesebb a rendszeres technikai karbantartás, viszont tartalmi módosításokhoz fejlesztői munka vagy előre kialakított szerkesztési folyamat kell.</p>
+            <h2>Hogyan dönts?</h2>
+            <ul>
+              <li>Ha sok szerkeszthető tartalom és blog a fő fókusz, a WordPress jó opció lehet.</li>
+              <li>Ha gyors, kontrollált, leadfókuszú szolgáltatói oldal kell, az egyedi weboldal erős választás.</li>
+              <li>Ha később webalkalmazás, integráció vagy automatizáció is jön, érdemes már az elején tiszta technikai alapban gondolkodni.</li>
+            </ul>
+            <p>A döntést nem a divat alapján érdemes meghozni, hanem az alapján, milyen üzleti feladatot kell az oldalnak megoldania.</p>
+          </div><aside class="content-panel highlight-box"><h2>Kapcsolódó linkek</h2><ul class="content-list"><li><a class="project-link" href="/weboldal-keszites">Egyedi weboldal készítés</a></li><li><a class="project-link" href="/blog/weboldal-keszites-arak">Mennyibe kerül egy weboldal?</a></li><li><a class="project-link" href="/webalkalmazas-fejlesztes">Webalkalmazás fejlesztés</a></li></ul></aside></div></section>
+        </article>
+      </main>
+      <footer class="footer"><div class="container footer-inner"><p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p><div class="footer-links"><a href="/blog">Blog</a><a href="/weboldal-keszites">Weboldal készítés</a><a href="/kapcsolat">Kapcsolat</a></div></div></footer>
+    </div>
+    <script type="module" src="../assets/scripts/main.js"></script>
+  </body>
+</html>

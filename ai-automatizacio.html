@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>AI automatizáció vállalkozásoknak | Pataki Attila Bence</title>
+    <meta name="description" content="AI automatizáció vállalkozásoknak: leadkezelés, admin folyamatok, ügyféligény-rendszerezés, workflow-tervezés és API-alapú integrációk." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/ai-automatizacio" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/ai-automatizacio" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/ai-automation" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/ai-automatizacio" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="AI automatizáció vállalkozásoknak | Pataki Attila Bence" />
+    <meta property="og:description" content="AI automatizáció vállalkozásoknak: leadkezelés, admin folyamatok, ügyféligény-rendszerezés, workflow-tervezés és API-alapú integrációk." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/ai-automatizacio" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="AI automatizáció vállalkozásoknak" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI automatizáció vállalkozásoknak | Pataki Attila Bence" />
+    <meta name="twitter:description" content="AI automatizáció vállalkozásoknak: leadkezelés, admin folyamatok, ügyféligény-rendszerezés, workflow-tervezés és API-alapú integrációk." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="AI automatizáció vállalkozásoknak" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.pataki-dev.hu/ai-automatizacio#service",
+    "name": "AI automatizáció vállalkozásoknak",
+    "serviceType": "AI automatizáció és folyamatautomatizálás",
+    "url": "https://www.pataki-dev.hu/ai-automatizacio",
+    "description": "Leadkezelési, adminisztrációs és ügyféligény-rendszerezési workflow-k tervezése AI- és API-alapú automatizációs logikával.",
+    "provider": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "areaServed": "Hungary",
+    "inLanguage": "hu"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Mit érdemes AI automatizációval kezdeni?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Olyan ismétlődő folyamatokat, ahol információt kell gyűjteni, rendszerezni, továbbítani vagy előkészíteni egy emberi döntéshez."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Az AI minden folyamatra jó megoldás?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nem. Sok esetben egy egyszerűbb szabályalapú workflow vagy API-integráció stabilabb. A cél mindig a hasznos folyamat, nem az AI önmagáért."
+        }
+      }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+      <header class="topbar"><div class="container topbar-inner"><a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><nav class="nav" id="siteNav"><div class="nav-links"><a href="/#about" data-i18n="nav.about">Rólam</a><a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/projektek" data-i18n="nav.projects">Projektek</a><a href="/blog" data-i18n="nav.blog">Blog</a><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a></div></nav><div class="header-actions"><button class="nav-toggle" id="navToggle" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="mobileNavOverlay"><span></span><span></span><span></span></button><div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/ai-automation" aria-pressed="false">EN</button><button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/ai-automatizacio" aria-pressed="true">HU</button></div><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div><button class="theme-toggle" id="themeToggle" aria-label="Téma váltása"><span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span><span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span></button></div></div></header>
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert><div class="mobile-nav-shell"><div class="mobile-nav-header"><a href="/" class="logo" aria-label="Kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Menü bezárása"><span></span><span></span></button></div><nav class="mobile-nav-links" aria-label="Mobil navigáció"><a href="/#about" data-i18n="nav.about">Rólam</a><a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/projektek" data-i18n="nav.projects">Projektek</a><a href="/blog" data-i18n="nav.blog">Blog</a><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a></nav><div class="mobile-nav-footer"><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="lang.switcher">Nyelvválasztó</p><div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/ai-automation" aria-pressed="false">EN</button><button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/ai-automatizacio" aria-pressed="true">HU</button></div></div><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="currency.switcher">Pénznem választó</p><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div></div></div></div></div>
+      <main>
+        <section class="content-hero"><div class="container"><div class="content-hero-card"><p class="eyebrow">AI automatizáció</p><h1>AI automatizáció vállalkozásoknak</h1><p class="section-text">Olyan workflow-kat tervezek és építek, amelyek kevesebb kézi adminisztrációval segítenek rögzíteni, rendszerezni és továbbítani az ügyféligényeket vagy belső információkat.</p><div class="article-meta"><span class="meta-pill">Lead automatizálás</span><span class="meta-pill">Admin workflow</span><span class="meta-pill">API-kapcsolatok</span></div></div></div></section>
+        <section class="section"><div class="container content-grid-two"><article class="content-panel"><h2>Nem mindenhez kell AI, de sok folyamat jobb lehet tőle</h2><p>Az AI automatizáció akkor hasznos, ha ismétlődő információfeldolgozás, szövegértés, kategorizálás vagy ügyféligény-rendszerezés lassítja a munkát.</p><p>A jó automatizáció nem elveszi az emberi döntést, hanem előkészíti hozzá a kontextust: rendezettebb leadek, gyorsabb válasz, kevesebb manuális utánkövetés.</p></article><aside class="content-panel highlight-box"><h2>Gyakori irányok</h2><ul class="content-list"><li>Beérkező érdeklődések rendszerezése</li><li>Nem fogadott hívások vagy üzenetek utókövetése</li><li>Űrlapadatok és ügyféligények strukturálása</li><li>Eszközök összekötése API-kon keresztül</li></ul></aside></div></section>
+        <section class="section section-alt"><div class="container"><div class="section-heading"><p class="section-label">Folyamat</p><h2>Előbb folyamat, utána AI</h2></div><div class="resource-grid"><article class="resource-card"><h3>1. Manuális teher azonosítása</h3><p>Megnézzük, melyik ismétlődő admin vagy kommunikációs lépés viszi el a legtöbb időt.</p></article><article class="resource-card"><h3>2. Workflow megtervezése</h3><p>Meghatározzuk, milyen adat kell, hová kell továbbmenjen, és hol segít AI vagy egyszerű szabálylogika.</p></article><article class="resource-card"><h3>3. Stabil integráció</h3><p>Az automatizációt úgy kell felépíteni, hogy átlátható, tesztelhető és kézzel is kontrollálható maradjon.</p></article></div></div></section>
+        <section class="section"><div class="container content-grid-two"><article class="content-panel"><h2>Kapcsolódó oldalak</h2><ul class="content-list"><li><a class="project-link" href="/webalkalmazas-fejlesztes">Webalkalmazás és backend fejlesztés</a></li><li><a class="project-link" href="/projects/ai-call-handling">AI Call Handling System esettanulmány</a></li><li><a class="project-link" href="/blog/milyen-folyamatokat-erdemes-automatizalni">Milyen folyamatokat érdemes automatizálni?</a></li></ul></article><article class="content-panel"><h2>Gyakori kérdések</h2><ul class="faq-list"><li><strong>Mit érdemes automatizálni?</strong> Olyan ismétlődő lépéseket, ahol információt kell gyűjteni, rendszerezni, továbbítani vagy előkészíteni.</li><li><strong>Mindenre AI kell?</strong> Nem. Sokszor egy szabályalapú workflow vagy API-integráció stabilabb és olcsóbb megoldás.</li></ul></article></div></section>
+        <section class="section cta-section"><div class="container"><div class="cta-box"><p class="section-label">Automatizációs audit</p><h2>Nézzük meg, hol veszít időt a folyamatod.</h2><p>Küldd el röviden, milyen adminisztráció, leadkezelés vagy ügyfélkommunikáció ismétlődik nálad a legtöbbször.</p><div class="cta-actions"><a href="/kapcsolat" class="btn btn-primary">Automatizáció indítása</a><a href="/projektek" class="btn btn-secondary">Esettanulmányok</a></div></div></div></section>
+      </main>
+      <footer class="footer"><div class="container footer-inner"><p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p><div class="footer-links"><a href="/projektek">Projektek</a><a href="/blog">Blog</a><a href="/kapcsolat">Kapcsolat</a></div></div></footer>
+    </div>
+    <script type="module" src="assets/scripts/main.js"></script>
+  </body>
+</html>

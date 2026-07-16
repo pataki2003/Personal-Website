@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>How Much Does Website Development Cost? | Pataki Attila Bence</title>
+    <meta name="description" content="A practical guide to what affects website development cost: scope, content, design, implementation, SEO basics, and maintainability." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/en/blog/website-development-costs" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/blog/weboldal-keszites-arak" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/blog/website-development-costs" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/blog/weboldal-keszites-arak" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="How Much Does Website Development Cost? | Pataki Attila Bence" />
+    <meta property="og:description" content="A practical guide to what affects website development cost: scope, content, design, implementation, SEO basics, and maintainability." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/en/blog/website-development-costs" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="How much does website development cost?" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How Much Does Website Development Cost? | Pataki Attila Bence" />
+    <meta name="twitter:description" content="A practical guide to what affects website development cost: scope, content, design, implementation, SEO basics, and maintainability." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="How much does website development cost?" />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles/base.css" />
+    <link rel="stylesheet" href="../../assets/styles/home.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://www.pataki-dev.hu/en/blog/website-development-costs#article",
+    "mainEntityOfPage": "https://www.pataki-dev.hu/en/blog/website-development-costs",
+    "headline": "How Much Does Website Development Cost?",
+    "description": "A practical guide to what affects website development cost.",
+    "image": "https://www.pataki-dev.hu/Images/og-pataki-dev.jpg",
+    "datePublished": "2026-07-16",
+    "dateModified": "2026-07-16",
+    "author": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "publisher": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "inLanguage": "en"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pataki-dev.hu/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.pataki-dev.hu/en/blog" },
+      { "@type": "ListItem", "position": 3, "name": "How Much Does Website Development Cost?", "item": "https://www.pataki-dev.hu/en/blog/website-development-costs" }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+      <header class="topbar"><div class="container topbar-inner"><a href="/en/" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><nav class="nav" id="siteNav"><div class="nav-links"><a href="/en/#about" data-i18n="nav.about">About</a><a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/projects" data-i18n="nav.projects">Projects</a><a href="/en/blog" data-i18n="nav.blog">Blog</a><a href="/en/contact" data-i18n="nav.contact">Contact</a></div></nav><div class="header-actions"><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay"><span></span><span></span><span></span></button><div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/blog/website-development-costs" aria-pressed="true">EN</button><button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/blog/weboldal-keszites-arak" aria-pressed="false">HU</button></div><button class="theme-toggle" id="themeToggle" aria-label="Switch theme"><span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span><span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span></button></div></div></header>
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert><div class="mobile-nav-shell"><div class="mobile-nav-header"><a href="/en/" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu"><span></span><span></span></button></div><nav class="mobile-nav-links" aria-label="Mobile navigation"><a href="/en/#about" data-i18n="nav.about">About</a><a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/projects" data-i18n="nav.projects">Projects</a><a href="/en/blog" data-i18n="nav.blog">Blog</a><a href="/en/contact" data-i18n="nav.contact">Contact</a></nav><div class="mobile-nav-footer"><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="lang.switcher">Language switcher</p><div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/blog/website-development-costs" aria-pressed="true">EN</button><button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/blog/weboldal-keszites-arak" aria-pressed="false">HU</button></div></div></div></div></div>
+      <main>
+        <article>
+          <section class="content-hero"><div class="container"><div class="content-hero-card"><p class="eyebrow">Website development</p><h1>How much does website development cost?</h1><p class="section-text">Website cost is not only about how many pages are built. The bigger factors are the goal, content readiness, design expectations, technical complexity, and the business job the website needs to do.</p><div class="article-meta"><span class="meta-pill">July 16, 2026</span><span class="meta-pill">Website pricing</span><span class="meta-pill">Project quotes</span></div></div></div></section>
+          <section class="section"><div class="container content-grid-two"><div class="content-panel article-body">
+            <p>Many business owners start with “I need a website.” That is a natural starting point, but it is not enough to estimate the real work. A simple presentation site, a multi-service business website, and a site with booking, form logic, or integrations all have different scopes.</p>
+            <h2>The first cost driver is the goal</h2>
+            <p>A site that only needs to act as an online business card is very different from a website expected to create inquiries or consultations. The clearer the goal, the easier it is to decide the structure, calls to action, content, and technical solution.</p>
+            <h2>Content readiness matters a lot</h2>
+            <p>If strong copy, images, service descriptions, and proof points already exist, the work can focus more on structure and implementation. If they do not exist yet, the offer needs to be clarified first: who it is for, what problem it solves, what trust signals exist, and how visitors should move toward contact.</p>
+            <h2>Design, implementation, and technical SEO</h2>
+            <p>Cost increases when the site needs a highly custom visual system, many special sections, animation, multiple UI states, or more complex responsive behavior. Technical SEO also matters: metadata, canonical URLs, sitemap, structured data, image optimization, and fast loading.</p>
+            <h2>When the cheapest option is not the best option</h2>
+            <p>If the website is an important client acquisition channel, a very cheap build can become expensive later. Weak structure, slow loading, poor mobile behavior, or unclear messaging are not only aesthetic issues. They create business friction.</p>
+            <h2>How to ask for a more accurate quote</h2>
+            <ul>
+              <li>Describe the main goal: inquiry, booking, presentation, or sales support.</li>
+              <li>Collect 2-3 example websites and explain what you find useful in them.</li>
+              <li>Share how many services need to be presented and whether copy or images already exist.</li>
+              <li>Mention whether you need a contact form, booking, integration, or future expansion.</li>
+            </ul>
+            <p>A good website quote does more than give a number. It clarifies scope, responsibilities, and the next step, so both sides know what is actually being built.</p>
+          </div><aside class="content-panel highlight-box"><h2>Related links</h2><ul class="content-list"><li><a class="project-link" href="/en/website-development">Custom website development</a></li><li><a class="project-link" href="/en/blog/wordpress-vs-custom-website">WordPress or custom website?</a></li><li><a class="project-link" href="/en/contact">Request a quote</a></li></ul></aside></div></section>
+        </article>
+      </main>
+      <footer class="footer"><div class="container footer-inner"><p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p><div class="footer-links"><a href="/en/blog">Blog</a><a href="/en/website-development">Website development</a><a href="/en/contact">Contact</a></div></div></footer>
+    </div>
+    <script type="module" src="../../assets/scripts/main.js"></script>
+  </body>
+</html>

@@ -396,13 +396,132 @@ main {
   margin-top: 16px;
 }
 
+.content-hero {
+  padding: 68px 0 28px;
+}
+
+.content-hero-card,
+.content-panel,
+.resource-card,
+.article-card {
+  background: linear-gradient(180deg, var(--surface) 0%, color-mix(in srgb, var(--surface) 84%, transparent) 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+.content-hero-card {
+  padding: 42px;
+}
+
+.content-hero-card h1 {
+  max-width: 12ch;
+  margin: 0 0 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.7rem, 7vw, 5rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.content-hero-card .section-text {
+  max-width: 68ch;
+}
+
+.content-grid-two {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.content-panel {
+  padding: 30px;
+}
+
+.content-panel h2,
+.content-panel h3,
+.resource-card h2,
+.resource-card h3,
+.article-card h2,
+.article-card h3 {
+  margin: 0 0 12px;
+}
+
+.content-panel p,
+.resource-card p,
+.article-card p,
+.article-body p,
+.article-body li {
+  color: var(--muted);
+}
+
+.content-list,
+.faq-list,
+.article-body ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.resource-grid,
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.resource-card,
+.article-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.resource-card:hover,
+.article-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent) 38%, var(--line));
+}
+
+.resource-card .project-link,
+.article-card .project-link {
+  margin-top: auto;
+}
+
+.article-body {
+  display: grid;
+  gap: 22px;
+}
+
+.article-body h2 {
+  margin: 8px 0 0;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
 @media (max-width: 1100px) {
   .hero-grid,
   .about-grid,
   .services-grid,
   .skills-grid,
   .projects-grid,
-  .contact-grid {
+  .contact-grid,
+  .content-grid-two,
+  .resource-grid,
+  .article-grid {
     grid-template-columns: 1fr;
   }
 
@@ -426,6 +545,10 @@ main {
 
   .hero-text,
   .hero-card,
+  .content-hero-card,
+  .content-panel,
+  .resource-card,
+  .article-card,
   .info-card,
   .service-card,
   .skill-card,

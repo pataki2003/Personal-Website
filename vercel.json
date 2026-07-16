@@ -1,5 +1,22 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/contact",
+      "destination": "/kapcsolat",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/kapcsolat",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact.html",
+      "destination": "/en/contact",
+      "permanent": true
+    }
+  ]
 }

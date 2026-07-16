@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Az oldal nem található | Pataki Dev</title>
+    <meta name="description" content="A keresett oldal nem található. Térj vissza a Pataki Dev főoldalra, projektekhez vagy kapcsolat oldalra." />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+  </head>
+  <body data-theme="light">
+    <main class="site-shell">
+      <section class="content-hero">
+        <div class="container">
+          <div class="content-hero-card">
+            <p class="eyebrow">404</p>
+            <h1>Ez az oldal nem található.</h1>
+            <p class="section-text">Lehet, hogy a link megváltozott, vagy az oldal már nem létezik. A fontos útvonalak innen gyorsan elérhetők.</p>
+            <div class="cta-actions">
+              <a href="/" class="btn btn-primary">Kezdőlap</a>
+              <a href="/projektek" class="btn btn-secondary">Projektek</a>
+              <a href="/kapcsolat" class="btn btn-secondary">Kapcsolat</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

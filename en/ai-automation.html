@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>AI Automation for Businesses | Pataki Attila Bence</title>
+    <meta name="description" content="AI automation for businesses: lead handling, admin workflows, request structuring, workflow design, and API-based integrations." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/en/ai-automation" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/ai-automatizacio" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/ai-automation" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/ai-automatizacio" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="AI Automation for Businesses | Pataki Attila Bence" />
+    <meta property="og:description" content="AI automation for businesses: lead handling, admin workflows, request structuring, workflow design, and API-based integrations." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/en/ai-automation" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="AI automation for businesses" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Automation for Businesses | Pataki Attila Bence" />
+    <meta name="twitter:description" content="AI automation for businesses: lead handling, admin workflows, request structuring, workflow design, and API-based integrations." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="AI automation for businesses" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/home.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.pataki-dev.hu/en/ai-automation#service",
+    "name": "AI Automation for Businesses",
+    "serviceType": "AI automation and workflow automation",
+    "url": "https://www.pataki-dev.hu/en/ai-automation",
+    "description": "Workflow design for lead handling, administration, request structuring, and API-based automation logic.",
+    "provider": {
+      "@id": "https://www.pataki-dev.hu/#pataki-attila-bence"
+    },
+    "areaServed": "Hungary",
+    "inLanguage": "en"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What should a business automate with AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Repeated processes where information must be collected, structured, routed, summarized, or prepared for a human decision."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is AI the right solution for every process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. In many cases a simpler rules-based workflow or API integration is more stable. The goal is a useful process, not AI for its own sake."
+        }
+      }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+      <header class="topbar"><div class="container topbar-inner"><a href="/en/" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><nav class="nav" id="siteNav"><div class="nav-links"><a href="/en/#about" data-i18n="nav.about">About</a><a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/projects" data-i18n="nav.projects">Projects</a><a href="/en/blog" data-i18n="nav.blog">Blog</a><a href="/en/contact" data-i18n="nav.contact">Contact</a></div></nav><div class="header-actions"><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay"><span></span><span></span><span></span></button><div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/ai-automation" aria-pressed="true">EN</button><button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/ai-automatizacio" aria-pressed="false">HU</button></div><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div><button class="theme-toggle" id="themeToggle" aria-label="Switch theme"><span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span><span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span></button></div></div></header>
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert><div class="mobile-nav-shell"><div class="mobile-nav-header"><a href="/en/" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu"><span></span><span></span></button></div><nav class="mobile-nav-links" aria-label="Mobile navigation"><a href="/en/#about" data-i18n="nav.about">About</a><a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/projects" data-i18n="nav.projects">Projects</a><a href="/en/blog" data-i18n="nav.blog">Blog</a><a href="/en/contact" data-i18n="nav.contact">Contact</a></nav><div class="mobile-nav-footer"><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="lang.switcher">Language switcher</p><div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/ai-automation" aria-pressed="true">EN</button><button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/ai-automatizacio" aria-pressed="false">HU</button></div></div><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="currency.switcher">Currency selector</p><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div></div></div></div></div>
+      <main>
+        <section class="content-hero"><div class="container"><div class="content-hero-card"><p class="eyebrow">AI automation</p><h1>AI automation for businesses</h1><p class="section-text">I design and build workflows that reduce manual administration by capturing, structuring, and routing customer requests or internal information more reliably.</p><div class="article-meta"><span class="meta-pill">Lead automation</span><span class="meta-pill">Admin workflow</span><span class="meta-pill">API connections</span></div></div></div></section>
+        <section class="section"><div class="container content-grid-two"><article class="content-panel"><h2>Not every process needs AI, but many can become better with automation</h2><p>AI automation is useful when repeated information processing, text understanding, categorization, or request structuring slows down the business.</p><p>Good automation does not replace human judgment. It prepares context: cleaner leads, faster responses, and less manual follow-up.</p></article><aside class="content-panel highlight-box"><h2>Common directions</h2><ul class="content-list"><li>Structuring incoming inquiries</li><li>Missed call or message follow-up</li><li>Form data and customer request handling</li><li>Connecting tools through APIs</li></ul></aside></div></section>
+        <section class="section section-alt"><div class="container"><div class="section-heading"><p class="section-label">Process</p><h2>Process first, AI second</h2></div><div class="resource-grid"><article class="resource-card"><h3>1. Find the manual burden</h3><p>We identify which repeated admin or communication step consumes the most time.</p></article><article class="resource-card"><h3>2. Design the workflow</h3><p>We define what data is needed, where it should go, and where AI or simple rules actually help.</p></article><article class="resource-card"><h3>3. Keep it controllable</h3><p>The automation should stay transparent, testable, and possible to override manually when needed.</p></article></div></div></section>
+        <section class="section"><div class="container content-grid-two"><article class="content-panel"><h2>Related pages</h2><ul class="content-list"><li><a class="project-link" href="/en/web-application-development">Web application and backend development</a></li><li><a class="project-link" href="/en/projects/ai-call-handling">AI Call Handling System case study</a></li><li><a class="project-link" href="/en/blog/business-processes-to-automate">Which business processes are worth automating?</a></li></ul></article><article class="content-panel"><h2>FAQ</h2><ul class="faq-list"><li><strong>What should be automated?</strong> Repeated steps where information must be collected, structured, routed, or prepared.</li><li><strong>Does every process need AI?</strong> No. A rules-based workflow or API integration is often more stable and simpler.</li></ul></article></div></section>
+        <section class="section cta-section"><div class="container"><div class="cta-box"><p class="section-label">Automation audit</p><h2>Let’s find where your process loses time.</h2><p>Send a short note about the admin work, lead handling, or customer communication that repeats most often.</p><div class="cta-actions"><a href="/en/contact" class="btn btn-primary">Start automation planning</a><a href="/en/projects" class="btn btn-secondary">View case studies</a></div></div></div></section>
+      </main>
+      <footer class="footer"><div class="container footer-inner"><p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p><div class="footer-links"><a href="/en/projects">Projects</a><a href="/en/blog">Blog</a><a href="/en/contact">Contact</a></div></div></footer>
+    </div>
+    <script type="module" src="../assets/scripts/main.js"></script>
+  </body>
+</html>

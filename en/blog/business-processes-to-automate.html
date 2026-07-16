@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Which Business Processes Are Worth Automating? | Pataki Attila Bence</title>
+    <meta name="description" content="A practical guide for businesses: which admin, lead handling, customer communication, and API-based workflows are worth automating." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/en/blog/business-processes-to-automate" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/blog/milyen-folyamatokat-erdemes-automatizalni" />
+    <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/blog/business-processes-to-automate" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/blog/milyen-folyamatokat-erdemes-automatizalni" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Which Business Processes Are Worth Automating? | Pataki Attila Bence" />
+    <meta property="og:description" content="A practical guide for businesses: which admin, lead handling, customer communication, and API-based workflows are worth automating." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/en/blog/business-processes-to-automate" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Which business processes are worth automating?" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Which Business Processes Are Worth Automating? | Pataki Attila Bence" />
+    <meta name="twitter:description" content="A practical guide for businesses: which admin, lead handling, customer communication, and API-based workflows are worth automating." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="Which business processes are worth automating?" />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles/base.css" />
+    <link rel="stylesheet" href="../../assets/styles/home.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://www.pataki-dev.hu/en/blog/business-processes-to-automate#article",
+    "mainEntityOfPage": "https://www.pataki-dev.hu/en/blog/business-processes-to-automate",
+    "headline": "Which Business Processes Are Worth Automating?",
+    "description": "A practical guide to business processes worth automating.",
+    "image": "https://www.pataki-dev.hu/Images/og-pataki-dev.jpg",
+    "datePublished": "2026-07-16",
+    "dateModified": "2026-07-16",
+    "author": { "@id": "https://www.pataki-dev.hu/#pataki-attila-bence" },
+    "publisher": { "@id": "https://www.pataki-dev.hu/#pataki-attila-bence" },
+    "inLanguage": "en"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pataki-dev.hu/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.pataki-dev.hu/en/blog" },
+      { "@type": "ListItem", "position": 3, "name": "Which Business Processes Are Worth Automating?", "item": "https://www.pataki-dev.hu/en/blog/business-processes-to-automate" }
+    ]
+  }
+]
+    </script>
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+      <header class="topbar"><div class="container topbar-inner"><a href="/en/" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><nav class="nav" id="siteNav"><div class="nav-links"><a href="/en/#about" data-i18n="nav.about">About</a><a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/projects" data-i18n="nav.projects">Projects</a><a href="/en/blog" data-i18n="nav.blog">Blog</a><a href="/en/contact" data-i18n="nav.contact">Contact</a></div></nav><div class="header-actions"><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay"><span></span><span></span><span></span></button><div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/blog/business-processes-to-automate" aria-pressed="true">EN</button><button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/blog/milyen-folyamatokat-erdemes-automatizalni" aria-pressed="false">HU</button></div><button class="theme-toggle" id="themeToggle" aria-label="Switch theme"><span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span><span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span></button></div></div></header>
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert><div class="mobile-nav-shell"><div class="mobile-nav-header"><a href="/en/" class="logo" aria-label="Homepage" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu"><span></span><span></span></button></div><nav class="mobile-nav-links" aria-label="Mobile navigation"><a href="/en/#about" data-i18n="nav.about">About</a><a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/projects" data-i18n="nav.projects">Projects</a><a href="/en/blog" data-i18n="nav.blog">Blog</a><a href="/en/contact" data-i18n="nav.contact">Contact</a></nav><div class="mobile-nav-footer"><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="lang.switcher">Language switcher</p><div class="language-switcher" aria-label="Language switcher" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/blog/business-processes-to-automate" aria-pressed="true">EN</button><button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/blog/milyen-folyamatokat-erdemes-automatizalni" aria-pressed="false">HU</button></div></div></div></div></div>
+      <main>
+        <article>
+          <section class="content-hero"><div class="container"><div class="content-hero-card"><p class="eyebrow">Automation</p><h1>Which business processes are worth automating?</h1><p class="section-text">Automation is useful when it reduces a real time loss, error risk, or hard-to-track manual process. It should solve a concrete operational problem, not just add technical novelty.</p><div class="article-meta"><span class="meta-pill">July 16, 2026</span><span class="meta-pill">AI automation</span><span class="meta-pill">Workflow</span></div></div></div></section>
+          <section class="section"><div class="container content-grid-two"><div class="content-panel article-body">
+            <p>The best automation ideas are usually not flashy. They start with ordinary repeated steps someone does every week: copying data, organizing messages, following up with leads, updating statuses, or routing information.</p>
+            <h2>1. Leads and incoming inquiries</h2>
+            <p>When inquiries arrive through several channels, context is easy to lose. Automation can help turn forms, emails, or post-call notes into cleaner lead records with category, priority, or a suggested next step.</p>
+            <h2>2. Administration and data movement</h2>
+            <p>If the same data needs to be copied into multiple places, it is a good automation candidate. AI is not always required. An API integration or rules-based workflow is often enough to make the process faster and less error-prone.</p>
+            <h2>3. Preparing customer communication</h2>
+            <p>AI can help when incoming text needs to be summarized, categorized, or prepared for a human response. The goal is not to automate every conversation, but to let a person respond faster with better context.</p>
+            <h2>4. Reports and dashboards</h2>
+            <p>If decisions depend on collecting data from multiple sources, a simple dashboard or summary workflow can help. The point is not more data, but better overview.</p>
+            <h2>What should you not automate first?</h2>
+            <p>Do not start with a process that is unclear even when handled manually. First understand the steps, responsibilities, and exceptions. Automation speeds up a good process, but it can make a confusing process confusing faster.</p>
+            <h2>A good first step</h2>
+            <ul>
+              <li>List the tasks that repeat every week.</li>
+              <li>Mark where manual copy-paste or status updates happen.</li>
+              <li>Look for places where customer context or lead information gets lost.</li>
+              <li>Choose one small, measurable workflow for the first pilot.</li>
+            </ul>
+            <p>Automation works best when it targets a specific business friction, not a vague feeling that “we should use AI”.</p>
+          </div><aside class="content-panel highlight-box"><h2>Related links</h2><ul class="content-list"><li><a class="project-link" href="/en/ai-automation">AI automation for businesses</a></li><li><a class="project-link" href="/en/projects/ai-call-handling">AI Call Handling case study</a></li><li><a class="project-link" href="/en/web-application-development">Web application development</a></li></ul></aside></div></section>
+        </article>
+      </main>
+      <footer class="footer"><div class="container footer-inner"><p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p><div class="footer-links"><a href="/en/blog">Blog</a><a href="/en/ai-automation">AI automation</a><a href="/en/contact">Contact</a></div></div></footer>
+    </div>
+    <script type="module" src="../../assets/scripts/main.js"></script>
+  </body>
+</html>
