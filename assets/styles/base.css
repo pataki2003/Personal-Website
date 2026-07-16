@@ -764,3 +764,44 @@ select:focus-visible {
     justify-content: center;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body,
+  .mobile-nav-overlay,
+  .nav,
+  .nav-toggle span,
+  .theme-icon,
+  .btn,
+  .info-card,
+  .service-card,
+  .skill-card,
+  .project-card,
+  .resource-card,
+  .article-card,
+  .project-card-media img,
+  .hero-image-wrap img,
+  .mobile-nav-links a,
+  .mobile-nav-secondary,
+  .back-link {
+    transition-duration: 1ms;
+  }
+
+  .hero-card:hover .hero-image-wrap img,
+  .project-card:hover .project-card-media img,
+  .info-card:hover,
+  .service-card:hover,
+  .skill-card:hover,
+  .project-card:hover,
+  .resource-card:hover,
+  .article-card:hover,
+  .btn:hover,
+  .back-link:hover,
+  .mobile-nav-links a:hover,
+  .mobile-nav-secondary:hover {
+    transform: none;
+  }
+}

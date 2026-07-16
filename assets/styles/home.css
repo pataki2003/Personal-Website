@@ -124,6 +124,7 @@ main {
   text-transform: uppercase;
 }
 
+.mini-card h2,
 .mini-card h3 { margin: 0 0 8px; font-size: 1.2rem; }
 .section-alt { background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--surface-soft) 45%, transparent)); }
 
@@ -332,7 +333,8 @@ main {
   border: 1px solid var(--line);
   background: var(--surface-soft);
   color: var(--text);
-  outline: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
 }
 
@@ -346,6 +348,12 @@ main {
 .form-row textarea:focus {
   border-color: var(--accent-border);
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-soft) 70%, transparent);
+}
+
+.form-row input:focus-visible,
+.form-row select:focus-visible,
+.form-row textarea:focus-visible {
+  outline-color: color-mix(in srgb, var(--accent-border) 88%, transparent);
 }
 
 .form-row [aria-invalid="true"] {

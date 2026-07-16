@@ -14,13 +14,10 @@ theme.setLabelResolver((currentTheme) =>
   i18n.t(currentTheme === "dark" ? "theme.switchToLight" : "theme.switchToDark")
 );
 
-const navToggle = document.getElementById("navToggle");
-if (navToggle) {
-  const syncNavLabel = () => navToggle.setAttribute("aria-label", i18n.t("nav.toggle"));
-  syncNavLabel();
-  document.addEventListener("app:languagechange", syncNavLabel);
-}
+const mobileNav = initMobileNav({
+  getToggleLabel: (isOpen) => i18n.t(isOpen ? "nav.close" : "nav.open")
+});
+document.addEventListener("app:languagechange", () => mobileNav?.syncToggleLabel());
 
-initMobileNav();
 initBookingLinks();
 initContactForm({ t: i18n.t, getCurrency: currency.getCurrency });

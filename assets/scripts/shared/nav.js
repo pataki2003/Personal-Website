@@ -1,6 +1,6 @@
 const MOBILE_OVERLAY_BREAKPOINT = 768;
 
-export function initMobileNav() {
+export function initMobileNav({ getToggleLabel } = {}) {
   const navToggle = document.getElementById("navToggle");
   const siteNav = document.getElementById("siteNav");
   const mobileNavOverlay = document.getElementById("mobileNavOverlay");
@@ -18,6 +18,21 @@ export function initMobileNav() {
   function syncToggleTarget() {
     const targetId = isOverlayMode() || !siteNav ? "mobileNavOverlay" : "siteNav";
     navToggle.setAttribute("aria-controls", targetId);
+  }
+
+  function isNavOpen() {
+    return isOverlayMode()
+      ? Boolean(mobileNavOverlay?.classList.contains("is-open"))
+      : Boolean(siteNav?.classList.contains("is-open"));
+  }
+
+  function syncToggleLabel() {
+    const isOpen = isNavOpen();
+    const fallbackLabel = isOpen ? "Close navigation" : "Open navigation";
+    navToggle.setAttribute(
+      "aria-label",
+      typeof getToggleLabel === "function" ? getToggleLabel(isOpen) : fallbackLabel
+    );
   }
 
   function closeDesktopNav() {
@@ -49,6 +64,7 @@ export function initMobileNav() {
     navToggle.setAttribute("aria-expanded", "false");
     closeDesktopNav();
     closeOverlay();
+    syncToggleLabel();
   }
 
   function openNav() {
@@ -57,10 +73,12 @@ export function initMobileNav() {
 
     if (isOverlayMode()) {
       openOverlay();
+      syncToggleLabel();
       return;
     }
 
     openDesktopNav();
+    syncToggleLabel();
   }
 
   navToggle.addEventListener("click", () => {
@@ -125,5 +143,5 @@ export function initMobileNav() {
   syncToggleTarget();
   closeNav();
 
-  return { closeNav, openNav };
+  return { closeNav, openNav, syncToggleLabel };
 }
