@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Impresszum | Pataki Attila Bence</title>
+    <meta name="description" content="Impresszum a pataki-dev.hu személyes portfólió és szolgáltatói weboldalhoz: üzemeltető, elérhetőség, tárhely és domainregisztrátor adatok." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/impresszum" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/impresszum" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/impresszum" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Impresszum | Pataki Attila Bence" />
+    <meta property="og:description" content="Impresszum a pataki-dev.hu személyes portfólió és szolgáltatói weboldalhoz." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/impresszum" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Impresszum | Pataki Dev" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Impresszum | Pataki Attila Bence" />
+    <meta name="twitter:description" content="Impresszum a pataki-dev.hu személyes portfólió és szolgáltatói weboldalhoz." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="Impresszum | Pataki Dev" />
+    <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+    <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a href="/" class="logo" aria-label="PAB kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <nav class="nav" id="siteNav"><div class="nav-links"><a href="/#about" data-i18n="nav.about">Rólam</a><a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/projektek" data-i18n="nav.projects">Projektek</a><a href="/blog" data-i18n="nav.blog">Blog</a><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a></div></nav>
+          <div class="header-actions">
+            <button class="nav-toggle" id="navToggle" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="mobileNavOverlay"><span></span><span></span><span></span></button>
+            <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/" aria-pressed="false">EN</button><button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/impresszum" aria-pressed="true">HU</button></div>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Téma váltása"><span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span><span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span></button>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+        <div class="mobile-nav-shell">
+          <div class="mobile-nav-header"><a href="/" class="logo" aria-label="PAB kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Menü bezárása"><span></span><span></span></button></div>
+          <nav class="mobile-nav-links" aria-label="Mobil navigáció"><a href="/#about" data-i18n="nav.about">Rólam</a><a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/projektek" data-i18n="nav.projects">Projektek</a><a href="/blog" data-i18n="nav.blog">Blog</a><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a></nav>
+          <div class="mobile-nav-footer"><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="lang.switcher">Nyelvválasztó</p><div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/" aria-pressed="false">EN</button><button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/impresszum" aria-pressed="true">HU</button></div></div><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="currency.switcher">Pénznem választó</p><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div></div></div>
+        </div>
+      </div>
+      <main class="legal-page">
+        <section class="content-hero">
+          <div class="container">
+            <div class="content-hero-card">
+              <p class="eyebrow">Jogi dokumentum</p>
+              <h1>Impresszum</h1>
+              <p class="section-text">A pataki-dev.hu személyes portfólió és szolgáltatói weboldal üzemeltetői, tárhely- és domainregisztrátori adatai.</p>
+              <div class="article-meta"><span class="meta-pill">Hatályos: 2026-07-17</span><span class="meta-pill">Személyes portfólió</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container content-grid-two">
+            <article class="content-panel">
+              <h2>Üzemeltető</h2>
+              <dl class="legal-list">
+                <div><dt>Név</dt><dd>Pataki Attila Bence</dd></div>
+                <div><dt>E-mail</dt><dd><a class="project-link" href="mailto:patakiattila987@gmail.com">patakiattila987@gmail.com</a></dd></div>
+                <div><dt>Telefon</dt><dd><a class="project-link" href="tel:+36705968264">+36 70 596 8264</a></dd></div>
+                <div><dt>Weboldal</dt><dd>https://www.pataki-dev.hu</dd></div>
+              </dl>
+            </article>
+            <article class="content-panel">
+              <h2>Szolgáltatók</h2>
+              <dl class="legal-list">
+                <div><dt>Tárhely</dt><dd>Vercel Inc.</dd></div>
+                <div><dt>Domainregisztrátor</dt><dd>Rackhost Zrt.</dd></div>
+              </dl>
+              <p>Jelenleg nincs vállalkozásként megadott működés, ezért az impresszum nem tartalmaz adószámot, cégjegyzékszámot vagy kitalált vállalkozási adatot.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-alt">
+          <div class="container content-grid-two">
+            <article class="content-panel">
+              <h2>Kapcsolat</h2>
+              <p>Weboldal készítéssel, webalkalmazás fejlesztéssel, AI automatizációval vagy a weboldalon található tartalommal kapcsolatos kérdés esetén a kapcsolat oldalon vagy emailben tudsz elérni.</p>
+              <p><a class="project-link" href="/kapcsolat">Kapcsolat oldal megnyitása</a></p>
+            </article>
+            <article class="content-panel">
+              <h2>Kapcsolódó dokumentumok</h2>
+              <ul class="content-list">
+                <li><a class="project-link" href="/adatkezelesi-tajekoztato">Adatkezelési tájékoztató</a></li>
+                <li><a class="project-link" href="/szolgaltatasi-feltetelek">Szolgáltatási feltételek</a></li>
+                <li><a class="project-link" href="/cookie-tajekoztato">Cookie tájékoztató</a></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer-inner footer-grid">
+          <div class="footer-brand">
+            <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+            <p class="footer-note">Személyes portfólió és szolgáltatói weboldal.</p>
+          </div>
+          <nav class="footer-column" aria-label="Oldaltérkép">
+            <h2 class="footer-heading">OLDAL</h2>
+            <div class="footer-links"><a href="/">Kezdőlap</a><a href="/projektek">Projektek</a><a href="/blog">Blog</a><a href="/kapcsolat">Kapcsolat</a></div>
+          </nav>
+          <nav class="footer-column" aria-label="Közösségi linkek">
+            <h2 class="footer-heading">KÖZÖSSÉG</h2>
+            <div class="footer-links"><a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+          </nav>
+          <nav class="footer-column" aria-label="Jogi oldalak">
+            <h2 class="footer-heading">JOGI</h2>
+            <div class="footer-links"><a href="/adatkezelesi-tajekoztato">Adatkezelési tájékoztató</a><a href="/szolgaltatasi-feltetelek">Szolgáltatási feltételek</a><a href="/cookie-tajekoztato">Cookie tájékoztató</a><a href="/impresszum">Impresszum</a></div>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="assets/scripts/main.js"></script>
+  </body>
+</html>

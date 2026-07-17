@@ -615,6 +615,37 @@ select:focus-visible {
   font-weight: 600;
 }
 
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.3fr) repeat(3, minmax(140px, 1fr));
+  align-items: start;
+}
+
+.footer-brand,
+.footer-column {
+  display: grid;
+  gap: 10px;
+}
+
+.footer-note {
+  max-width: 28ch;
+}
+
+.footer-heading {
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.footer-column .footer-links {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
 .form-status {
   min-height: 24px;
   font-weight: 700;
@@ -760,8 +791,22 @@ select:focus-visible {
     text-align: center;
   }
 
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
   .footer-links {
     justify-content: center;
+  }
+
+  .footer-note {
+    margin-inline: auto;
+  }
+
+  .footer-column .footer-links {
+    align-items: center;
   }
 }
 

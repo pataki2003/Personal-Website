@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          root.setAttribute("data-theme", theme);
+          root.style.colorScheme = theme;
+        } catch {
+          root.setAttribute("data-theme", "dark");
+          root.style.colorScheme = "dark";
+        }
+      })();
+    </script>
+    <title>Cookie tájékoztató | Pataki Attila Bence</title>
+    <meta name="description" content="Cookie tájékoztató a pataki-dev.hu weboldal localStorage beállításairól, Vercel méréseiről, Google Fonts és Calendly használatáról." />
+    <meta name="author" content="Pataki Attila Bence" />
+    <link rel="canonical" href="https://www.pataki-dev.hu/cookie-tajekoztato" />
+    <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/cookie-tajekoztato" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/cookie-tajekoztato" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pataki Dev" />
+    <meta property="og:title" content="Cookie tájékoztató | Pataki Attila Bence" />
+    <meta property="og:description" content="Cookie tájékoztató a pataki-dev.hu weboldal technikai tárolásáról és külső szolgáltatásairól." />
+    <meta property="og:url" content="https://www.pataki-dev.hu/cookie-tajekoztato" />
+    <meta property="og:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Cookie tájékoztató | Pataki Dev" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cookie tájékoztató | Pataki Attila Bence" />
+    <meta name="twitter:description" content="Cookie tájékoztató a pataki-dev.hu weboldal technikai tárolásáról és külső szolgáltatásairól." />
+    <meta name="twitter:image" content="https://www.pataki-dev.hu/Images/og-pataki-dev.jpg" />
+    <meta name="twitter:image:alt" content="Cookie tájékoztató | Pataki Dev" />
+    <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+    <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+  </head>
+  <body data-theme="light">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a href="/" class="logo" aria-label="PAB kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a>
+          <nav class="nav" id="siteNav"><div class="nav-links"><a href="/#about" data-i18n="nav.about">Rólam</a><a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/projektek" data-i18n="nav.projects">Projektek</a><a href="/blog" data-i18n="nav.blog">Blog</a><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a></div></nav>
+          <div class="header-actions">
+            <button class="nav-toggle" id="navToggle" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="mobileNavOverlay"><span></span><span></span><span></span></button>
+            <div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/" aria-pressed="false">EN</button><button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/cookie-tajekoztato" aria-pressed="true">HU</button></div>
+            <div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Téma váltása"><span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path></svg></span><span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg></span></button>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
+        <div class="mobile-nav-shell">
+          <div class="mobile-nav-header"><a href="/" class="logo" aria-label="PAB kezdőlap" data-i18n="site.logoLabel" data-i18n-attr="aria-label" data-i18n-attr-only="true">PAB</a><button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Menü bezárása"><span></span><span></span></button></div>
+          <nav class="mobile-nav-links" aria-label="Mobil navigáció"><a href="/#about" data-i18n="nav.about">Rólam</a><a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/projektek" data-i18n="nav.projects">Projektek</a><a href="/blog" data-i18n="nav.blog">Blog</a><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a></nav>
+          <div class="mobile-nav-footer"><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="lang.switcher">Nyelvválasztó</p><div class="language-switcher" aria-label="Nyelvválasztó" data-i18n="lang.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/" aria-pressed="false">EN</button><button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/cookie-tajekoztato" aria-pressed="true">HU</button></div></div><div class="mobile-nav-group"><p class="mobile-nav-label" data-i18n="currency.switcher">Pénznem választó</p><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true"><button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button><button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button></div></div></div>
+        </div>
+      </div>
+      <main class="legal-page">
+        <section class="content-hero">
+          <div class="container">
+            <div class="content-hero-card">
+              <p class="eyebrow">Jogi dokumentum</p>
+              <h1>Cookie tájékoztató</h1>
+              <p class="section-text">Ez az oldal bemutatja, milyen böngészőben tárolt beállításokat és külső technológiákat használ a pataki-dev.hu weboldal. A weboldal nem használ Google Analytics-et, Meta Pixelt vagy Google Ads-et.</p>
+              <div class="article-meta"><span class="meta-pill">Hatályos: 2026-07-17</span><span class="meta-pill">Nincs Google Analytics</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container content-grid-two">
+            <article class="content-panel">
+              <h2>LocalStorage beállítások</h2>
+              <p>A weboldal localStorage segítségével jegyezhet meg kényelmi beállításokat. Ezek nem klasszikus sütik, hanem a böngésződben tárolt beállítások.</p>
+              <ul class="content-list">
+                <li>theme preference - világos vagy sötét mód</li>
+                <li>language preference - magyar vagy angol nyelvi beállítás</li>
+                <li>currency preference - EUR vagy HUF pénznemválasztás</li>
+              </ul>
+            </article>
+            <article class="content-panel">
+              <h2>Kezelés</h2>
+              <p>A localStorage adatok a böngésződben törölhetők a webhelyadatok vagy böngészési adatok törlésével. A törlés után az oldal az alapértelmezett beállításokat használja.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-alt">
+          <div class="container">
+            <div class="section-heading">
+              <p class="section-label">Technológiák</p>
+              <h2>Külső szolgáltatások</h2>
+            </div>
+            <div class="resource-grid">
+              <article class="resource-card"><h3>Vercel Analytics</h3><p>Anonim vagy aggregált látogatottsági mérést biztosíthat a weboldal működésének és használatának megértéséhez.</p></article>
+              <article class="resource-card"><h3>Vercel Speed Insights</h3><p>Teljesítménymérést biztosíthat, például oldalbetöltési és Core Web Vitals jellegű adatokkal.</p></article>
+              <article class="resource-card"><h3>Google Fonts</h3><p>A weboldal külső Google Fonts forrásból tölti be a Manrope és Space Grotesk betűtípusokat.</p></article>
+              <article class="resource-card"><h3>Calendly</h3><p>Az időpontfoglalási link külső Calendly oldalra vezet. A Calendly saját sütiket és adatkezelési megoldásokat használhat.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container content-grid-two">
+            <article class="content-panel">
+              <h2>Nem használt marketing technológiák</h2>
+              <ul class="content-list">
+                <li>Google Analytics nincs beépítve.</li>
+                <li>Meta Pixel nincs beépítve.</li>
+                <li>Google Ads konverziómérés vagy remarketing nincs beépítve.</li>
+              </ul>
+            </article>
+            <article class="content-panel">
+              <h2>Kapcsolódó dokumentum</h2>
+              <p>A személyes adatok kezeléséről részletesen az adatkezelési tájékoztatóban olvashatsz.</p>
+              <p><a class="project-link" href="/adatkezelesi-tajekoztato">Adatkezelési tájékoztató</a></p>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer-inner footer-grid">
+          <div class="footer-brand">
+            <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+            <p class="footer-note">Személyes portfólió és szolgáltatói weboldal.</p>
+          </div>
+          <nav class="footer-column" aria-label="Oldaltérkép">
+            <h2 class="footer-heading">OLDAL</h2>
+            <div class="footer-links"><a href="/">Kezdőlap</a><a href="/projektek">Projektek</a><a href="/blog">Blog</a><a href="/kapcsolat">Kapcsolat</a></div>
+          </nav>
+          <nav class="footer-column" aria-label="Közösségi linkek">
+            <h2 class="footer-heading">KÖZÖSSÉG</h2>
+            <div class="footer-links"><a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+          </nav>
+          <nav class="footer-column" aria-label="Jogi oldalak">
+            <h2 class="footer-heading">JOGI</h2>
+            <div class="footer-links"><a href="/adatkezelesi-tajekoztato">Adatkezelési tájékoztató</a><a href="/szolgaltatasi-feltetelek">Szolgáltatási feltételek</a><a href="/cookie-tajekoztato">Cookie tájékoztató</a><a href="/impresszum">Impresszum</a></div>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="assets/scripts/main.js"></script>
+  </body>
+</html>

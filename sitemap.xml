@@ -226,4 +226,28 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/projects/rush-market" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/projects/rush-market" />
   </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/adatkezelesi-tajekoztato</loc>
+    <lastmod>2026-07-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/adatkezelesi-tajekoztato" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/adatkezelesi-tajekoztato" />
+  </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/szolgaltatasi-feltetelek</loc>
+    <lastmod>2026-07-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/szolgaltatasi-feltetelek" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/szolgaltatasi-feltetelek" />
+  </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/cookie-tajekoztato</loc>
+    <lastmod>2026-07-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/cookie-tajekoztato" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/cookie-tajekoztato" />
+  </url>
+  <url>
+    <loc>https://www.pataki-dev.hu/impresszum</loc>
+    <lastmod>2026-07-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/impresszum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pataki-dev.hu/impresszum" />
+  </url>
 </urlset>

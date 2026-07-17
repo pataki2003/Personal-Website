@@ -66,6 +66,7 @@ export function initContactForm({ t, getCurrency = () => "EUR" }) {
     return {
       name: formData.get("name")?.toString().trim() || "",
       email: formData.get("email")?.toString().trim() || "",
+      company: formData.get("company")?.toString().trim() || "",
       projectType: formData.get("projectType")?.toString().trim() || "",
       budget: formData.get("budget")?.toString().trim() || "",
       message: formData.get("message")?.toString().trim() || ""

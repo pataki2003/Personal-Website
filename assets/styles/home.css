@@ -460,7 +460,8 @@ main {
 .resource-card p,
 .article-card p,
 .article-body p,
-.article-body li {
+.article-body li,
+.legal-list dd {
   color: var(--muted);
 }
 
@@ -518,6 +519,30 @@ main {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 22px;
+}
+
+.legal-page .content-hero-card h1 {
+  max-width: 16ch;
+}
+
+.legal-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.legal-list div {
+  display: grid;
+  gap: 4px;
+}
+
+.legal-list dt {
+  font-weight: 800;
+  color: var(--text);
+}
+
+.legal-list dd {
+  margin: 0;
 }
 
 @media (max-width: 1100px) {

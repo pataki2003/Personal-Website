@@ -147,6 +147,8 @@ export const hu = {
   "contactPage.form.namePlaceholder": "Neved",
   "contactPage.form.emailLabel": "Email",
   "contactPage.form.emailPlaceholder": "email@pelda.hu",
+  "contactPage.form.companyLabel": "Cégnév (opcionális)",
+  "contactPage.form.companyPlaceholder": "Céged neve",
   "contactPage.form.projectTypeLabel": "Projekt típusa",
   "contactPage.form.projectTypePlaceholder": "Válassz egyet",
   "contactPage.form.projectType.website": "Weboldal",

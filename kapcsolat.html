@@ -190,6 +190,10 @@
                     <input id="email" name="email" type="email" placeholder="email@pelda.hu" data-i18n-placeholder="contactPage.form.emailPlaceholder" required aria-invalid="false" />
                   </div>
                   <div class="form-row">
+                    <label for="company" data-i18n="contactPage.form.companyLabel">Cégnév (opcionális)</label>
+                    <input id="company" name="company" type="text" placeholder="Céged neve" data-i18n-placeholder="contactPage.form.companyPlaceholder" aria-invalid="false" />
+                  </div>
+                  <div class="form-row">
                     <label for="projectType" data-i18n="contactPage.form.projectTypeLabel">Projekt típusa</label>
                     <select id="projectType" name="projectType" required aria-invalid="false">
                       <option value="" data-i18n="contactPage.form.projectTypePlaceholder">Válassz egyet</option>
@@ -241,15 +245,24 @@
           </div>
         </section>
       </main>
-
       <footer class="footer">
-        <div class="container footer-inner">
-          <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
-          <div class="footer-links">
-            <a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer" data-i18n="footer.facebook">Facebook</a>
-            <a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer" data-i18n="footer.github">GitHub</a>
-            <a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer" data-i18n="footer.instagram">Instagram</a>
+        <div class="container footer-inner footer-grid">
+          <div class="footer-brand">
+            <p data-i18n="footer.rights">© 2026 Pataki Attila Bence</p>
+            <p class="footer-note">Személyes portfólió és szolgáltatói weboldal.</p>
           </div>
+          <nav class="footer-column" aria-label="Oldaltérkép">
+            <h2 class="footer-heading">OLDAL</h2>
+            <div class="footer-links"><a href="/">Kezdőlap</a><a href="/projektek">Projektek</a><a href="/blog">Blog</a><a href="/kapcsolat">Kapcsolat</a></div>
+          </nav>
+          <nav class="footer-column" aria-label="Közösségi linkek">
+            <h2 class="footer-heading">KÖZÖSSÉG</h2>
+            <div class="footer-links"><a href="https://www.facebook.com/benceattila.pataki" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://github.com/pataki2003" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.instagram.com/pataky.jpg" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+          </nav>
+          <nav class="footer-column" aria-label="Jogi oldalak">
+            <h2 class="footer-heading">JOGI</h2>
+            <div class="footer-links"><a href="/adatkezelesi-tajekoztato">Adatkezelési tájékoztató</a><a href="/szolgaltatasi-feltetelek">Szolgáltatási feltételek</a><a href="/cookie-tajekoztato">Cookie tájékoztató</a><a href="/impresszum">Impresszum</a></div>
+          </nav>
         </div>
       </footer>
     </div>

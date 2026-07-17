@@ -147,6 +147,8 @@ export const en = {
   "contactPage.form.namePlaceholder": "Your name",
   "contactPage.form.emailLabel": "Email",
   "contactPage.form.emailPlaceholder": "you@example.com",
+  "contactPage.form.companyLabel": "Company name (optional)",
+  "contactPage.form.companyPlaceholder": "Your company",
   "contactPage.form.projectTypeLabel": "Project type",
   "contactPage.form.projectTypePlaceholder": "Select one",
   "contactPage.form.projectType.website": "Website",
