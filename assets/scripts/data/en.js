@@ -9,12 +9,12 @@ export const en = {
   "currency.option.eur": "EUR - Euro",
   "currency.option.huf": "HUF - Hungarian forint",
   "site.logoLabel": "PAB homepage",
-  "site.meta.title": "Full-Stack Web Developer & AI Automation | Pataki Attila Bence",
+  "site.meta.title": "Websites and web applications | Pataki Attila Bence",
   "site.meta.description":
-    "Work with Pataki Attila Bence on fast websites, web applications, AI automation, API integrations, and practical digital systems for small businesses.",
-  "contact.meta.title": "Contact for Web Development & Automation | Pataki Attila Bence",
+    "Studoid, MEDIABOX, and three online magazines sharing one editorial system. Websites, internal tools, and transparent development pricing.",
+  "contact.meta.title": "Contact and project inquiries | Pataki Attila Bence",
   "contact.meta.description":
-    "Start a web development, automation, or API integration project with Pataki Attila Bence. Send a brief or book a short discovery call.",
+    "Request a proposal for a website, online magazine, automation, or internal CRM. The first conversation is free.",
   "project.coachtimize.meta.title": "Coachtimize Coaching Platform | Full-Stack Case Study",
   "project.coachtimize.meta.description":
     "Full-stack case study for Coachtimize, a coaching platform concept focused on client management, workout workflows, and structured backend logic.",
@@ -24,6 +24,8 @@ export const en = {
   "project.portfolio.meta.title": "Portfolio Website | Static Frontend Case Study",
   "project.portfolio.meta.description":
     "Static frontend case study for a fast bilingual portfolio website with reusable structure, project pages, and lead-focused contact paths.",
+  "portfolio.nav.work": "Work",
+  "portfolio.nav.services": "Services & pricing",
   "nav.about": "About",
   "nav.services": "Services",
   "nav.skills": "Skills",
@@ -134,9 +136,9 @@ export const en = {
   "form.validation.required": "Please fill in all required fields.",
   "form.validation.email": "Please enter a valid email address.",
   "contactPage.eyebrow": "Work with me",
-  "contactPage.title": "Let's start a useful digital system.",
+  "contactPage.title": "Let’s talk about your project.",
   "contactPage.lead":
-    "If you need a custom website, web application, AI automation, or API integration, send me the short context of your project.",
+    "Website, magazine, automation, or internal system? Tell me what you need and we can work out the next step.",
   "contactPage.info.emailLabel": "Email",
   "contactPage.info.locationLabel": "Location",
   "contactPage.info.locationValue": "Hungary",

@@ -9,12 +9,12 @@ export const hu = {
   "currency.option.eur": "EUR - euró",
   "currency.option.huf": "HUF - magyar forint",
   "site.logoLabel": "PAB kezdőlap",
-  "site.meta.title": "Full-stack webfejlesztő és AI automatizáció | Pataki Attila Bence",
+  "site.meta.title": "Weboldalak és webalkalmazások | Pataki Attila Bence",
   "site.meta.description":
-    "Dolgozz Pataki Attila Bencével gyors weboldalakon, webalkalmazásokon, AI automatizációkon, API integrációkon és gyakorlatias digitális rendszereken.",
+    "Studoid, MEDIABOX és három online magazin közös szerkesztőséggel. Weboldalak, belső rendszerek és átlátható fejlesztési árak.",
   "contact.meta.title": "Kapcsolat és projektindítás | Pataki Attila Bence",
   "contact.meta.description":
-    "Indíts webfejlesztési, automatizációs vagy API integrációs projektet Pataki Attila Bencével. Küldj projektbriefet vagy foglalj rövid egyeztetést.",
+    "Kérj ajánlatot weboldalra, online magazinra, automatizációra vagy belső CRM-re. Az első beszélgetés díjmentes.",
   "project.coachtimize.meta.title": "Coachtimize coaching platform | Full-stack esettanulmány",
   "project.coachtimize.meta.description":
     "Full-stack esettanulmány a Coachtimize coaching platformról ügyfélkezeléssel, edzésterv workflow-val és strukturált backend logikával.",
@@ -24,6 +24,8 @@ export const hu = {
   "project.portfolio.meta.title": "Portfólió weboldal | Statikus frontend esettanulmány",
   "project.portfolio.meta.description":
     "Statikus frontend esettanulmány egy gyors, kétnyelvű portfólió weboldalról, projektoldalakkal és lead-fókuszú kapcsolatfelvétellel.",
+  "portfolio.nav.work": "Munkák",
+  "portfolio.nav.services": "Szolgáltatások és árak",
   "nav.about": "Rólam",
   "nav.services": "Szolgáltatások",
   "nav.skills": "Készségek",
@@ -134,9 +136,9 @@ export const hu = {
   "form.validation.required": "Kérlek tölts ki minden kötelező mezőt.",
   "form.validation.email": "Kérlek adj meg egy érvényes email címet.",
   "contactPage.eyebrow": "Dolgozz velem",
-  "contactPage.title": "Indítsunk el egy hasznos digitális rendszert.",
+  "contactPage.title": "Beszéljünk a projektedről.",
   "contactPage.lead":
-    "Ha egyedi weboldalra, webalkalmazásra, AI automatizációra vagy API-integrációra van szükséged, küldd el a projekt rövid kontextusát.",
+    "Weboldal, magazin, automatizáció vagy belső rendszer? Írd meg röviden, mire van szükséged, és egyeztetjük a következő lépést.",
   "contactPage.info.emailLabel": "Email",
   "contactPage.info.locationLabel": "Helyszín",
   "contactPage.info.locationValue": "Magyarország",

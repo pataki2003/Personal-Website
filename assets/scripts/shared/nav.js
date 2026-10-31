@@ -57,6 +57,9 @@ export function initMobileNav({ getToggleLabel } = {}) {
     mobileNavOverlay.setAttribute("aria-hidden", "false");
     mobileNavOverlay.inert = false;
     document.body.classList.add("is-nav-open");
+    window.setTimeout(() => {
+      if (mobileNavOverlay.classList.contains("is-open")) mobileNavClose?.focus();
+    }, 230);
   }
 
   function closeNav() {
@@ -123,6 +126,23 @@ export function initMobileNav({ getToggleLabel } = {}) {
   document.addEventListener("keydown", (event) => {
     const overlayOpen = mobileNavOverlay?.classList.contains("is-open");
     const desktopNavOpen = siteNav?.classList.contains("is-open");
+
+    if (event.key === "Tab" && overlayOpen && mobileNavOverlay) {
+      const focusable = Array.from(
+        mobileNavOverlay.querySelectorAll('a[href], button:not([disabled])')
+      ).filter((element) => element instanceof HTMLElement && element.offsetParent !== null);
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (first && last) {
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    }
 
     if (event.key === "Escape" && (overlayOpen || desktopNavOpen)) {
       closeNav();

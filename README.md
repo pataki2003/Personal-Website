@@ -66,8 +66,8 @@ Legacy contact redirects:
 - Bilingual Hungarian and English static pages.
 - Dark and light theme toggle with saved preference.
 - Responsive navigation and page layouts.
-- Service pages with lead-focused copy and visible FAQ sections.
-- Project detail pages and project index pages.
+- An editorial homepage with selected work and public pricing in Hungarian and English.
+- Project indexes with six direct reference anchors, plus the existing MEDIABOX case study and legacy project detail pages.
 - Blog index pages and three starter articles in both languages.
 - Contact form validation and submission to `/api/contact`.
 - Booking CTA powered by a shared external scheduling URL.
@@ -152,21 +152,13 @@ Personal-Website/
 
 ## Local Development
 
-No frontend build step is required. Run a simple static server so ES modules load correctly during local development.
-
-Examples:
+No frontend build step is required. Use the local preview server to load ES modules and resolve production-style clean URLs:
 
 ```powershell
-python -m http.server 5500
+python dev_server.py
 ```
 
-```powershell
-npx serve .
-```
-
-Then open `http://localhost:5500` or the port your server prints.
-
-For full production routing behavior, deploy to Vercel or preview with a tool that respects `vercel.json`.
+Then open `http://127.0.0.1:5500`. Set the `PORT` environment variable to use another port. The local preview serves the frontend and clean page routes; it does not run `/api/contact`.
 
 ## Contact Form Setup
 

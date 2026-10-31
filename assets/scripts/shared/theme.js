@@ -9,6 +9,7 @@ export function initTheme() {
   function getPreferredTheme() {
     const savedTheme = localStorage.getItem(THEME_KEY);
     if (savedTheme === "light" || savedTheme === "dark") return savedTheme;
+    if (body.classList.contains("portfolio-page")) return "light";
     return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
   }
 
