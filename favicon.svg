@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PB">
-  <rect width="64" height="64" rx="15" fill="#2563eb"/>
-  <text x="32" y="39" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="0">PB</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="P">
+  <rect width="64" height="64" rx="12" fill="#20211F" />
+  <path
+    fill="#F7F6F2"
+    fill-rule="evenodd"
+    d="M20 15h14.5C42.4 15 47 19.5 47 26.5S42.4 38 34.5 38H28v11h-8V15Zm8 7v9h6.2c3.2 0 4.8-1.6 4.8-4.5S37.4 22 34.2 22H28Z"
+  />
 </svg>
