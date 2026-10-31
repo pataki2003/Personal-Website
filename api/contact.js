@@ -44,7 +44,6 @@ function normalizePayload(body) {
         email: normalizeField(body?.email),
         company: normalizeField(body?.company),
         projectType: normalizeField(body?.projectType),
-        budget: normalizeField(body?.budget),
         message: normalizeField(body?.message),
     };
 }
@@ -78,11 +77,10 @@ function getEmailConfig() {
 }
 
 function buildEmailContent(payload) {
-    const budgetLabel = payload.budget || "Not specified";
-    const companyLabel = payload.company || "Not specified";
+    const companyLabel = payload.company || "—";
 
     return {
-        subject: `New lead: ${payload.projectType} (${budgetLabel})`,
+        subject: `New lead: ${payload.projectType}`,
         html: `
             <div style="font-family: Inter, Arial, sans-serif; background:#f5f7fb; padding:24px;">
                 <div style="max-width:600px; margin:0 auto; background:#ffffff; border-radius:16px; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,0.08);">
@@ -99,7 +97,6 @@ function buildEmailContent(payload) {
                         <p><strong>Email:</strong> ${escapeHtml(payload.email)}</p>
                         <p><strong>Company:</strong> ${escapeHtml(companyLabel)}</p>
                         <p><strong>Project type:</strong> ${escapeHtml(payload.projectType)}</p>
-                        <p><strong>Budget:</strong> ${escapeHtml(budgetLabel)}</p>
                     </div>
 
                     <div style="margin:20px 0;">

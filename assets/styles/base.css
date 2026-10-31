@@ -745,9 +745,7 @@ select:focus-visible {
   }
 
   .header-actions .language-switcher,
-  .header-actions .currency-switcher,
   .topbar-actions > .language-switcher,
-  .topbar-actions > .currency-switcher,
   .topbar-actions > .back-link {
     display: none;
   }
@@ -767,8 +765,7 @@ select:focus-visible {
     display: block;
   }
 
-  .mobile-nav-footer .language-switcher,
-  .mobile-nav-footer .currency-switcher {
+  .mobile-nav-footer .language-switcher {
     display: flex;
     width: 100%;
     padding: 6px;

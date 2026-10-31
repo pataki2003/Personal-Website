@@ -90,7 +90,7 @@
           <nav class="nav" id="siteNav">
             <div class="nav-links">
               <a href="/en/#about" data-i18n="nav.about">About</a>
-              <a href="/en/#services" data-i18n="nav.services">Services</a>
+              <a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/pricing" data-i18n="nav.pricing">Pricing</a>
               <a href="/en/projects" data-i18n="nav.projects">Projects</a>
               <a href="/en/blog" data-i18n="nav.blog">Blog</a>
               <a href="/en/contact" data-i18n="nav.contact">Contact</a>
@@ -123,7 +123,7 @@
           </div>
           <nav class="mobile-nav-links" aria-label="Mobile navigation">
             <a href="/en/#about" data-i18n="nav.about">About</a>
-            <a href="/en/#services" data-i18n="nav.services">Services</a>
+            <a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/pricing" data-i18n="nav.pricing">Pricing</a>
             <a href="/en/projects" data-i18n="nav.projects">Projects</a>
             <a href="/en/blog" data-i18n="nav.blog">Blog</a>
             <a href="/en/contact" data-i18n="nav.contact">Contact</a>
@@ -193,21 +193,9 @@
                     </select>
                   </div>
                   <div class="form-row">
-                    <label for="budget" data-i18n="contactPage.form.budgetLabel">Budget range</label><div class="budget-currency"><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Currency selector" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
-              <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
-              <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
-            </div></div>
-                    <select id="budget" name="budget">
-                      <option value="" data-i18n="contactPage.form.budgetPlaceholder">Select one</option>
-                      <option value="Under EUR 500" data-budget-tier="1">500 EUR alatt</option>
-                      <option value="EUR 500 - EUR 1,000" data-budget-tier="2">500 - 1 000 EUR</option>
-                      <option value="EUR 1,000 - EUR 3,000" data-budget-tier="3">1 000 - 3 000 EUR</option>
-                      <option value="EUR 3,000+" data-budget-tier="4">3 000+ EUR</option>
-                    </select>
-                  </div>
-                  <div class="form-row">
                     <label for="message" data-i18n="contactPage.form.messageLabel">Message</label>
-                    <textarea id="message" name="message" rows="7" placeholder="Tell me a bit about your project..." data-i18n-placeholder="contactPage.form.messagePlaceholder" required aria-invalid="false"></textarea>
+                    <p class="form-hint" id="messageHelp">What would you like to solve? If you already have a website or system, you can send its link too.</p>
+                    <textarea id="message" aria-describedby="messageHelp" name="message" rows="7" placeholder="Briefly describe the task..." data-i18n-placeholder="contactPage.form.messagePlaceholder" required aria-invalid="false"></textarea>
                   </div>
                   <div class="form-actions">
                     <button type="submit" class="btn btn-primary" id="contactSubmitBtn" data-i18n="form.send">Send message</button>
@@ -244,7 +232,7 @@
           </div>
           <nav class="footer-column" aria-label="Footer site links">
             <h2 class="footer-heading">SITE</h2>
-            <div class="footer-links"><a href="/en/">Home</a><a href="/en/projects">Projects</a><a href="/en/blog">Blog</a><a href="/en/contact">Contact</a></div>
+            <div class="footer-links"><a href="/en/">Home</a><a href="/en/pricing">Pricing</a><a href="/en/projects">Projects</a><a href="/en/blog">Blog</a><a href="/en/contact">Contact</a></div>
           </nav>
           <nav class="footer-column" aria-label="Social links">
             <h2 class="footer-heading">SOCIAL</h2>

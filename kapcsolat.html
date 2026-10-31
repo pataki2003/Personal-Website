@@ -90,7 +90,7 @@
           <nav class="nav" id="siteNav">
             <div class="nav-links">
               <a href="/#about" data-i18n="nav.about">Rólam</a>
-              <a href="/#services" data-i18n="nav.services">Szolgáltatások</a>
+              <a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/arazas" data-i18n="nav.pricing">Árazás</a>
               <a href="/projektek" data-i18n="nav.projects">Projektek</a>
               <a href="/blog" data-i18n="nav.blog">Blog</a>
               <a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
@@ -123,7 +123,7 @@
           </div>
           <nav class="mobile-nav-links" aria-label="Mobile navigation">
             <a href="/#about" data-i18n="nav.about">Rólam</a>
-            <a href="/#services" data-i18n="nav.services">Szolgáltatások</a>
+            <a href="/#services" data-i18n="nav.services">Szolgáltatások</a><a href="/arazas" data-i18n="nav.pricing">Árazás</a>
             <a href="/projektek" data-i18n="nav.projects">Projektek</a>
             <a href="/blog" data-i18n="nav.blog">Blog</a>
             <a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
@@ -193,21 +193,9 @@
                     </select>
                   </div>
                   <div class="form-row">
-                    <label for="budget" data-i18n="contactPage.form.budgetLabel">Költségkeret</label><div class="budget-currency"><div class="language-switcher currency-switcher" data-currency-switcher aria-label="Pénznem választó" data-i18n="currency.switcher" data-i18n-attr="aria-label" data-i18n-attr-only="true">
-              <button type="button" class="lang-btn currency-btn" data-currency-btn="EUR" aria-pressed="false">EUR</button>
-              <button type="button" class="lang-btn currency-btn" data-currency-btn="HUF" aria-pressed="false">HUF</button>
-            </div></div>
-                    <select id="budget" name="budget">
-                      <option value="" data-i18n="contactPage.form.budgetPlaceholder">Válassz egyet</option>
-                      <option value="Under EUR 500" data-budget-tier="1">500 EUR alatt</option>
-                      <option value="EUR 500 - EUR 1,000" data-budget-tier="2">500 - 1 000 EUR</option>
-                      <option value="EUR 1,000 - EUR 3,000" data-budget-tier="3">1 000 - 3 000 EUR</option>
-                      <option value="EUR 3,000+" data-budget-tier="4">3 000+ EUR</option>
-                    </select>
-                  </div>
-                  <div class="form-row">
                     <label for="message" data-i18n="contactPage.form.messageLabel">Üzenet</label>
-                    <textarea id="message" name="message" rows="7" placeholder="Írj pár mondatot a projektedről..." data-i18n-placeholder="contactPage.form.messagePlaceholder" required aria-invalid="false"></textarea>
+                    <p class="form-hint" id="messageHelp">Mit szeretnél megoldani? Ha van már weboldalad vagy rendszered, a linkjét is elküldheted.</p>
+                    <textarea id="message" aria-describedby="messageHelp" name="message" rows="7" placeholder="Írd le röviden a feladatot..." data-i18n-placeholder="contactPage.form.messagePlaceholder" required aria-invalid="false"></textarea>
                   </div>
                   <div class="form-actions">
                     <button type="submit" class="btn btn-primary" id="contactSubmitBtn" data-i18n="form.send">Üzenet küldése</button>
@@ -244,7 +232,7 @@
           </div>
           <nav class="footer-column" aria-label="Oldaltérkép">
             <h2 class="footer-heading">OLDAL</h2>
-            <div class="footer-links"><a href="/">Kezdőlap</a><a href="/projektek">Projektek</a><a href="/blog">Blog</a><a href="/kapcsolat">Kapcsolat</a></div>
+            <div class="footer-links"><a href="/">Kezdőlap</a><a href="/arazas">Árazás</a><a href="/projektek">Projektek</a><a href="/blog">Blog</a><a href="/kapcsolat">Kapcsolat</a></div>
           </nav>
           <nav class="footer-column" aria-label="Közösségi linkek">
             <h2 class="footer-heading">KÖZÖSSÉG</h2>

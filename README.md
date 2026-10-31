@@ -23,6 +23,7 @@ Hungarian:
 - `/weboldal-keszites`
 - `/webalkalmazas-fejlesztes`
 - `/ai-automatizacio`
+- `/arazas`
 - `/projektek`
 - `/blog`
 - `/blog/weboldal-keszites-arak`
@@ -47,6 +48,7 @@ English:
 - `/en/website-development`
 - `/en/web-application-development`
 - `/en/ai-automation`
+- `/en/pricing`
 - `/en/projects`
 - `/en/blog`
 - `/en/blog/website-development-costs`
@@ -77,7 +79,8 @@ Legacy contact redirects:
 - Dark and light theme toggle with saved preference.
 - Responsive navigation and page layouts.
 - An editorial homepage with short previews for services and selected work in Hungarian and English.
-- Detailed service pricing on the three service pages in each language.
+- Short service-specific pricing summaries on the three service pages in each language, linking to the detailed guide.
+- A bilingual pricing guide with an anonymous, local project estimate calculator. Published price bands have one source in `assets/scripts/data/pricing-data.js`.
 - Project indexes linking to six bilingual case studies, including the combined MEDIABOX website and CRM page, while legacy project URLs remain available.
 - Blog index pages and three starter articles in both languages.
 - Contact form validation and submission to `/api/contact`.
@@ -102,6 +105,7 @@ Personal-Website/
 |-- weboldal-keszites.html
 |-- webalkalmazas-fejlesztes.html
 |-- ai-automatizacio.html
+|-- arazas.html
 |-- projektek.html
 |-- blog.html
 |-- 404.html
@@ -117,14 +121,15 @@ Personal-Website/
 |   |-- scripts/
 |   |   |-- main.js
 |   |   |-- project-page.js
+|   |   |-- pricing-calculator.js
 |   |   |-- data/
 |   |   |   |-- en.js
 |   |   |   |-- hu.js
+|   |   |   |-- pricing-data.js
 |   |   |   `-- translations.js
 |   |   `-- shared/
 |   |       |-- booking.js
 |   |       |-- contact-form.js
-|   |       |-- currency.js
 |   |       |-- i18n.js
 |   |       |-- nav.js
 |   |       `-- theme.js
@@ -144,6 +149,7 @@ Personal-Website/
 |   |-- website-development.html
 |   |-- web-application-development.html
 |   |-- ai-automation.html
+|   |-- pricing.html
 |   |-- projects.html
 |   |-- blog.html
 |   |-- blog/
@@ -159,7 +165,7 @@ Personal-Website/
 - `assets/scripts/shared/theme.js` manages theme state.
 - `assets/scripts/shared/i18n.js` manages language state for shared translated UI.
 - `assets/scripts/shared/nav.js` controls the mobile navigation menu.
-- `assets/scripts/shared/currency.js` manages budget/currency UI where used.
+- `assets/scripts/pricing-calculator.js` renders estimates from shared HUF price bands without passing selections to the contact form.
 - `assets/scripts/shared/booking.js` injects the live booking URL into `[data-booking-link]` elements.
 - `assets/scripts/shared/contact-form.js` validates and submits the contact form.
 
@@ -179,9 +185,15 @@ The contact form sends this payload to `/api/contact`:
 
 - `name`
 - `email`
+- `company` (optional)
 - `projectType`
-- `budget`
 - `message`
+
+Run the real API handler against a mocked Resend response, without sending mail:
+
+```powershell
+node --test tests/contact-api.test.mjs
+```
 
 `api/contact.js` expects these environment variables:
 

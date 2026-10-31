@@ -626,6 +626,3 @@ main {
     padding: 28px 0 44px;
   }
 }
-
-/* Currency belongs to the budget field on contact pages. */
-.budget-currency{margin:4px 0 10px}.budget-currency .language-switcher{width:max-content;max-width:100%}
