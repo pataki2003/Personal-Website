@@ -33,6 +33,11 @@ Hungarian:
 - `/projects/ai-call-handling`
 - `/projects/portfolio-website`
 - `/projects/mediabox`
+- `/projects/studoid`
+- `/projects/golden-hour`
+- `/projects/gastro-house`
+- `/projects/palyaszog`
+- `/projects/szerkesztoseg-app`
 - `/projects/nadasdi-zoltan`
 - `/projects/rush-market`
 
@@ -52,6 +57,11 @@ English:
 - `/en/projects/ai-call-handling`
 - `/en/projects/portfolio-website`
 - `/en/projects/mediabox`
+- `/en/projects/studoid`
+- `/en/projects/golden-hour`
+- `/en/projects/gastro-house`
+- `/en/projects/palyaszog`
+- `/en/projects/szerkesztoseg-app`
 - `/en/projects/nadasdi-zoltan`
 - `/en/projects/rush-market`
 
@@ -66,8 +76,9 @@ Legacy contact redirects:
 - Bilingual Hungarian and English static pages.
 - Dark and light theme toggle with saved preference.
 - Responsive navigation and page layouts.
-- An editorial homepage with selected work and public pricing in Hungarian and English.
-- Project indexes with six direct reference anchors, plus the existing MEDIABOX case study and legacy project detail pages.
+- An editorial homepage with short previews for services and selected work in Hungarian and English.
+- Detailed service pricing on the three service pages in each language.
+- Project indexes linking to six bilingual case studies, including the combined MEDIABOX website and CRM page, while legacy project URLs remain available.
 - Blog index pages and three starter articles in both languages.
 - Contact form validation and submission to `/api/contact`.
 - Booking CTA powered by a shared external scheduling URL.
@@ -119,6 +130,8 @@ Personal-Website/
 |   |       `-- theme.js
 |   `-- styles/
 |       |-- base.css
+|       |-- portfolio.css
+|       |-- editorial-site.css
 |       |-- home.css
 |       `-- project-detail.css
 |-- blog/

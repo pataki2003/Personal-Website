@@ -10,24 +10,29 @@
           t === "dark" ? "dark" : "light";
       } catch {}
     </script>
-    <title>Weboldalak és webalkalmazások | Pataki Attila Bence</title>
+    <title>Pataki Attila Bence | Weboldalak és webalkalmazások</title>
     <meta
       name="description"
-      content="Studoid, MEDIABOX és három online magazin közös szerkesztőséggel. Weboldalak, belső rendszerek és átlátható fejlesztési árak."
+      content="Pataki Attila Bence webfejlesztő portfóliója: weboldalak, webalkalmazások, automatizációk és válogatott projektek."
     />
+    <meta name="author" content="Pataki Attila Bence" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.pataki-dev.hu/" />
     <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/" />
     <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/" />
-    <meta name="author" content="Pataki Attila Bence" />
-    <meta name="robots" content="index, follow" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.pataki-dev.hu/"
+    />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Weboldalak és webalkalmazások | Pataki Attila Bence"
+      content="Pataki Attila Bence | Weboldalak és webalkalmazások"
     />
     <meta
       property="og:description"
-      content="Studoid, MEDIABOX és három online magazin közös szerkesztőséggel. Weboldalak, belső rendszerek és átlátható fejlesztési árak."
+      content="Pataki Attila Bence webfejlesztő portfóliója: weboldalak, webalkalmazások, automatizációk és válogatott projektek."
     />
     <meta property="og:url" content="https://www.pataki-dev.hu/" />
     <meta
@@ -36,35 +41,36 @@
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pataki Attila Bence | Weboldalak és webalkalmazások"
+    />
+    <meta
+      name="twitter:description"
+      content="Pataki Attila Bence webfejlesztő portfóliója: weboldalak, webalkalmazások, automatizációk és válogatott projektek."
+    />
     <meta
       name="twitter:image"
       content="https://www.pataki-dev.hu/Images/og-portfolio.jpg"
     />
-    <meta
-      name="twitter:title"
-      content="Weboldalak és webalkalmazások | Pataki Attila Bence"
-    />
-    <meta
-      name="twitter:description"
-      content="Studoid, MEDIABOX és három online magazin közös szerkesztőséggel. Weboldalak, belső rendszerek és átlátható fejlesztési árak."
-    />
     <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
     <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/styles/base.css" />
-    <link rel="stylesheet" href="assets/styles/portfolio.css" />
+    <link rel="stylesheet" href="/assets/styles/base.css" />
+    <link rel="stylesheet" href="/assets/styles/portfolio.css" />
+    <link rel="stylesheet" href="/assets/styles/editorial-site.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Weboldalak és webalkalmazások",
+        "name": "Pataki Attila Bence | Weboldalak és webalkalmazások",
         "url": "https://www.pataki-dev.hu/",
         "inLanguage": "hu",
         "author": {
@@ -79,15 +85,14 @@
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
     <header class="topbar">
       <div class="container topbar-inner">
-        <a class="portfolio-logo" href="/">Pataki Attila Bence</a>
-        <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="/" class="portfolio-logo">Pataki Attila Bence</a>
+        <nav class="nav" id="siteNav" aria-label="Primary navigation">
           <div class="nav-links">
-            <a href="#work" data-i18n="portfolio.nav.work">Munkák</a>
-            <a href="/#services" data-i18n="portfolio.nav.services"
-              >Szolgáltatások és árak</a
-            >
-            <a href="/#about">Rólam</a>
-            <a href="/#contact">Kapcsolat</a>
+            <a href="/#about" data-i18n="nav.about">Rólam</a
+            ><a href="/#services" data-i18n="nav.services">Szolgáltatások</a
+            ><a href="/projektek" data-i18n="nav.projects">Projektek</a
+            ><a href="/blog" data-i18n="nav.blog">Blog</a
+            ><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
           </div>
         </nav>
         <div class="header-actions">
@@ -111,9 +116,9 @@
             </button>
           </div>
           <button
+            type="button"
             class="theme-toggle"
             id="themeToggle"
-            type="button"
             aria-label="Theme"
           >
             <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span
@@ -121,10 +126,10 @@
               >◐</span
             ></button
           ><button
+            type="button"
             class="nav-toggle"
             id="navToggle"
-            type="button"
-            aria-label="Menu"
+            aria-label="Navigáció megnyitása"
             aria-expanded="false"
             aria-controls="mobileNavOverlay"
           >
@@ -146,18 +151,17 @@
             type="button"
             class="mobile-nav-close"
             id="mobileNavClose"
-            aria-label="Close menu"
+            aria-label="Menü bezárása"
           >
             <span></span><span></span>
           </button>
         </div>
         <nav class="mobile-nav-links" aria-label="Mobile navigation">
-          <a href="#work" data-i18n="portfolio.nav.work">Munkák</a>
-          <a href="/#services" data-i18n="portfolio.nav.services"
-            >Szolgáltatások és árak</a
-          >
-          <a href="/#about">Rólam</a>
-          <a href="/#contact">Kapcsolat</a>
+          <a href="/#about" data-i18n="nav.about">Rólam</a
+          ><a href="/#services" data-i18n="nav.services">Szolgáltatások</a
+          ><a href="/projektek" data-i18n="nav.projects">Projektek</a
+          ><a href="/blog" data-i18n="nav.blog">Blog</a
+          ><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
         </nav>
         <div class="mobile-nav-footer">
           <div class="language-switcher" aria-label="Nyelvválasztó">
@@ -179,12 +183,6 @@
               EN
             </button>
           </div>
-          <button class="theme-toggle" type="button" aria-label="Theme">
-            <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span
-            ><span class="theme-icon theme-icon-moon" aria-hidden="true"
-              >◐</span
-            >
-          </button>
         </div>
       </div>
     </div>
@@ -192,269 +190,256 @@
       <section class="hero portfolio-section">
         <div class="container hero-layout">
           <div class="hero-name">
-            <p class="kicker">PORTFOLIO / 2026</p>
+            <p class="kicker">PORTFÓLIÓ / WEBFEJLESZTÉS</p>
             <h1>Pataki Attila<br />Bence<span class="hero-dot">.</span></h1>
           </div>
           <div class="hero-copy">
             <p class="kicker">WEB / PRODUCT / SYSTEMS</p>
-            <h2>Weboldalak és webalkalmazások</h2>
-            <p>
-              A MEDIABOX-nak weboldalt és ügyfélkezelőt készítettem. Három
-              online magazinhoz közös szerkesztőfelületet építettem. A saját
-              termékem a Studoid, amelyben egyetemisták a saját tananyagukból
-              készülhetnek vizsgára.
+            <h2 data-i18n="refresh.hero.title">
+              Weboldalak és webalkalmazások
+            </h2>
+            <p data-i18n="refresh.hero.intro">
+              Pataki Attila Bence vagyok. Olyan weboldalakat és belső
+              rendszereket építek, amelyekben az érthető felület és a működő
+              folyamat egymást erősíti.
             </p>
-            <a class="text-link" href="#work"
-              >Munkáim megtekintése <span aria-hidden="true">↘</span></a
-            >
-          </div>
-        </div>
-      </section>
-      <section class="portfolio-section work-section" id="work">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-index">01 / Válogatott munkák</span
-            ><a class="text-link" href="/projektek">Mind a hat referencia ↗</a>
-          </div>
-          <article class="feature-work studoid-work">
-            <div class="work-meta">
-              <span>01 / Saját termék · zárt béta</span
-              ><span>PRODUCT / EDUCATION</span>
-            </div>
-            <div class="feature-grid">
-              <div>
-                <h2>Studoid<span class="hero-dot">.</span></h2>
-                <p class="work-lead">
-                  Egy hallgató tanulási útja, a kurzustól a vizsgáig.
-                </p>
-                <a class="text-link" href="/projektek#studoid"
-                  >Részletek <span aria-hidden="true">↗</span></a
-                >
-              </div>
-              <div class="feature-copy">
-                <p>
-                  A Studoidban a hallgató kurzust hoz létre, saját anyagot tölt
-                  fel, megtervezi a hetét, majd az anyagból tanul és
-                  visszakérdez. A termék tervezése és a fejlesztés irányítása az
-                  én munkám.
-                </p>
-                <div class="status-block">
-                  <h3>A zárt bétában használható</h3>
-                  <p>
-                    Kurzusok és saját tananyagok · heti terv · forrásalapú
-                    fókuszált tanulás · visszakérdezés · gyakorlás és vizsgamód.
-                  </p>
-                </div>
-                <div class="status-block">
-                  <h3>Következő lépések</h3>
-                  <p>
-                    Az olvasás és jegyzetelés folyamatának finomítása, valamint
-                    a tanulási út személyre szabása. Ezeket fejlesztési
-                    irányként mutatom be.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="feature-work mediabox-work">
-            <div class="work-meta">
-              <span>02 / Ügyfélprojekt</span><span>WEB / CRM</span>
-            </div>
-            <div class="feature-grid">
-              <div>
-                <h2>MEDIABOX<span class="hero-dot">.</span></h2>
-                <p class="work-lead">
-                  Egy pizzásdoboz-hirdetési vállalkozás két összetartozó
-                  digitális felülete.
-                </p>
-                <a class="text-link" href="/projektek#mediabox"
-                  >Részletek <span aria-hidden="true">↗</span></a
-                >
-              </div>
-              <div class="feature-copy">
-                <div class="status-block">
-                  <h3>Publikus weboldal</h3>
-                  <p>
-                    A hirdetőknek a reklámlehetőséget, a pizzériáknak a partneri
-                    modellt mutatja be, külön kapcsolatfelvételi utakkal.
-                  </p>
-                </div>
-                <div class="status-block">
-                  <h3>Belső értékesítési CRM</h3>
-                  <p>
-                    Ugyanehhez a vállalkozáshoz készült ügyfélkezelő, amely az
-                    érdeklődők és az értékesítési munka áttekintését támogatja.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="feature-work magazines-work">
-            <div class="work-meta">
-              <span>03 / Kiadói rendszer</span><span>EDITORIAL / CMS</span>
-            </div>
-            <div class="feature-grid">
-              <div>
-                <h2>
-                  Három magazin, egy szerkesztőség<span class="hero-dot"
-                    >.</span
-                  >
-                </h2>
-                <p class="work-lead">
-                  Három eltérő hangú kiadvány, mögöttük egy közös
-                  szerkesztőfelület.
-                </p>
-              </div>
-              <div class="mag-list">
-                <div class="mag-row">
-                  <h3>Golden Hour</h3>
-                  <p>Esküvői inspirációs magazin.</p>
-                  <a class="text-link" href="/projektek#golden-hour"
-                    >Részletek <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-                <div class="mag-row">
-                  <h3>Gastro House</h3>
-                  <p>Gasztronómiai magazin nyomtatható receptekkel.</p>
-                  <a class="text-link" href="/projektek#gastro-house"
-                    >Részletek <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-                <div class="mag-row">
-                  <h3>Pályaszög</h3>
-                  <p>
-                    Saját futball-véleménymagazinom, ahol szerzőként is
-                    publikálok.
-                  </p>
-                  <a class="text-link" href="/projektek#palyaszog"
-                    >Részletek <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-                <div class="mag-row cms-row">
-                  <h3>Szerkesztőség.app</h3>
-                  <p>
-                    Közös CMS a három kiadványhoz. A szerkesztő piszkozatot ír,
-                    előnézetben ellenőrzi, majd publikálja a cikket.
-                  </p>
-                  <a class="text-link" href="/projektek#szerkesztoseg"
-                    >Részletek <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="portfolio-section pricing-section" id="services">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-index">02 / Szolgáltatások és árak</span>
-          </div>
-          <div class="section-layout">
-            <div>
-              <h2>Szolgáltatások és árak<span class="hero-dot">.</span></h2>
-              <p class="section-intro">
-                Kisebb módosításokat óradíjban vállalok. Weboldalra,
-                automatizációra és belső rendszerre előre egyeztetett fix árat
-                adok. Az összegek áfa nélkül értendők.
-              </p>
-            </div>
-            <div class="price-list">
-              <div class="price-row">
-                <h3>Kisebb fejlesztés, hibajavítás</h3>
-                <strong>15 000 Ft/óra</strong>
-                <p>
-                  Önálló kisebb megbízás minimumdíja 30 000 Ft, ami két órát
-                  fedez.
-                </p>
-              </div>
-              <div class="price-row">
-                <h3>Weboldal, magazin, automatizáció vagy CRM</h3>
-                <strong>Fix projektár</strong>
-                <p>
-                  Az ajánlat rögzíti az átadáskor működő funkciókat és a
-                  módosítási köröket.
-                </p>
-              </div>
-              <div class="price-row">
-                <h3>Meglévő rendszer részletes felmérése</h3>
-                <strong>79 000 Ft</strong>
-                <p>
-                  Az első beszélgetés díjmentes. Fizetős felmérést akkor
-                  ajánlok, ha a becsléshez át kell néznem a rendszert, az
-                  adatokat és a folyamatokat. Az ügyfél tervet és tételes
-                  ajánlatot kap.
-                </p>
-              </div>
-              <div class="price-row">
-                <h3>Opcionális havi gondozás</h3>
-                <strong>Például 39 000 Ft/hó</strong>
-                <p>
-                  Felügyelet, mentésellenőrzés és havi egy óra segítség. A
-                  tárhely, licencek és új fejlesztések külön egyeztetendők.
-                </p>
-              </div>
-              <div class="price-example">
-                <span class="kicker">Szemléltető példa</span>
-                <p>
-                  Egy meglévő magazin főoldalának, cikkoldalának, archívumának
-                  és navigációjának megújítása például 690 000 Ft lehet, ha a
-                  jelenlegi CMS és a tartalom megtartható.
-                </p>
-              </div>
+            <div class="hero-actions-editorial">
+              <a class="text-link" href="/projektek">Projektek megtekintése ↗</a
+              ><a class="text-link" href="/kapcsolat">Kapcsolat ↗</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="portfolio-section about-section" id="about">
+      <section class="portfolio-section editorial-section" id="about">
         <div class="container section-layout">
           <div>
-            <span class="section-index">03 / Rólam</span>
-            <h2>Rólam<span class="hero-dot">.</span></h2>
+            <span class="section-index">01 / Rólam</span>
+            <h2 data-i18n="refresh.about.title">Rólam</h2>
           </div>
-          <p class="section-intro">
-            Weboldalakat és belső eszközöket tervezek és fejlesztek. A saját
-            termékemen és ügyfélmunkákon ugyanazt keresem: érthető felületet,
-            működő folyamatot és gondosan megépített részleteket.
+          <p class="section-intro" data-i18n="refresh.about.text">
+            A saját termékem, a Studoid fejlesztését vezetem, ügyfeleknek pedig
+            weboldalakat és üzleti eszközöket készítek. Szeretem a világos
+            szerkezetet, az olvasható kódot és azokat a részleteket, amelyek a
+            használat során számítanak.
           </p>
         </div>
       </section>
-      <section class="portfolio-section contact-section" id="contact">
+      <section class="portfolio-section editorial-section" id="services">
+        <div class="container">
+          <div class="editorial-heading">
+            <span class="section-index">02 / Szolgáltatások</span>
+            <h2 data-i18n="refresh.services.title">Szolgáltatások</h2>
+            <p data-i18n="refresh.services.intro">
+              Három területen tudok segíteni. A részleteket és az ajánlatadás
+              menetét az egyes szolgáltatási oldalakon találod.
+            </p>
+          </div>
+          <div class="preview-grid">
+            <article class="preview-card">
+              <span class="kicker">01 / Szolgáltatások</span>
+              <h3 data-i18n="refresh.service.1.title">Weboldalkészítés</h3>
+              <p data-i18n="refresh.service.1.text">
+                Céges oldalak, magazinok és landing oldalak érthető tartalommal,
+                reszponzív megvalósítással.
+              </p>
+              <a class="text-link" href="/weboldal-keszites"
+                >Szolgáltatás részletei ↗</a
+              >
+            </article>
+            <article class="preview-card">
+              <span class="kicker">02 / Szolgáltatások</span>
+              <h3 data-i18n="refresh.service.2.title">
+                Webalkalmazás-fejlesztés
+              </h3>
+              <p data-i18n="refresh.service.2.text">
+                Ügyfélkezelők, belső adminfelületek és célzott webalkalmazások a
+                napi munkához.
+              </p>
+              <a class="text-link" href="/webalkalmazas-fejlesztes"
+                >Szolgáltatás részletei ↗</a
+              >
+            </article>
+            <article class="preview-card">
+              <span class="kicker">03 / Szolgáltatások</span>
+              <h3 data-i18n="refresh.service.3.title">
+                Automatizáció és API-integráció
+              </h3>
+              <p data-i18n="refresh.service.3.text">
+                Ismétlődő folyamatok összekötése és egyszerűsítése API-kkal,
+                szükség esetén AI-val.
+              </p>
+              <a class="text-link" href="/ai-automatizacio"
+                >Szolgáltatás részletei ↗</a
+              >
+            </article>
+          </div>
+          <p class="price-note" data-i18n="refresh.services.price">
+            Kisebb fejlesztések 15 000 Ft/óra díjtól, önálló megbízásnál 30 000
+            Ft minimumdíjjal.
+          </p>
+        </div>
+      </section>
+      <section class="portfolio-section editorial-section" id="skills">
         <div class="container section-layout">
           <div>
-            <span class="section-index">04 / Kapcsolat</span>
-            <h2>Kapcsolat<span class="hero-dot">.</span></h2>
+            <span class="section-index">03 / Készségek</span>
+            <h2 data-i18n="refresh.skills.title">Készségek</h2>
+            <p data-i18n="refresh.skills.intro">
+              Az eszközöket a feladathoz választom; ezekkel dolgozom
+              rendszeresen.
+            </p>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <span data-i18n="refresh.skill.1"
+                >Reszponzív HTML, CSS és JavaScript</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.2"
+                >Frontend és felülettervezés</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.3"
+                >Backend logika és adatmodellezés</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.4"
+                >API-integráció és automatizáció</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.5"
+                >Verziókezelés és publikálás</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.6"
+                >Biztonságtudatos fejlesztés</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio-section editorial-section" id="projects">
+        <div class="container">
+          <div class="editorial-heading">
+            <span class="section-index">04 / Kiemelt projektek</span>
+            <h2 data-i18n="refresh.projects.title">Kiemelt projektek</h2>
+            <p data-i18n="refresh.projects.intro">
+              Három munka, amely megmutatja a termék-, ügyfél- és szerkesztőségi
+              oldalt.
+            </p>
+          </div>
+          <div class="preview-grid">
+            <article class="preview-card">
+              <span class="kicker">01 / Kiemelt projektek</span>
+              <h3>Studoid</h3>
+              <p data-i18n="refresh.project.1.text">
+                Saját, zárt bétás tanulási termék egyetemistáknak, saját
+                tananyaggal, heti tervezéssel és vizsgafelkészüléssel.
+              </p>
+              <a class="text-link" href="/projects/studoid">Részletek ↗</a>
+            </article>
+            <article class="preview-card">
+              <span class="kicker">02 / Kiemelt projektek</span>
+              <h3>MEDIABOX</h3>
+              <p data-i18n="refresh.project.2.text">
+                Publikus pizzásdoboz-hirdetési weboldal és ugyanahhoz a
+                vállalkozáshoz készített belső értékesítési CRM.
+              </p>
+              <a class="text-link" href="/projects/mediabox">Részletek ↗</a>
+            </article>
+            <article class="preview-card">
+              <span class="kicker">03 / Kiemelt projektek</span>
+              <h3>Szerkesztőség.app</h3>
+              <p data-i18n="refresh.project.3.text">
+                Közös szerkesztőfelület a Golden Hour, a Gastro House és a
+                Pályaszög magazinokhoz.
+              </p>
+              <a class="text-link" href="/projects/szerkesztoseg-app"
+                >Részletek ↗</a
+              >
+            </article>
+          </div>
+          <a class="text-link all-projects-link" href="/projektek"
+            >Összes projekt ↗</a
+          >
+        </div>
+      </section>
+      <section
+        class="portfolio-section editorial-section contact-section"
+        id="contact"
+      >
+        <div class="container section-layout">
+          <div>
+            <span class="section-index">05 / Kapcsolat</span>
+            <h2 data-i18n="refresh.contact.title">Kapcsolat</h2>
           </div>
           <div>
-            <p class="section-intro">
-              Írd meg, min dolgozol, vagy foglalj egy rövid beszélgetést. Az
-              első egyeztetés díjmentes.
+            <p class="section-intro" data-i18n="refresh.contact.text">
+              Van egy weboldal-, rendszer- vagy automatizációs ötleted? Írd meg
+              röviden, vagy beszéljünk róla egy díjmentes első egyeztetésen.
             </p>
             <div class="contact-actions">
-              <a class="text-link" href="/kapcsolat#contactForm"
-                >Projekt megírása ↗</a
-              >
-              <a class="text-link" href="/kapcsolat#booking" data-booking-link
+              <a class="text-link" href="/kapcsolat">Kapcsolatfelvétel ↗</a
+              ><a class="text-link" href="/kapcsolat#booking" data-booking-link
                 >Időpontfoglalás ↗</a
-              >
-              <a class="text-link" href="mailto:patakiattila987@gmail.com"
-                >E-mail ↗</a
               >
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="portfolio-footer">
-      <div class="container footer-line">
-        <span>© 2026 Pataki Attila Bence</span>
-        <nav aria-label="Footer">
-          <a href="/">Vissza a főoldalra</a>
-          <a href="/projektek" data-i18n="portfolio.nav.work">Munkák</a>
-          <a href="/kapcsolat">Kapcsolat</a>
+    <footer class="footer editorial-footer">
+      <div class="container footer-inner footer-grid">
+        <div class="footer-brand">
+          <p>© 2026 Pataki Attila Bence</p>
+          <p class="footer-note">
+            Személyes portfólió és szolgáltatói weboldal.
+          </p>
+        </div>
+        <nav class="footer-column" aria-label="OLDAL">
+          <h2 class="footer-heading">OLDAL</h2>
+          <div class="footer-links">
+            <a href="/">Kezdőlap</a><a href="/projektek">Projektek</a
+            ><a href="/blog">Blog</a><a href="/kapcsolat">Kapcsolat</a>
+          </div>
+        </nav>
+        <nav class="footer-column" aria-label="KÖZÖSSÉG">
+          <h2 class="footer-heading">KÖZÖSSÉG</h2>
+          <div class="footer-links">
+            <a
+              href="https://www.facebook.com/benceattila.pataki"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            ><a
+              href="https://github.com/pataki2003"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            ><a
+              href="https://www.instagram.com/pataky.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </div>
+        </nav>
+        <nav class="footer-column" aria-label="JOGI">
+          <h2 class="footer-heading">JOGI</h2>
+          <div class="footer-links">
+            <a href="/adatkezelesi-tajekoztato">Adatkezelési tájékoztató</a
+            ><a href="/szolgaltatasi-feltetelek">Szolgáltatási feltételek</a
+            ><a href="/cookie-tajekoztato">Cookie tájékoztató</a
+            ><a href="/impresszum">Impresszum</a>
+          </div>
         </nav>
       </div>
     </footer>
-    <script type="module" src="assets/scripts/main.js"></script>
+    <script type="module" src="/assets/scripts/main.js"></script>
   </body>
 </html>

@@ -10,24 +10,29 @@
           t === "dark" ? "dark" : "light";
       } catch {}
     </script>
-    <title>Websites and web applications | Pataki Attila Bence</title>
+    <title>Pataki Attila Bence | Websites and web applications</title>
     <meta
       name="description"
-      content="Studoid, MEDIABOX, and three online magazines sharing one editorial system. Websites, internal tools, and transparent development pricing."
+      content="The portfolio of Pataki Attila Bence: websites, web applications, automation, and selected projects."
     />
+    <meta name="author" content="Pataki Attila Bence" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.pataki-dev.hu/en/" />
     <link rel="alternate" hreflang="hu" href="https://www.pataki-dev.hu/" />
     <link rel="alternate" hreflang="en" href="https://www.pataki-dev.hu/en/" />
-    <meta name="author" content="Pataki Attila Bence" />
-    <meta name="robots" content="index, follow" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.pataki-dev.hu/"
+    />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Websites and web applications | Pataki Attila Bence"
+      content="Pataki Attila Bence | Websites and web applications"
     />
     <meta
       property="og:description"
-      content="Studoid, MEDIABOX, and three online magazines sharing one editorial system. Websites, internal tools, and transparent development pricing."
+      content="The portfolio of Pataki Attila Bence: websites, web applications, automation, and selected projects."
     />
     <meta property="og:url" content="https://www.pataki-dev.hu/en/" />
     <meta
@@ -36,35 +41,36 @@
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pataki Attila Bence | Websites and web applications"
+    />
+    <meta
+      name="twitter:description"
+      content="The portfolio of Pataki Attila Bence: websites, web applications, automation, and selected projects."
+    />
     <meta
       name="twitter:image"
       content="https://www.pataki-dev.hu/Images/og-portfolio.jpg"
     />
-    <meta
-      name="twitter:title"
-      content="Websites and web applications | Pataki Attila Bence"
-    />
-    <meta
-      name="twitter:description"
-      content="Studoid, MEDIABOX, and three online magazines sharing one editorial system. Websites, internal tools, and transparent development pricing."
-    />
     <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
     <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/styles/base.css" />
-    <link rel="stylesheet" href="../assets/styles/portfolio.css" />
+    <link rel="stylesheet" href="/assets/styles/base.css" />
+    <link rel="stylesheet" href="/assets/styles/portfolio.css" />
+    <link rel="stylesheet" href="/assets/styles/editorial-site.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Websites and web applications",
+        "name": "Pataki Attila Bence | Websites and web applications",
         "url": "https://www.pataki-dev.hu/en/",
         "inLanguage": "en",
         "author": {
@@ -79,15 +85,14 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="topbar">
       <div class="container topbar-inner">
-        <a class="portfolio-logo" href="/en/">Pataki Attila Bence</a>
-        <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="/en/" class="portfolio-logo">Pataki Attila Bence</a>
+        <nav class="nav" id="siteNav" aria-label="Primary navigation">
           <div class="nav-links">
-            <a href="#work" data-i18n="portfolio.nav.work">Work</a>
-            <a href="/en/#services" data-i18n="portfolio.nav.services"
-              >Services &amp; pricing</a
-            >
-            <a href="/en/#about">About</a>
-            <a href="/en/#contact">Contact</a>
+            <a href="/en/#about" data-i18n="nav.about">About</a
+            ><a href="/en/#services" data-i18n="nav.services">Services</a
+            ><a href="/en/projects" data-i18n="nav.projects">Projects</a
+            ><a href="/en/blog" data-i18n="nav.blog">Blog</a
+            ><a href="/en/contact" data-i18n="nav.contact">Contact</a>
           </div>
         </nav>
         <div class="header-actions">
@@ -111,9 +116,9 @@
             </button>
           </div>
           <button
+            type="button"
             class="theme-toggle"
             id="themeToggle"
-            type="button"
             aria-label="Theme"
           >
             <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span
@@ -121,10 +126,10 @@
               >◐</span
             ></button
           ><button
+            type="button"
             class="nav-toggle"
             id="navToggle"
-            type="button"
-            aria-label="Menu"
+            aria-label="Open navigation"
             aria-expanded="false"
             aria-controls="mobileNavOverlay"
           >
@@ -152,12 +157,11 @@
           </button>
         </div>
         <nav class="mobile-nav-links" aria-label="Mobile navigation">
-          <a href="#work" data-i18n="portfolio.nav.work">Work</a>
-          <a href="/en/#services" data-i18n="portfolio.nav.services"
-            >Services &amp; pricing</a
-          >
-          <a href="/en/#about">About</a>
-          <a href="/en/#contact">Contact</a>
+          <a href="/en/#about" data-i18n="nav.about">About</a
+          ><a href="/en/#services" data-i18n="nav.services">Services</a
+          ><a href="/en/projects" data-i18n="nav.projects">Projects</a
+          ><a href="/en/blog" data-i18n="nav.blog">Blog</a
+          ><a href="/en/contact" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="mobile-nav-footer">
           <div class="language-switcher" aria-label="Language switcher">
@@ -179,12 +183,6 @@
               EN
             </button>
           </div>
-          <button class="theme-toggle" type="button" aria-label="Theme">
-            <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span
-            ><span class="theme-icon theme-icon-moon" aria-hidden="true"
-              >◐</span
-            >
-          </button>
         </div>
       </div>
     </div>
@@ -192,270 +190,255 @@
       <section class="hero portfolio-section">
         <div class="container hero-layout">
           <div class="hero-name">
-            <p class="kicker">PORTFOLIO / 2026</p>
+            <p class="kicker">PORTFOLIO / WEB DEVELOPMENT</p>
             <h1>Pataki Attila<br />Bence<span class="hero-dot">.</span></h1>
           </div>
           <div class="hero-copy">
             <p class="kicker">WEB / PRODUCT / SYSTEMS</p>
-            <h2>Websites and web applications</h2>
-            <p>
-              I built a website and sales CRM for MEDIABOX. I built one shared
-              editorial system for three online magazines. My own product is
-              Studoid, where university students prepare for exams using their
-              own study materials.
+            <h2 data-i18n="refresh.hero.title">
+              Websites and web applications
+            </h2>
+            <p data-i18n="refresh.hero.intro">
+              I’m Pataki Attila Bence. I build websites and internal tools where
+              a clear interface and a useful process work together.
             </p>
-            <a class="text-link" href="#work"
-              >Explore my work <span aria-hidden="true">↘</span></a
-            >
-          </div>
-        </div>
-      </section>
-      <section class="portfolio-section work-section" id="work">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-index">01 / Selected work</span
-            ><a class="text-link" href="/en/projects"
-              >Explore all six projects ↗</a
-            >
-          </div>
-          <article class="feature-work studoid-work">
-            <div class="work-meta">
-              <span>01 / Own product · closed beta</span
-              ><span>PRODUCT / EDUCATION</span>
-            </div>
-            <div class="feature-grid">
-              <div>
-                <h2>Studoid<span class="hero-dot">.</span></h2>
-                <p class="work-lead">
-                  A student’s journey from course materials to the exam.
-                </p>
-                <a class="text-link" href="/en/projects#studoid"
-                  >View project <span aria-hidden="true">↗</span></a
-                >
-              </div>
-              <div class="feature-copy">
-                <p>
-                  In Studoid, a student creates a course, uploads their own
-                  materials, plans the week, then studies and tests recall. I
-                  designed the product and lead its development.
-                </p>
-                <div class="status-block">
-                  <h3>Available in the closed beta</h3>
-                  <p>
-                    Courses and personal materials · weekly plan · source-based
-                    focused study · recall questions · practice and exam mode.
-                  </p>
-                </div>
-                <div class="status-block">
-                  <h3>Next steps</h3>
-                  <p>
-                    Refining the reading and note-taking flow, and making the
-                    learning journey more personal. These are development
-                    directions.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="feature-work mediabox-work">
-            <div class="work-meta">
-              <span>02 / Client project</span><span>WEB / CRM</span>
-            </div>
-            <div class="feature-grid">
-              <div>
-                <h2>MEDIABOX<span class="hero-dot">.</span></h2>
-                <p class="work-lead">
-                  Two connected digital tools for one pizza-box advertising
-                  business.
-                </p>
-                <a class="text-link" href="/en/projects#mediabox"
-                  >View project <span aria-hidden="true">↗</span></a
-                >
-              </div>
-              <div class="feature-copy">
-                <div class="status-block">
-                  <h3>Public website</h3>
-                  <p>
-                    Explains the ad opportunity to advertisers and the
-                    partnership model to pizzerias, with separate contact paths.
-                  </p>
-                </div>
-                <div class="status-block">
-                  <h3>Internal sales CRM</h3>
-                  <p>
-                    A customer management tool for the same business, supporting
-                    an overview of leads and sales activity.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="feature-work magazines-work">
-            <div class="work-meta">
-              <span>03 / Publishing system</span><span>EDITORIAL / CMS</span>
-            </div>
-            <div class="feature-grid">
-              <div>
-                <h2>
-                  Three magazines, one editorial desk<span class="hero-dot"
-                    >.</span
-                  >
-                </h2>
-                <p class="work-lead">
-                  Three publications with distinct voices, supported by one
-                  shared editorial system.
-                </p>
-              </div>
-              <div class="mag-list">
-                <div class="mag-row">
-                  <h3>Golden Hour</h3>
-                  <p>A wedding inspiration magazine.</p>
-                  <a class="text-link" href="/en/projects#golden-hour"
-                    >View project <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-                <div class="mag-row">
-                  <h3>Gastro House</h3>
-                  <p>A food magazine with printable recipes.</p>
-                  <a class="text-link" href="/en/projects#gastro-house"
-                    >View project <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-                <div class="mag-row">
-                  <h3>Pályaszög</h3>
-                  <p>
-                    My own football opinion magazine, where I also write
-                    articles.
-                  </p>
-                  <a class="text-link" href="/en/projects#palyaszog"
-                    >View project <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-                <div class="mag-row cms-row">
-                  <h3>Szerkesztőség.app</h3>
-                  <p>
-                    One CMS for all three publications. An editor drafts an
-                    article, checks the preview, then publishes it.
-                  </p>
-                  <a class="text-link" href="/en/projects#szerkesztoseg"
-                    >View project <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="portfolio-section pricing-section" id="services">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-index">02 / Services &amp; pricing</span>
-          </div>
-          <div class="section-layout">
-            <div>
-              <h2>Services &amp; pricing<span class="hero-dot">.</span></h2>
-              <p class="section-intro">
-                I charge by the hour for small changes. For a website,
-                automation, or internal system, I provide an agreed fixed
-                project price. Prices exclude VAT.
-              </p>
-            </div>
-            <div class="price-list">
-              <div class="price-row">
-                <h3>Small development tasks and bug fixes</h3>
-                <strong>15,000 Ft/hour</strong>
-                <p>
-                  A standalone small assignment has a minimum fee of 30,000 Ft,
-                  covering two hours.
-                </p>
-              </div>
-              <div class="price-row">
-                <h3>Website, magazine, automation, or CRM</h3>
-                <strong>Fixed project price</strong>
-                <p>
-                  The proposal specifies the working features at handover and
-                  the included revision rounds.
-                </p>
-              </div>
-              <div class="price-row">
-                <h3>Detailed assessment of an existing system</h3>
-                <strong>79,000 Ft</strong>
-                <p>
-                  The first conversation is free. I recommend a paid assessment
-                  when I need to inspect the system, data, and processes to
-                  estimate the work. The client receives a plan and itemized
-                  proposal.
-                </p>
-              </div>
-              <div class="price-row">
-                <h3>Optional monthly care</h3>
-                <strong>For example 39,000 Ft/month</strong>
-                <p>
-                  Monitoring, backup checks, and one hour of help per month.
-                  Hosting, licenses, and new features are agreed separately.
-                </p>
-              </div>
-              <div class="price-example">
-                <span class="kicker">Illustrative example</span>
-                <p>
-                  Refreshing an existing magazine’s homepage, article page,
-                  archive, and navigation could cost 690,000 Ft, for example, if
-                  the current CMS and content can be retained.
-                </p>
-              </div>
+            <div class="hero-actions-editorial">
+              <a class="text-link" href="/en/projects">View projects ↗</a
+              ><a class="text-link" href="/en/contact">Contact ↗</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="portfolio-section about-section" id="about">
+      <section class="portfolio-section editorial-section" id="about">
         <div class="container section-layout">
           <div>
-            <span class="section-index">03 / About</span>
-            <h2>About<span class="hero-dot">.</span></h2>
+            <span class="section-index">01 / About</span>
+            <h2 data-i18n="refresh.about.title">About</h2>
           </div>
-          <p class="section-intro">
-            I design and build websites and internal tools. In my own product
-            and client work, I aim for clear interfaces, useful processes, and
-            carefully built details.
+          <p class="section-intro" data-i18n="refresh.about.text">
+            I lead the development of my own product, Studoid, and build
+            websites and business tools for clients. I care about clear
+            structure, readable code, and details that matter in everyday use.
           </p>
         </div>
       </section>
-      <section class="portfolio-section contact-section" id="contact">
+      <section class="portfolio-section editorial-section" id="services">
+        <div class="container">
+          <div class="editorial-heading">
+            <span class="section-index">02 / Services</span>
+            <h2 data-i18n="refresh.services.title">Services</h2>
+            <p data-i18n="refresh.services.intro">
+              I can help in three areas. Each service page explains the scope
+              and how I price the work.
+            </p>
+          </div>
+          <div class="preview-grid">
+            <article class="preview-card">
+              <span class="kicker">01 / Services</span>
+              <h3 data-i18n="refresh.service.1.title">Website development</h3>
+              <p data-i18n="refresh.service.1.text">
+                Business sites, magazines, and landing pages with clear content
+                and responsive implementation.
+              </p>
+              <a class="text-link" href="/en/website-development"
+                >Explore service ↗</a
+              >
+            </article>
+            <article class="preview-card">
+              <span class="kicker">02 / Services</span>
+              <h3 data-i18n="refresh.service.2.title">
+                Web application development
+              </h3>
+              <p data-i18n="refresh.service.2.text">
+                Customer management tools, internal admin interfaces, and
+                focused web applications for daily operations.
+              </p>
+              <a class="text-link" href="/en/web-application-development"
+                >Explore service ↗</a
+              >
+            </article>
+            <article class="preview-card">
+              <span class="kicker">03 / Services</span>
+              <h3 data-i18n="refresh.service.3.title">
+                Automation and API integration
+              </h3>
+              <p data-i18n="refresh.service.3.text">
+                Connecting and simplifying repetitive processes with APIs and,
+                when useful, AI.
+              </p>
+              <a class="text-link" href="/en/ai-automation"
+                >Explore service ↗</a
+              >
+            </article>
+          </div>
+          <p class="price-note" data-i18n="refresh.services.price">
+            Small development tasks from 15,000 Ft/hour, with a 30,000 Ft
+            minimum for standalone assignments.
+          </p>
+        </div>
+      </section>
+      <section class="portfolio-section editorial-section" id="skills">
         <div class="container section-layout">
           <div>
-            <span class="section-index">04 / Contact</span>
-            <h2>Contact<span class="hero-dot">.</span></h2>
+            <span class="section-index">03 / Skills</span>
+            <h2 data-i18n="refresh.skills.title">Skills</h2>
+            <p data-i18n="refresh.skills.intro">
+              I choose tools for the problem; these are the areas I work in
+              regularly.
+            </p>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <span data-i18n="refresh.skill.1"
+                >Responsive HTML, CSS, and JavaScript</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.2"
+                >Frontend and interface design</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.3"
+                >Backend logic and data modeling</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.4"
+                >API integration and automation</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.5"
+                >Version control and publishing</span
+              >
+            </li>
+            <li>
+              <span data-i18n="refresh.skill.6"
+                >Security-aware development</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio-section editorial-section" id="projects">
+        <div class="container">
+          <div class="editorial-heading">
+            <span class="section-index">04 / Featured projects</span>
+            <h2 data-i18n="refresh.projects.title">Featured projects</h2>
+            <p data-i18n="refresh.projects.intro">
+              Three projects showing my product, client, and editorial work.
+            </p>
+          </div>
+          <div class="preview-grid">
+            <article class="preview-card">
+              <span class="kicker">01 / Featured projects</span>
+              <h3>Studoid</h3>
+              <p data-i18n="refresh.project.1.text">
+                My own closed-beta study product for university students, with
+                personal materials, weekly planning, and exam preparation.
+              </p>
+              <a class="text-link" href="/en/projects/studoid"
+                >View project ↗</a
+              >
+            </article>
+            <article class="preview-card">
+              <span class="kicker">02 / Featured projects</span>
+              <h3>MEDIABOX</h3>
+              <p data-i18n="refresh.project.2.text">
+                A public pizza-box advertising website and an internal sales CRM
+                for the same business.
+              </p>
+              <a class="text-link" href="/en/projects/mediabox"
+                >View project ↗</a
+              >
+            </article>
+            <article class="preview-card">
+              <span class="kicker">03 / Featured projects</span>
+              <h3>Szerkesztőség.app</h3>
+              <p data-i18n="refresh.project.3.text">
+                A shared editorial system for the Golden Hour, Gastro House, and
+                Pályaszög magazines.
+              </p>
+              <a class="text-link" href="/en/projects/szerkesztoseg-app"
+                >View project ↗</a
+              >
+            </article>
+          </div>
+          <a class="text-link all-projects-link" href="/en/projects"
+            >All projects ↗</a
+          >
+        </div>
+      </section>
+      <section
+        class="portfolio-section editorial-section contact-section"
+        id="contact"
+      >
+        <div class="container section-layout">
+          <div>
+            <span class="section-index">05 / Contact</span>
+            <h2 data-i18n="refresh.contact.title">Contact</h2>
           </div>
           <div>
-            <p class="section-intro">
-              Tell me what you are working on, or book a short call. The first
-              conversation is free.
+            <p class="section-intro" data-i18n="refresh.contact.text">
+              Have a website, system, or automation idea? Send a short brief or
+              book a free first conversation.
             </p>
             <div class="contact-actions">
-              <a class="text-link" href="/en/contact#contactForm"
-                >Send a project brief ↗</a
-              >
-              <a class="text-link" href="/en/contact#booking" data-booking-link
+              <a class="text-link" href="/en/contact">Get in touch ↗</a
+              ><a class="text-link" href="/en/contact#booking" data-booking-link
                 >Book a call ↗</a
-              >
-              <a class="text-link" href="mailto:patakiattila987@gmail.com"
-                >Email ↗</a
               >
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="portfolio-footer">
-      <div class="container footer-line">
-        <span>© 2026 Pataki Attila Bence</span>
-        <nav aria-label="Footer">
-          <a href="/en/">Back to homepage</a>
-          <a href="/en/projects" data-i18n="portfolio.nav.work">Work</a>
-          <a href="/en/contact">Contact</a>
+    <footer class="footer editorial-footer">
+      <div class="container footer-inner footer-grid">
+        <div class="footer-brand">
+          <p>© 2026 Pataki Attila Bence</p>
+          <p class="footer-note">Personal portfolio and services website.</p>
+        </div>
+        <nav class="footer-column" aria-label="SITE">
+          <h2 class="footer-heading">SITE</h2>
+          <div class="footer-links">
+            <a href="/en/">Home</a><a href="/en/projects">Projects</a
+            ><a href="/en/blog">Blog</a><a href="/en/contact">Contact</a>
+          </div>
+        </nav>
+        <nav class="footer-column" aria-label="SOCIAL">
+          <h2 class="footer-heading">SOCIAL</h2>
+          <div class="footer-links">
+            <a
+              href="https://www.facebook.com/benceattila.pataki"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            ><a
+              href="https://github.com/pataki2003"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            ><a
+              href="https://www.instagram.com/pataky.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </div>
+        </nav>
+        <nav class="footer-column" aria-label="LEGAL">
+          <h2 class="footer-heading">LEGAL</h2>
+          <div class="footer-links">
+            <a href="/adatkezelesi-tajekoztato">Privacy notice</a
+            ><a href="/szolgaltatasi-feltetelek">Service terms</a
+            ><a href="/cookie-tajekoztato">Cookie notice</a
+            ><a href="/impresszum">Imprint</a>
+          </div>
         </nav>
       </div>
     </footer>
-    <script type="module" src="../assets/scripts/main.js"></script>
+    <script type="module" src="/assets/scripts/main.js"></script>
   </body>
 </html>
