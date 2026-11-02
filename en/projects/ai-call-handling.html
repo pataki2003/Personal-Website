@@ -104,95 +104,57 @@
     </script>
   <link rel="stylesheet" href="/assets/styles/editorial-site.css" /></head>
   <body data-theme="dark">
-                <header class="topbar">
-      <div class="container topbar-inner">
-        <a
-          href="/en/"
-          class="logo"
-          aria-label="PAB homepage"
-          data-i18n="site.logoLabel"
-          data-i18n-attr="aria-label"
-          data-i18n-attr-only="true"
-          >PAB</a
-        >
-        <div class="topbar-actions">
-          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNavOverlay">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <a href="/en/projects" class="back-link" data-i18n="project.backToProjects"
-            >Back to projects</a>
-          <div
-            class="language-switcher"
-            aria-label="Language switcher"
-            data-i18n="lang.switcher"
-            data-i18n-attr="aria-label"
-            data-i18n-attr-only="true"
-          >
-            <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/projects/ai-call-handling" aria-pressed="true">EN</button>
-            <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/projects/ai-call-handling" aria-pressed="false">HU</button>
-          </div>
-          <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
-            <span class="theme-icon theme-icon-sun" aria-hidden="true"
-              ><svg viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="4.5"></circle>
-                <path
-                  d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"
-                ></path></svg
-            ></span>
-            <span class="theme-icon theme-icon-moon" aria-hidden="true"
-              ><svg viewBox="0 0 24 24">
-                <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5Z"></path></svg
-            ></span>
-          </button>
-        </div>
+                <header class="topbar site-header">
+  <div class="container topbar-inner">
+    <a href="/en/" class="portfolio-logo">Pataki Attila Bence</a>
+    <nav class="nav" id="siteNav" aria-label="Primary navigation">
+      <div class="nav-links">
+              <a href="/en/#about" data-i18n="nav.about">About</a>
+              <a href="/en/#services" data-i18n="nav.services">Services</a>
+              <a href="/en/pricing" data-i18n="nav.pricing">Pricing</a>
+              <a href="/en/projects" data-i18n="nav.projects">Projects</a>
+              <a href="/en/blog" data-i18n="nav.blog">Blog</a>
+              <a href="/en/contact" data-i18n="nav.contact">Contact</a>
       </div>
-    </header>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switcher" role="group" aria-label="Language switcher">
+            <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/projects/ai-call-handling" aria-pressed="false">HU</button>
+            <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/projects/ai-call-handling" aria-pressed="true">EN</button>
+      </div>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">◐</span>
+      </button>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNavOverlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" inert>
-      <div class="mobile-nav-shell">
-        <div class="mobile-nav-header">
-          <a
-            href="/en/"
-            class="logo"
-            aria-label="PAB homepage"
-            data-i18n="site.logoLabel"
-            data-i18n-attr="aria-label"
-            data-i18n-attr-only="true"
-            >PAB</a
-          >
-          <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <nav class="mobile-nav-links" aria-label="Mobile navigation">
-          <a href="/en/#about" data-i18n="nav.about">About</a>
-          <a href="/en/#services" data-i18n="nav.services">Services</a><a href="/en/pricing" data-i18n="nav.pricing">Pricing</a>
-          <a href="/en/projects" data-i18n="nav.projects">Projects</a>
-          <a href="/en/blog" data-i18n="nav.blog">Blog</a>
-          <a href="/en/contact" data-i18n="nav.contact">Contact</a>
-        </nav>
-        <div class="mobile-nav-footer">
-          <a href="/en/projects" class="mobile-nav-secondary" data-i18n="project.backToProjects"
-            >Back to projects</a>
-          <div class="mobile-nav-group">
-            <p class="mobile-nav-label" data-i18n="lang.switcher">Language switcher</p>
-            <div
-              class="language-switcher"
-              aria-label="Language switcher"
-              data-i18n="lang.switcher"
-              data-i18n-attr="aria-label"
-              data-i18n-attr-only="true"
-            >
-              <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/projects/ai-call-handling" aria-pressed="true">EN</button>
-              <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/projects/ai-call-handling" aria-pressed="false">HU</button>
-            </div>
-          </div>
-        </div>
+    <div class="mobile-nav-overlay site-mobile-nav" id="mobileNavOverlay" aria-hidden="true" inert>
+  <div class="mobile-nav-shell">
+    <div class="mobile-nav-header">
+      <a href="/en/" class="portfolio-logo">Pataki Attila Bence</a>
+      <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav-links" aria-label="Mobile navigation">
+              <a href="/en/#about" data-i18n="nav.about">About</a>
+              <a href="/en/#services" data-i18n="nav.services">Services</a>
+              <a href="/en/pricing" data-i18n="nav.pricing">Pricing</a>
+              <a href="/en/projects" data-i18n="nav.projects">Projects</a>
+              <a href="/en/blog" data-i18n="nav.blog">Blog</a>
+              <a href="/en/contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <div class="language-switcher" role="group" aria-label="Language switcher">
+            <button type="button" class="lang-btn" data-lang-btn="hu" data-lang-url="/projects/ai-call-handling" aria-pressed="false">HU</button>
+            <button type="button" class="lang-btn is-active" data-lang-btn="en" data-lang-url="/en/projects/ai-call-handling" aria-pressed="true">EN</button>
       </div>
     </div>
+  </div>
+</div>
     <main>
       <section class="project-hero">
         <div class="container">

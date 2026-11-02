@@ -1,4 +1,4 @@
-const MOBILE_OVERLAY_BREAKPOINT = 768;
+const MOBILE_OVERLAY_BREAKPOINT = 1024;
 
 export function initMobileNav({ getToggleLabel } = {}) {
   const navToggle = document.getElementById("navToggle");

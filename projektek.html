@@ -91,109 +91,56 @@
   </head>
   <body class="portfolio-page">
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a href="/" class="portfolio-logo">Pataki Attila Bence</a>
-        <nav class="nav" id="siteNav" aria-label="Primary navigation">
-          <div class="nav-links">
-            <a href="/#about" data-i18n="nav.about">Rólam</a
-            ><a href="/#services" data-i18n="nav.services">Szolgáltatások</a
-            ><a href="/arazas" data-i18n="nav.pricing">Árazás</a><a href="/projektek" data-i18n="nav.projects">Projektek</a
-            ><a href="/blog" data-i18n="nav.blog">Blog</a
-            ><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
-          </div>
-        </nav>
-        <div class="header-actions">
-          <div class="language-switcher" aria-label="Nyelvválasztó">
-            <button
-              type="button"
-              class="lang-btn is-active"
-              data-lang-btn="hu"
-              data-lang-url="/projektek"
-              aria-pressed="true"
-            >
-              HU</button
-            ><button
-              type="button"
-              class="lang-btn"
-              data-lang-btn="en"
-              data-lang-url="/en/projects"
-              aria-pressed="false"
-            >
-              EN
-            </button>
-          </div>
-          <button
-            type="button"
-            class="theme-toggle"
-            id="themeToggle"
-            aria-label="Theme"
-          >
-            <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span
-            ><span class="theme-icon theme-icon-moon" aria-hidden="true"
-              >◐</span
-            ></button
-          ><button
-            type="button"
-            class="nav-toggle"
-            id="navToggle"
-            aria-label="Navigáció megnyitása"
-            aria-expanded="false"
-            aria-controls="mobileNavOverlay"
-          >
-            <span></span><span></span><span></span>
-          </button>
-        </div>
+    <header class="topbar site-header">
+  <div class="container topbar-inner">
+    <a href="/" class="portfolio-logo">Pataki Attila Bence</a>
+    <nav class="nav" id="siteNav" aria-label="Fő navigáció">
+      <div class="nav-links">
+              <a href="/#about" data-i18n="nav.about">Rólam</a>
+              <a href="/#services" data-i18n="nav.services">Szolgáltatások</a>
+              <a href="/arazas" data-i18n="nav.pricing">Árazás</a>
+              <a href="/projektek" data-i18n="nav.projects">Projektek</a>
+              <a href="/blog" data-i18n="nav.blog">Blog</a>
+              <a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
       </div>
-    </header>
-    <div
-      class="mobile-nav-overlay"
-      id="mobileNavOverlay"
-      aria-hidden="true"
-      inert
-    >
-      <div class="mobile-nav-shell">
-        <div class="mobile-nav-header">
-          <a href="/" class="portfolio-logo">Pataki Attila Bence</a
-          ><button
-            type="button"
-            class="mobile-nav-close"
-            id="mobileNavClose"
-            aria-label="Menü bezárása"
-          >
-            <span></span><span></span>
-          </button>
-        </div>
-        <nav class="mobile-nav-links" aria-label="Mobile navigation">
-          <a href="/#about" data-i18n="nav.about">Rólam</a
-          ><a href="/#services" data-i18n="nav.services">Szolgáltatások</a
-          ><a href="/arazas" data-i18n="nav.pricing">Árazás</a><a href="/projektek" data-i18n="nav.projects">Projektek</a
-          ><a href="/blog" data-i18n="nav.blog">Blog</a
-          ><a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
-        </nav>
-        <div class="mobile-nav-footer">
-          <div class="language-switcher" aria-label="Nyelvválasztó">
-            <button
-              type="button"
-              class="lang-btn is-active"
-              data-lang-btn="hu"
-              data-lang-url="/projektek"
-              aria-pressed="true"
-            >
-              HU</button
-            ><button
-              type="button"
-              class="lang-btn"
-              data-lang-btn="en"
-              data-lang-url="/en/projects"
-              aria-pressed="false"
-            >
-              EN
-            </button>
-          </div>
-        </div>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switcher" role="group" aria-label="Nyelvválasztó">
+            <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/projektek" aria-pressed="true">HU</button>
+            <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/projects" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Téma váltása">
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">◐</span>
+      </button>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="mobileNavOverlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="mobile-nav-overlay site-mobile-nav" id="mobileNavOverlay" aria-hidden="true" inert>
+  <div class="mobile-nav-shell">
+    <div class="mobile-nav-header">
+      <a href="/" class="portfolio-logo">Pataki Attila Bence</a>
+      <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Menü bezárása"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav-links" aria-label="Mobil navigáció">
+              <a href="/#about" data-i18n="nav.about">Rólam</a>
+              <a href="/#services" data-i18n="nav.services">Szolgáltatások</a>
+              <a href="/arazas" data-i18n="nav.pricing">Árazás</a>
+              <a href="/projektek" data-i18n="nav.projects">Projektek</a>
+              <a href="/blog" data-i18n="nav.blog">Blog</a>
+              <a href="/kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <div class="language-switcher" role="group" aria-label="Nyelvválasztó">
+            <button type="button" class="lang-btn is-active" data-lang-btn="hu" data-lang-url="/projektek" aria-pressed="true">HU</button>
+            <button type="button" class="lang-btn" data-lang-btn="en" data-lang-url="/en/projects" aria-pressed="false">EN</button>
       </div>
     </div>
+  </div>
+</div>
     <main id="main">
       <section class="portfolio-section index-hero">
         <div class="container">
